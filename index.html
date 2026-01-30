@@ -5,68 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vectixore LTD | Advanced Software Solutions</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a; /* Koyu Kurumsal Lacivert */
-            color: #e2e8f0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-            color: #ffffff;
-        }
-        p.tagline {
-            font-size: 1.5rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-        .contact-box {
-            background-color: #1e293b;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            border: 1px solid #334155;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .footer {
-            margin-top: 3rem;
-            font-size: 0.8rem;
-            color: #64748b;
-        }
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
+        .container { max-width: 800px; padding: 40px; }
+        h1 { font-size: 3.5rem; letter-spacing: -1px; margin-bottom: 10px; color: #fff; }
+        .tagline { font-size: 1.25rem; color: #94a3b8; margin-bottom: 40px; }
+        .card { background: var(--card); border: 1px solid #334155; padding: 30px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); }
+        .email-link { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+        .legal-links { margin-top: 50px; display: flex; gap: 20px; justify-content: center; }
+        .legal-links a { color: #64748b; text-decoration: none; font-size: 0.85rem; border-bottom: 1px dashed #64748b; padding-bottom: 2px; }
+        .legal-links a:hover { color: var(--accent); border-color: var(--accent); }
+        .footer { margin-top: 40px; font-size: 0.8rem; color: #475569; line-height: 1.6; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>VECTIXORE</h1>
-        <p class="tagline">Architecting the Future of Digital Intelligence.</p>
+        <p class="tagline">Architecting the future of software through AI-driven productivity tools and global SaaS platforms.</p>
         
-        <div class="contact-box">
-            <p>Our digital platforms are currently under active development.</p>
-            <p>For corporate inquiries, licensing, and partnerships:</p>
-            <p>Email: <a href="mailto:info@vectixore.com">info@vectixore.com</a></p>
+        <div class="card">
+            <p>Our digital infrastructure is currently scaling.</p>
+            <p>For strategic partnerships or corporate inquiries:</p>
+            <a href="mailto:info@vectixore.com" class="email-link">info@vectixore.com</a>
+        </div>
+
+        <div class="legal-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="cookies.html">Cookie Policy</a>
         </div>
 
         <div class="footer">
-            <p>VECTIXORE LTD</p>
-            <p>Registered in England & Wales (Company No. 16999592)</p>
-            <p>71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom</p>
+            <strong>VECTIXORE LTD</strong><br>
+            Registered in England & Wales | Company No: 16999592<br>
+            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
         </div>
     </div>
 </body>

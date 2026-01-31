@@ -3,208 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | VECTIXORE LTD</title>
+    <title>Privacy Policy | Vectixore LTD</title>
     <style>
-        /* VECTIXORE EXACT COLOR PALETTE FROM IMAGE */
-        :root {
-            --bg-main: #0a0f1d;       /* En koyu arka plan (Main Body) */
-            --bg-card: #151b2b;       /* Kart arka planı (Cards) */
-            --text-header: #ffffff;   /* Ana başlık (H1) */
-            --text-sub: #4da6ff;      /* Alt başlık ve Linkler */
-            --text-body: #b0b8c1;     /* Genel metin */
-            --text-footer: #6c757d;   /* Footer metni */
-            --accent-orange: #f39c12; /* "Infrastructure" butonu rengi (Vurgu için) */
-            --border-bar: #4da6ff;    /* Dikey mavi çizgiler */
-            --main-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        /* SİZİN VERDİĞİNİZ DEĞİŞKENLER (Dokunulmadı) */
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; }
+        
+        /* BODY GÜNCELLEMESİ: Uzun metinlerde scroll sorunu olmaması için 'align-items: center' kaldırıldı. */
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            min-height: 100vh; 
+            text-align: center; /* Başlıklar için */
         }
 
-        body {
-            font-family: var(--main-font);
-            background-color: var(--bg-main);
-            color: var(--text-body);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
+        .container { max-width: 800px; padding: 60px 20px; margin: 0 auto; }
+        
+        .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; }
+        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        
+        /* CARD YAPISI (Aynen Korundu) */
+        .card { 
+            background: var(--card); 
+            border: 1px solid #334155; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-sizing: border-box; 
+            text-align: left; /* Metin okuması için sola hizalama şart */
+            margin-bottom: 25px; /* Kartlar arası boşluk */
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center; /* Başlıkları ortala */
-        }
+        /* TYPOGRAPHY AYARLARI */
+        h1 { margin: 0; font-size: 2rem; color: #fff; }
+        h3 { color: #fff; margin-top: 0; margin-bottom: 15px; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; }
+        p { line-height: 1.7; font-size: 0.95rem; color: #94a3b8; margin-bottom: 15px; }
+        
+        /* LİSTE AYARLARI (Homepage'de yoktu, buraya eklendi) */
+        ul { padding-left: 20px; color: #94a3b8; margin-bottom: 15px; }
+        li { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
+        li::marker { color: var(--accent); } /* Madde işaretleri mavi */
 
-        /* HEADER BÖLÜMÜ (Anasayfa ile birebir) */
-        header {
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--text-header);
-            margin: 0 0 10px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .sub-header {
-            color: var(--text-sub);
-            font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* KART TASARIMI (Business Operations kartları gibi) */
-        .policy-card {
-            background-color: var(--bg-card);
-            border-radius: 12px; /* Yuvarlatılmış köşeler */
-            padding: 30px;
-            margin-bottom: 30px;
-            text-align: left; /* Kart içi metinler sola yaslı */
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            color: var(--text-header);
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Başlıkların solundaki dikey mavi çizgi */
-        h2::before {
-            content: "";
-            display: inline-block;
-            width: 4px;
-            height: 24px;
-            background-color: var(--border-bar);
-            margin-right: 15px;
-            border-radius: 2px;
-        }
-
-        p, li {
-            font-size: 1rem;
-            color: var(--text-body);
-            margin-bottom: 15px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        /* LİNKLER */
-        a {
-            color: var(--text-sub);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-        /* FOOTER (Anasayfa ile birebir) */
-        .site-footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-footer);
-            line-height: 1.8;
-        }
-
-        .site-footer a {
-            color: var(--text-footer);
-            font-weight: normal;
-            margin: 0 10px;
-        }
-        .site-footer a:hover { color: var(--text-sub); }
-
-        .footer-company-info {
-            margin-top: 20px;
-            font-weight: 500;
-            color: #8a929a;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <h1>VECTIXORE LTD</h1>
-        <div class="sub-header">Privacy Policy & Data Governance Framework</div>
-        </header>
-
-    <div class="policy-card">
-        <h2>01. Introduction</h2>
-        <p>Vectixore LTD ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services, in strict compliance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.</p>
-    </div>
-
-    <div class="policy-card">
-        <h2>02. Data We Collect</h2>
-        <p>We may collect and process the following categories of personal data required for our business operations:</p>
-        <ul>
-            <li><strong>Identity & Contact Data:</strong> Name, email address, and professional details provided via inquiries.</li>
-            <li><strong>Technical Data:</strong> IP address, browser type, operating system, and device information collected automatically.</li>
-            <li><strong>Usage Data:</strong> Information about how you interact with our website and digital services.</li>
-        </ul>
-    </div>
-
-    <div class="policy-card">
-        <h2>03. Legal Basis for Processing</h2>
-        <p>Under UK GDPR Article 6, we rely on the following lawful bases:</p>
-        <ul>
-            <li><strong>Contractual Necessity:</strong> To fulfill our service obligations to you.</li>
-            <li><strong>Legitimate Interests:</strong> For network security, product development, and business operations.</li>
-            <li><strong>Legal Obligation:</strong> To comply with UK corporate and tax laws.</li>
-        </ul>
-    </div>
-
-     <div class="policy-card">
-        <h2>04. Data Storage & International Transfers</h2>
-        <p>Vectixore LTD is incorporated in England & Wales. Your data is stored on secure servers. We do not transfer data outside the UK unless adequate protective measures (such as Standard Contractual Clauses or UK Adequacy Regulations) are in place.</p>
-    </div>
-
-    <div class="policy-card">
-        <h2>05. Your Legal Rights</h2>
-        <p>You retain full control over your data. Under UK GDPR, you have the right to access, correct, erase ("right to be forgotten"), restrict processing, and object to the processing of your personal data.</p>
-    </div>
-
-    <div class="policy-card" style="text-align: center;">
-        <h2 style="justify-content: center; margin-bottom: 15px;">Privacy Inquiries</h2>
-        <p>If you have any questions about this policy or wish to exercise your rights, please contact us:</p>
-        <a href="mailto:info@vectixore.com" style="font-size: 1.2rem;">info@vectixore.com</a>
-        <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-footer);">
-            Regulatory Authority: Information Commissioner's Office (ICO) - www.ico.org.uk
-        </p>
-    </div>
-
-</div>
-
-<footer class="site-footer">
-    <div style="margin-bottom: 15px;">
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-    </div>
-    <div class="footer-company-info">
-        VECTIXORE LTD<br>
-        Registered in England & Wales | Company No: 16999592<br>
-        71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
-    </div>
-</footer>
-
-</body>
-</html>
+        .footer { margin-top: 50

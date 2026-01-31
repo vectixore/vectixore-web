@@ -126,29 +126,29 @@
             Review our <a href="privacy.html">Privacy Policy</a> for details.
         </div>
         <div class="banner-actions">
-            <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
-            <button onclick="acceptAll()" class="btn-action">Accept All</button>
+            <button onclick="acceptNecessary()" class="btn-minimal">Necessary Cookies Only</button>
+            <button onclick="acceptAll()" class="btn-action">Accept All Cookies</button>
         </div>
     </div>
 </div>
 
 <style>
-    /* BANNER POSITION - Bottom Bar */
+    /* BANNER POSITION */
     #cookie-banner {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(15, 23, 42, 0.95); /* Dark Background */
-        border-top: 1px solid #334155; /* Thin Top Line */
-        backdrop-filter: blur(10px); /* Modern Blur */
+        background-color: rgba(15, 23, 42, 0.95);
+        border-top: 1px solid #334155;
+        backdrop-filter: blur(10px);
         z-index: 9999;
         padding: 15px 0;
         box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
         animation: slideUp 0.5s ease-out;
     }
 
-    /* CONTENT LAYOUT */
+    /* LAYOUT */
     .banner-content {
         max-width: 900px;
         margin: 0 auto;
@@ -157,7 +157,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        flex-wrap: wrap; /* Stacks on mobile */
+        flex-wrap: wrap; 
     }
 
     .banner-text {
@@ -180,7 +180,7 @@
     }
 
     button {
-        padding: 8px 16px;
+        padding: 10px 20px; /* Biraz daha geniş tıklama alanı */
         border-radius: 6px;
         font-weight: 600;
         font-size: 0.85rem;
@@ -212,16 +212,15 @@
     }
 
     /* MOBILE RESPONSIVE */
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         .banner-content { flex-direction: column; text-align: center; }
-        .banner-actions { width: 100%; justify-content: center; }
+        .banner-actions { width: 100%; justify-content: center; flex-direction: column; }
         button { width: 100%; }
     }
 </style>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Check: Has consent been given previously?
         if (!localStorage.getItem("vectixore_consent")) {
             document.getElementById("cookie-banner").style.display = "block";
         }
@@ -230,7 +229,6 @@
     function acceptAll() {
         localStorage.setItem("vectixore_consent", "full");
         document.getElementById("cookie-banner").style.display = "none";
-        // Optional: Trigger analytics scripts here
     }
 
     function acceptNecessary() {

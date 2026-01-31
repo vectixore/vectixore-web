@@ -52,5 +52,124 @@
             71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
         </div>
     </div>
+    <div id="cookie-banner" style="display:none;">
+    <div class="banner-content">
+        <div class="banner-text">
+            <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity. 
+            Review our <a href="privacy.html">Privacy Policy</a> for details.
+        </div>
+        <div class="banner-actions">
+            <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
+            <button onclick="acceptAll()" class="btn-action">Accept All</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* BANNER POZİSYONU - Alt Bant */
+    #cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(15, 23, 42, 0.95); /* Koyu Arkaplan */
+        border-top: 1px solid #334155; /* İnce Üst Çizgi */
+        backdrop-filter: blur(10px); /* Hafif modern blur */
+        z-index: 9999;
+        padding: 15px 0;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+        animation: slideUp 0.5s ease-out;
+    }
+
+    /* İÇERİK DÜZENİ */
+    .banner-content {
+        max-width: 900px; /* Container ile aynı */
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap; /* Mobilde alt alta geçsin */
+    }
+
+    .banner-text {
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 0.9rem;
+        color: #e2e8f0;
+        line-height: 1.5;
+        flex: 2; /* Metin daha geniş alan kaplasın */
+    }
+    
+    .banner-text a { color: #38bdf8; text-decoration: none; }
+    .banner-text a:hover { text-decoration: underline; }
+
+    /* BUTON GRUBU */
+    .banner-actions {
+        display: flex;
+        gap: 10px;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    button {
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+    }
+
+    /* Accept All (Mavi) */
+    .btn-action {
+        background-color: #38bdf8;
+        color: #0f172a;
+        border: 1px solid #38bdf8;
+    }
+    .btn-action:hover { background-color: #7dd3fc; }
+
+    /* Necessary (Şeffaf) */
+    .btn-minimal {
+        background-color: transparent;
+        color: #94a3b8;
+        border: 1px solid #475569;
+    }
+    .btn-minimal:hover { color: #fff; border-color: #fff; }
+
+    /* Slide Up Animasyonu */
+    @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+
+    /* MOBİL UYUM */
+    @media (max-width: 600px) {
+        .banner-content { flex-direction: column; text-align: center; }
+        .banner-actions { width: 100%; justify-content: center; }
+        button { width: 100%; }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Kontrol: Daha önce seçim yapıldı mı?
+        if (!localStorage.getItem("vectixore_consent")) {
+            document.getElementById("cookie-banner").style.display = "block";
+            // Not: Scroll engelleme (overflow:hidden) kaldırıldı.
+        }
+    });
+
+    function acceptAll() {
+        localStorage.setItem("vectixore_consent", "full");
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+
+    function acceptNecessary() {
+        localStorage.setItem("vectixore_consent", "necessary");
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+</script>
 </body>
 </html>

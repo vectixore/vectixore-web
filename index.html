@@ -59,38 +59,38 @@
             Review our <a href="privacy.html">Privacy Policy</a> for details.
         </div>
         <div class="banner-actions">
-            <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
-            <button onclick="acceptAll()" class="btn-action">Accept All</button>
+            <button onclick="acceptNecessary()" class="btn-minimal">Necessary Cookies Only</button>
+            <button onclick="acceptAll()" class="btn-action">Accept All Cookies</button>
         </div>
     </div>
 </div>
 
 <style>
-    /* BANNER POZİSYONU - Alt Bant */
+    /* BANNER POSITION */
     #cookie-banner {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(15, 23, 42, 0.95); /* Koyu Arkaplan */
-        border-top: 1px solid #334155; /* İnce Üst Çizgi */
-        backdrop-filter: blur(10px); /* Hafif modern blur */
+        background-color: rgba(15, 23, 42, 0.95);
+        border-top: 1px solid #334155;
+        backdrop-filter: blur(10px);
         z-index: 9999;
         padding: 15px 0;
         box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
         animation: slideUp 0.5s ease-out;
     }
 
-    /* İÇERİK DÜZENİ */
+    /* LAYOUT */
     .banner-content {
-        max-width: 900px; /* Container ile aynı */
+        max-width: 900px;
         margin: 0 auto;
         padding: 0 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        flex-wrap: wrap; /* Mobilde alt alta geçsin */
+        flex-wrap: wrap; 
     }
 
     .banner-text {
@@ -98,13 +98,13 @@
         font-size: 0.9rem;
         color: #e2e8f0;
         line-height: 1.5;
-        flex: 2; /* Metin daha geniş alan kaplasın */
+        flex: 2;
     }
     
     .banner-text a { color: #38bdf8; text-decoration: none; }
     .banner-text a:hover { text-decoration: underline; }
 
-    /* BUTON GRUBU */
+    /* BUTTON GROUP */
     .banner-actions {
         display: flex;
         gap: 10px;
@@ -113,7 +113,7 @@
     }
 
     button {
-        padding: 8px 16px;
+        padding: 10px 20px; /* Biraz daha geniş tıklama alanı */
         border-radius: 6px;
         font-weight: 600;
         font-size: 0.85rem;
@@ -122,7 +122,7 @@
         transition: all 0.2s;
     }
 
-    /* Accept All (Mavi) */
+    /* Accept All (Blue) */
     .btn-action {
         background-color: #38bdf8;
         color: #0f172a;
@@ -130,7 +130,7 @@
     }
     .btn-action:hover { background-color: #7dd3fc; }
 
-    /* Necessary (Şeffaf) */
+    /* Necessary (Transparent) */
     .btn-minimal {
         background-color: transparent;
         color: #94a3b8;
@@ -138,26 +138,24 @@
     }
     .btn-minimal:hover { color: #fff; border-color: #fff; }
 
-    /* Slide Up Animasyonu */
+    /* Animation */
     @keyframes slideUp {
         from { transform: translateY(100%); }
         to { transform: translateY(0); }
     }
 
-    /* MOBİL UYUM */
-    @media (max-width: 600px) {
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 700px) {
         .banner-content { flex-direction: column; text-align: center; }
-        .banner-actions { width: 100%; justify-content: center; }
+        .banner-actions { width: 100%; justify-content: center; flex-direction: column; }
         button { width: 100%; }
     }
 </style>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Kontrol: Daha önce seçim yapıldı mı?
         if (!localStorage.getItem("vectixore_consent")) {
             document.getElementById("cookie-banner").style.display = "block";
-            // Not: Scroll engelleme (overflow:hidden) kaldırıldı.
         }
     });
 

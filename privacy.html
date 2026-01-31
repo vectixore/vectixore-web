@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Vectixore LTD</title>
     <style>
-        /* SİZİN VERDİĞİNİZ DEĞİŞKENLER (Dokunulmadı) */
+        /* CORE VARIABLES (Matches Index.html) */
         :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; }
         
-        /* BODY GÜNCELLEMESİ: Uzun metinlerde scroll sorunu olmaması için 'align-items: center' kaldırıldı. */
+        /* BODY SETTINGS */
         body { 
             font-family: 'Inter', system-ui, sans-serif; 
             background-color: var(--bg); 
             color: var(--text); 
             margin: 0; 
             min-height: 100vh; 
-            text-align: center; /* Başlıklar için */
+            text-align: center; 
         }
 
         .container { max-width: 800px; padding: 60px 20px; margin: 0 auto; }
@@ -23,25 +23,95 @@
         .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; }
         .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
         
-        /* CARD YAPISI (Aynen Korundu) */
+        /* CARD COMPONENT */
         .card { 
             background: var(--card); 
             border: 1px solid #334155; 
             padding: 30px; 
             border-radius: 12px; 
             box-sizing: border-box; 
-            text-align: left; /* Metin okuması için sola hizalama şart */
-            margin-bottom: 25px; /* Kartlar arası boşluk */
+            text-align: left; 
+            margin-bottom: 25px; 
         }
 
-        /* TYPOGRAPHY AYARLARI */
-        h1 { margin: 0; font-size: 2rem; color: #fff; }
+        /* TYPOGRAPHY */
         h3 { color: #fff; margin-top: 0; margin-bottom: 15px; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; }
         p { line-height: 1.7; font-size: 0.95rem; color: #94a3b8; margin-bottom: 15px; }
         
-        /* LİSTE AYARLARI (Homepage'de yoktu, buraya eklendi) */
+        /* LIST STYLES */
         ul { padding-left: 20px; color: #94a3b8; margin-bottom: 15px; }
         li { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
-        li::marker { color: var(--accent); } /* Madde işaretleri mavi */
+        li::marker { color: var(--accent); } 
 
-        .footer { margin-top: 50
+        /* FOOTER */
+        .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; }
+        
+        /* LINKS */
+        a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; text-decoration: underline; }
+        
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: #64748b; }
+        .back-link:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="business-name">PRIVACY POLICY</div>
+        <div class="tagline">Data Governance Framework (UK GDPR)</div>
+
+        <div class="card">
+            <h3>01. Introduction</h3>
+            <p>Vectixore LTD ("we", "our", or "us") respects your privacy. This policy explains how we handle your personal data when you visit our website or use our software applications.</p>
+            <p>We operate in strict compliance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h3>02. Data We Collect</h3>
+            <p>Depending on how you interact with our services (e.g., website inquiries or app usage), we may collect:</p>
+            <ul>
+                <li><strong>Identity Data:</strong> Name, username, or unique identifiers.</li>
+                <li><strong>Contact Data:</strong> Email address (for support inquiries).</li>
+                <li><strong>Technical Data:</strong> IP address, browser type, device model, and operating system versions necessary for software compatibility.</li>
+                <li><strong>Usage Data:</strong> Analytics on how you use our digital products.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>03. Legal Basis for Processing</h3>
+            <p>We only process your data when we have a lawful basis:</p>
+            <ul>
+                <li><strong>Contractual Necessity:</strong> To provide the services you requested.</li>
+                <li><strong>Legitimate Interests:</strong> To improve our software, prevent fraud, and ensure network security.</li>
+                <li><strong>Legal Obligation:</strong> To comply with UK tax and corporate laws.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>04. Data Storage</h3>
+            <p>Vectixore LTD is a UK-based entity. Your data is stored on secure servers. We do not sell your personal data to third parties. Any international transfers are protected by appropriate safeguards such as UK International Data Transfer Agreements (IDTA).</p>
+        </div>
+
+        <div class="card">
+            <h3>05. Your Rights</h3>
+            <p>Under UK GDPR, you have the right to access, correct, erase ("right to be forgotten"), and restrict the processing of your data. To exercise these rights, please contact us.</p>
+        </div>
+
+        <div class="card">
+            <h3>06. Contact Us</h3>
+            <p><strong>Controller:</strong> Vectixore LTD</p>
+            <p><strong>Email:</strong> <a href="mailto:info@vectixore.com">info@vectixore.com</a></p>
+            <p>You have the right to lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong> if you believe your rights have been violated.</p>
+        </div>
+
+        <div class="footer">
+            <strong>VECTIXORE LTD</strong><br>
+            Registered in England & Wales | Company No: 16999592<br>
+            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
+        </div>
+    </div>
+
+</body>
+</html>

@@ -16,9 +16,15 @@
         p { line-height: 1.6; font-size: 0.95rem; color: #94a3b8; }
         .footer { margin-top: 40px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 20px; line-height: 1.5; }
         
+        /* Legal Links Styling */
+        .legal-links { margin-top: 30px; padding: 10px; border-top: 1px solid #334155; border-bottom: 1px solid #334155; }
+        .legal-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin: 0 15px; transition: color 0.2s; }
+        .legal-links a:hover { color: var(--accent); }
+
         @media (max-width: 700px) {
             .grid { grid-template-columns: 1fr; }
             .business-name { font-size: 2rem; }
+            .legal-links a { display: block; margin: 10px 0; }
         }
     </style>
 </head>
@@ -38,4 +44,93 @@
             </div>
         </div>
 
-        <div class="card" style
+        <div class="card" style="text-align: left; margin-bottom: 20px;">
+            <h3>Refund & Cancellation Policy</h3>
+            <p>Vectixore LTD is committed to customer satisfaction. For software licensing and digital services, refund requests are processed within 14 days of purchase in accordance with UK consumer laws. Please contact our support team for any billing inquiries.</p>
+        </div>
+
+        <div class="card" style="text-align: center; margin-bottom: 20px;">
+            <p style="margin:0; color:#fff;">Corporate & Strategic Inquiries: <br>
+            <a href="mailto:info@vectixore.com" style="color:var(--accent); text-decoration:none; font-weight:600;">info@vectixore.com</a></p>
+        </div>
+
+        <div class="legal-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span style="color: #334155;">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+
+        <div class="footer">
+            <strong>VECTIXORE LTD</strong><br>
+            Registered in England & Wales | Company No: 16999592<br>
+            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
+        </div>
+    </div>
+
+    <div id="cookie-banner" style="display:none;">
+        <div class="banner-content">
+            <div class="banner-text">
+                <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity. 
+                Review our <a href="privacy.html">Privacy Policy</a> for details.
+            </div>
+            <div class="banner-actions">
+                <button onclick="acceptNecessary()" class="btn-minimal">Necessary Cookies Only</button>
+                <button onclick="acceptAll()" class="btn-action">Accept All Cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #cookie-banner {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background-color: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid #334155;
+            backdrop-filter: blur(10px); z-index: 9999;
+            padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+        .banner-content {
+            max-width: 900px; margin: 0 auto; padding: 0 20px;
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 20px; flex-wrap: wrap; 
+        }
+        .banner-text {
+            font-family: 'Inter', system-ui, sans-serif; font-size: 0.9rem;
+            color: #e2e8f0; line-height: 1.5; flex: 2;
+        }
+        .banner-text a { color: #38bdf8; text-decoration: none; }
+        .banner-text a:hover { text-decoration: underline; }
+        .banner-actions { display: flex; gap: 10px; flex: 1; justify-content: flex-end; }
+        button {
+            padding: 10px 20px; border-radius: 6px; font-weight: 600;
+            font-size: 0.85rem; cursor: pointer; white-space: nowrap; transition: all 0.2s;
+        }
+        .btn-action { background-color: #38bdf8; color: #0f172a; border: 1px solid #38bdf8; }
+        .btn-action:hover { background-color: #7dd3fc; }
+        .btn-minimal { background-color: transparent; color: #94a3b8; border: 1px solid #475569; }
+        .btn-minimal:hover { color: #fff; border-color: #fff; }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        @media (max-width: 700px) {
+            .banner-content { flex-direction: column; text-align: center; }
+            .banner-actions { width: 100%; justify-content: center; flex-direction: column; }
+            button { width: 100%; }
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem("vectixore_consent")) {
+                document.getElementById("cookie-banner").style.display = "block";
+            }
+        });
+        function acceptAll() {
+            localStorage.setItem("vectixore_consent", "full");
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+        function acceptNecessary() {
+            localStorage.setItem("vectixore_consent", "necessary");
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vectixore LTD | Software Development & Publishing</title>
     <style>
-        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; }
-        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; position: relative; }
-        
-        /* Navigation */
-        .nav-container { position: absolute; top: 20px; right: 20px; z-index: 100; }
-        .nav-link { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; border: 1px solid var(--accent); padding: 8px 20px; border-radius: 6px; transition: all 0.2s; background: rgba(56, 189, 248, 0.05); }
-        .nav-link:hover { background: var(--accent); color: var(--bg); }
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --border: #334155; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
 
-        .container { max-width: 900px; padding: 60px 20px 40px 20px; }
-        .business-name { font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 5px; }
-        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        /* Top Navigation Bar - Projects sayfası ile aynı standart */
+        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
+        .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
+        .nav-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .nav-links a.active { font-weight: 700; }
+
+        /* Main Container */
+        .container { max-width: 900px; width: 100%; padding: 120px 20px 40px 20px; text-align: center; flex: 1; }
+        
+        .business-name { font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 5px; letter-spacing: -1px; }
+        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 50px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-bottom: 20px; }
-        .card { background: var(--card); border: 1px solid #334155; padding: 25px; border-radius: 12px; height: 100%; box-sizing: border-box; }
+        .card { background: var(--card); border: 1px solid var(--border); padding: 25px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s; }
+        
         h3 { color: #fff; margin-top: 0; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 10px; }
         p { line-height: 1.6; font-size: 0.95rem; color: #94a3b8; }
         
-        .footer { margin-top: 40px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 20px; line-height: 1.5; }
-        .ico-box { color: #94a3b8; font-weight: 600; margin: 10px 0; }
+        .footer { margin-top: 60px; font-size: 0.8rem; color: #475569; border-top: 1px solid var(--border); padding-top: 30px; line-height: 1.6; }
+        .ico-box { color: #94a3b8; font-weight: 600; margin: 5px 0; }
 
-        .legal-links { margin-top: 30px; padding: 10px; border-top: 1px solid #334155; border-bottom: 1px solid #334155; }
+        .legal-links { margin-top: 30px; padding: 10px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .legal-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin: 0 15px; transition: color 0.2s; }
         .legal-links a:hover { color: var(--accent); }
 
-        /* Cookie Banner Styling */
-        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); display: none; animation: slideUp 0.5s ease-out; }
+        /* Cookie Banner */
+        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid var(--border); backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); display: none; animation: slideUp 0.5s ease-out; }
         .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
         .banner-text { font-size: 0.9rem; color: #e2e8f0; text-align: left; flex: 2; }
         .banner-actions { display: flex; gap: 10px; flex: 1; justify-content: flex-end; }
@@ -40,7 +47,6 @@
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 
         @media (max-width: 700px) {
-            .nav-container { position: static; margin-bottom: 20px; text-align: right; width: 100%; padding-right: 20px; box-sizing: border-box; }
             .grid { grid-template-columns: 1fr; }
             .business-name { font-size: 2rem; }
             .legal-links a { display: block; margin: 10px 0; }
@@ -52,8 +58,14 @@
 </head>
 <body>
 
-    <nav class="nav-container">
-        <a href="products.html" class="nav-link">Products</a>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-brand">VECTIXORE LTD</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Corporate</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </div>
     </nav>
 
     <div class="container">
@@ -63,7 +75,7 @@
         <div class="grid">
             <div class="card">
                 <h3>Core Services</h3>
-                <p>We specialize in computer programming and software publishing. We deliver AI-driven utility applications designed for global distribution via major app stores, ensuring high-performance solutions for end-users.</p>
+                <p>We specialize in computer programming and software publishing. We deliver AI-driven utility applications designed for global distribution via the Google Play Store and Apple App Store, ensuring high-performance solutions for end-users.</p>
             </div>
             <div class="card">
                 <h3>Business Model</h3>

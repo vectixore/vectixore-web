@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Vectixore LTD</title>
+    <style>
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --border: #334155; --flutter: #027dfd; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        
+        /* Top Navigation Bar */
+        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
+        .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
+        .nav-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        .container { max-width: 900px; width: 100%; padding: 100px 20px 40px 20px; flex: 1; }
+        
+        .page-header { text-align: left; margin-bottom: 50px; }
+        .page-title { font-size: 2.5rem; font-weight: 800; color: #fff; margin: 0 0 10px 0; letter-spacing: -1px; }
+        .page-subtitle { color: #64748b; font-size: 1rem; max-width: 600px; line-height: 1.5; }
+
+        .project-list { display: flex; flex-direction: column; gap: 30px; }
+        
+        /* Detailed Wide Cards */
+        .project-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 35px; transition: transform 0.2s, border-color 0.2s; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 20px; }
+        .project-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; }
+        .project-name { font-size: 1.8rem; font-weight: 700; color: #fff; margin: 0; display: flex; align-items: center; gap: 15px; }
+        .badge { font-size: 0.7rem; padding: 4px 10px; border-radius: 6px; font-weight: 700; background: rgba(2, 125, 253, 0.1); color: var(--flutter); border: 1px solid rgba(2, 125, 253, 0.3); letter-spacing: 0.5px; }
+        
+        .project-desc { font-size: 1rem; color: #94a3b8; line-height: 1.6; margin: 0; max-width: 90%; }
+        
+        .feature-list { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 5px; }
+        .feature-tag { font-size: 0.8rem; color: #cbd5e1; background: rgba(255,255,255,0.05); padding: 5px 12px; border-radius: 20px; border: 1px solid var(--border); }
+
+        .card-footer { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .status-box { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #10b981; font-weight: 600; }
+        .status-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
+        
+        .action-btn { background: var(--accent); color: #0f172a; text-decoration: none; padding: 10px 24px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; transition: opacity 0.2s; }
+        .action-btn:hover { opacity: 0.9; }
+
+        .footer { margin-top: 60px; text-align: center; font-size: 0.8rem; color: #475569; padding-bottom: 20px; width: 100%; border-top: 1px solid var(--border); padding-top: 30px; }
+
+        @media (max-width: 700px) {
+            .project-name { font-size: 1.4rem; flex-direction: column; align-items: flex-start; gap: 5px; }
+            .card-footer { flex-direction: column; gap: 15px; align-items: flex-start; }
+            .action-btn { width: 100%; text-align: center; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-brand">VECTIXORE LTD</a>
+            <div class="nav-links">
+                <a href="index.html">Corporate</a>
+                <a href="projects.html" class="active">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">Flagship Projects</h1>
+            <p class="page-subtitle">Strategic software solutions focused on data privacy, legal compliance, and high-utility automation.</p>
+        </div>
+
+        <div class="project-list">
+            
+            <div class="project-card">
+                <div class="card-header">
+                    <h2 class="project-name">
+                        SalienTag 
+                        <span class="badge">FLUTTER</span>
+                    </h2>
+                </div>
+                <p class="project-desc">
+                    An enterprise-grade privacy validation ecosystem designed for UK GDPR & Data Protection Act 2018 compliance. It integrates the proprietary <strong>DreamCipher</strong> encryption module to secure legal text validation and user consent flows.
+                </p>
+                <div class="feature-list">
+                    <span class="feature-tag">Privacy Tech</span>
+                    <span class="feature-tag">UK GDPR Compliance</span>
+                    <span class="feature-tag">DreamCipher Core</span>
+                </div>
+                <div class="card-footer">
+                    <div class="status-box">
+                        <span class="status-dot"></span> Active Development
+                    </div>
+                    <a href="#" class="action-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header">
+                    <h2 class="project-name">
+                        PocketNotary
+                        <span class="badge">FLUTTER</span>
+                    </h2>
+                </div>
+                <p class="project-desc">
+                    A comprehensive mobile utility suite for document verification and PDF management. Features secure crypto-asset service modules, delivering a seamless digital verification experience aligned with international standards.
+                </p>
+                <div class="feature-list">
+                    <span class="feature-tag">Utility Tool</span>
+                    <span class="feature-tag">Crypto Services</span>
+                    <span class="feature-tag">PDF Manager</span>
+                </div>
+                <div class="card-footer">
+                    <div class="status-box">
+                        <span class="status-dot"></span> Market Ready
+                    </div>
+                    <a href="#" class="action-btn">View on Store</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <strong>VECTIXORE LTD</strong><br>
+        ICO Registration: ZC087615 | London, UK<br>
+        Compliance: UK Company Law | Data Protection Act 2018 | UK GDPR
+    </div>
+
+</body>
+</html>

@@ -39,7 +39,7 @@
         
         h3 { color: #fff; margin-top: 35px; margin-bottom: 10px; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 15px; }
         
-        h4 { color: #cbd5e1; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; }
+        h4 { color: #cbd5e1; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 700; }
 
         p { line-height: 1.7; font-size: 0.95rem; color: #94a3b8; margin-bottom: 15px; }
         
@@ -95,14 +95,14 @@
             <hr style="border: 0; border-top: 1px solid #334155; margin: 25px 0;">
 
             <h3>1.1. Handwritten Signature Data</h3>
-            <p>We collect the visual representation (image) and vector paths (stroke data) of the signature you draw on the screen.</p>
+            <p>Where applicable, we collect the visual representation (image) and vector paths (stroke data) of the signature you draw on the screen.</p>
             <ul>
                 <li><strong>Purpose:</strong> This data is processed strictly as "Document Content" to be embedded into the PDF.</li>
                 <li><strong>Disclaimer:</strong> Vectixore LTD does NOT perform graphological analysis or dynamic biometric verification (pressure/speed analysis) on this signature. We only cryptographically seal the image provided.</li>
             </ul>
 
             <h3>1.2. Identity Document & NFC Data (High-Assurance Verification)</h3>
-            <p>To achieve "Substantial Assurance" (NIST IAL2 / eIDAS High) levels of identity verification, the App accesses the NFC controller of your device to communicate with the RFID chip embedded in your government-issued Identity Document (Passport or National ID Card).</p>
+            <p>To achieve "Substantial Assurance" (NIST IAL2 / eIDAS High) levels of identity verification in our secure applications, the App accesses the NFC controller of your device to communicate with the RFID chip embedded in your government-issued Identity Document (Passport or National ID Card).</p>
             
             <h4>A. Data Extracted via OCR (Optical Character Recognition):</h4>
             <ul>
@@ -231,9 +231,55 @@
         </div>
 
         <div class="card">
-            <h2>REGIONAL ANNEXES</h2>
+            <h2>3. COOKIES & LOCAL STORAGE PROTOCOLS</h2>
+            
+            <p>Vectixore LTD employs advanced client-side storage technologies, including HTTP Cookies, HTML5 Local Storage, and Session Tokens, to ensure the operational integrity, security, and performance of our Services. Unlike traditional tracking, our architecture prioritizes functional necessity over behavioral profiling.</p>
 
-            <h3>3. ANNEX A: EUROPE (GDPR - EU/UK/Swiss)</h3>
+            <h3>3.1. Technical Definitions</h3>
+            <ul>
+                <li><strong>HTTP Cookies:</strong> Small text files transmitted from our server to your client device (browser/app) to maintain stateful sessions (e.g., keeping you logged in).</li>
+                <li><strong>HTML5 Local Storage:</strong> A client-side database used to store non-sensitive preference data and UI states locally on your device, reducing server calls and latency.</li>
+                <li><strong>Session Tokens (JWT):</strong> JSON Web Tokens used for secure, stateless authentication during forensic operations.</li>
+            </ul>
+
+            <h3>3.2. Categories of Data Storage</h3>
+            <p>We classify our storage technologies into three strict categories based on forensic and operational necessity:</p>
+
+            <h4>A. Strictly Necessary (Kernel)</h4>
+            <p>These are technically essential for the Service to function and cannot be disabled. They do not store personally identifiable information (PII) for marketing purposes.</p>
+            <ul>
+                <li><strong>Security Tokens (CSRF/XSRF):</strong> To prevent Cross-Site Request Forgery attacks during document signing.</li>
+                <li><strong>Authentication State:</strong> To verify your identity across different pages or app screens (OAuth 2.0 / OpenID Connect).</li>
+                <li><strong>Load Balancing:</strong> To distribute network traffic efficiently across our secure server clusters.</li>
+            </ul>
+
+            <h4>B. Performance & Telemetry (Analytics)</h4>
+            <p>We use these technologies to collect anonymous technical data to detect crashes, latency issues, and platform instability.</p>
+            <ul>
+                <li><strong>Crash Reporting:</strong> (e.g., Firebase Crashlytics) Collects stack traces and device state at the moment of application failure.</li>
+                <li><strong>Latency Metrics:</strong> Measures the time taken for cryptographic operations (Hashing/Sealing) to optimize performance.</li>
+            </ul>
+
+            <h4>C. Advertising & Attribution (Mobile Only)</h4>
+            <p>In our mobile applications supported by ad revenue, we utilize standard identifiers to prevent fraud and attribute installations.</p>
+            <ul>
+                <li><strong>Advertising ID (AAID/IDFA):</strong> Used strictly to cap frequency (limit how often you see the same ad) and detect "click farms" or bot activity (Anti-Fraud).</li>
+                <li><strong>Attribution:</strong> To determine if an installation originated from a specific marketing campaign, without revealing your personal identity.</li>
+            </ul>
+
+            <h3>3.3. Management & Control</h3>
+            <p>You have the right to control how these technologies are used on your device:</p>
+            <ul>
+                <li><strong>Browser Settings:</strong> You can block or delete cookies via your browser's privacy settings (Chrome, Safari, Firefox, Edge). Note that blocking "Strictly Necessary" cookies will render the Service unusable.</li>
+                <li><strong>Mobile Device Settings:</strong> You can reset your Advertising ID or enable "Limit Ad Tracking" (iOS) / "Opt out of Ads Personalization" (Android) in your device settings.</li>
+                <li><strong>Consent Banner:</strong> Upon your first visit, our Consent Management Platform allows you to Accept or Reject non-essential storage technologies.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>4. REGIONAL ANNEXES</h2>
+
+            <h3>ANNEX A: EUROPE (GDPR - EU/UK/Swiss)</h3>
             <p><strong>Applicable Law:</strong> General Data Protection Regulation (GDPR) / UK GDPR / nFADP.</p>
             <p>You have the following specific rights under Articles 15-22 of the GDPR:</p>
             <ul>
@@ -246,7 +292,7 @@
                 <li><strong>Article 22 (Automated Decision-Making):</strong> Right not to be subject to a decision based solely on automated processing (e.g., security blocks), and to request human intervention.</li>
             </ul>
 
-            <h3>4. ANNEX B: USA (CCPA / CPRA / VCDPA)</h3>
+            <h3>ANNEX B: USA (CCPA / CPRA / VCDPA)</h3>
             <p><strong>Applicable Law:</strong> California Consumer Privacy Act (CCPA) & State Laws.</p>
             <ul>
                 <li><strong>Right to Know:</strong> Request disclosure of collection/use of info over past 12 months.</li>
@@ -256,7 +302,7 @@
                 <li><strong>"Do Not Sell or Share":</strong> Vectixore LTD does not sell your personal information. We use Advertising IDs solely for fraud prevention and internal analytics.</li>
             </ul>
 
-            <h3>5. ANNEX C: BRAZIL (LGPD)</h3>
+            <h3>ANNEX C: BRAZIL (LGPD)</h3>
             <p><strong>Applicable Law:</strong> Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
             <p>Pursuant to Article 18 of the LGPD, you have the right to request:</p>
             <ul>
@@ -272,7 +318,7 @@
             </ul>
             <p><strong>Person in Charge (Encarregado):</strong> The Data Protection Officer at info@vectixore.com.</p>
 
-            <h3>6. ANNEX D: TURKEY (KVKK / LPPD)</h3>
+            <h3>ANNEX D: TURKEY (KVKK / LPPD)</h3>
             <p><strong>Applicable Law:</strong> Law on Protection of Personal Data No. 6698.</p>
             <p>Pursuant to Article 11 of the KVKK, everyone has the right to:</p>
             <ul>
@@ -289,7 +335,7 @@
             <p><strong>Data Controller:</strong> Vectixore LTD (United Kingdom).<br>
             <strong>Application Method:</strong> Submit requests to info@vectixore.com.</p>
 
-            <h3>7. ANNEX E: SOUTH AFRICA (POPIA)</h3>
+            <h3>ANNEX E: SOUTH AFRICA (POPIA)</h3>
             <p><strong>Applicable Law:</strong> Protection of Personal Information Act.</p>
             <ul>
                 <li><strong>Right to be Notified:</strong> Know when data is collected or compromised.</li>
@@ -300,7 +346,7 @@
             </ul>
             <p><strong>Information Officer:</strong> The DPO at info@vectixore.com.</p>
 
-            <h3>8. ANNEX F: CANADA (PIPEDA)</h3>
+            <h3>ANNEX F: CANADA (PIPEDA)</h3>
             <p><strong>Applicable Law:</strong> Personal Information Protection and Electronic Documents Act.</p>
             <ul>
                 <li><strong>Access:</strong> Right to access personal info and challenge accuracy.</li>

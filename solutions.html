@@ -8,38 +8,38 @@
         :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --border: #334155; }
         body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; }
 
-        /* Navbar (Standart) */
+        /* Navbar */
         .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
         .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; text-decoration: none; }
         .nav-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* Header Area */
+        /* Header */
         .header-sec { padding: 120px 20px 60px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #0f172a 0%, #172033 100%); }
         .page-title { font-size: 2.5rem; font-weight: 800; color: #fff; margin: 0; letter-spacing: -1px; }
         .page-sub { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-top: 10px; font-weight: 600; }
         
-        /* Grid */
+        /* Grid Layout */
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         
-        /* Kart Tasarımı (Clean & Corporate) */
-        .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 30px; transition: transform 0.2s; position: relative; overflow: hidden; }
+        /* Card Design */
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 30px; transition: transform 0.2s; position: relative; overflow: hidden; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); border-color: var(--accent); }
         .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent); opacity: 0.5; }
 
-        .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; }
+        .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; width: fit-content; }
         .dev { background: rgba(255, 183, 3, 0.1); color: #ffb703; }
-        .concept { background: rgba(148, 163, 184, 0.1); color: #94a3b8; }
+        .live { background: rgba(16, 185, 129, 0.1); color: #10b981; }
 
         h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.4rem; }
-        p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+        p { color: #94a3b8; line-height: 1.6; font-size: 0.9rem; flex-grow: 1; }
         
-        .tags { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
-        .tag { font-size: 0.75rem; color: var(--accent); border: 1px solid #334155; padding: 4px 10px; border-radius: 4px; }
+        .tags { margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag { font-size: 0.7rem; color: var(--accent); border: 1px solid #334155; padding: 4px 8px; border-radius: 4px; background: rgba(15, 23, 42, 0.5); }
 
-        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 10px; } .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 0; } .nav-links a { margin: 0; } }
+        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 10px; } }
     </style>
 </head>
 <body>
@@ -59,30 +59,77 @@
     <div class="page-sub">Logic. Law. Systems.</div>
     <h1 class="page-title">Vectixore Solutions</h1>
     <p style="max-width: 600px; margin: 20px auto 0; color: #94a3b8;">
-        Developing high-utility algorithms and disciplined software architectures for professional and personal optimization.
+        Deploying AI-driven architectures for legal verification, business intelligence, and behavioral optimization.
     </p>
 </div>
 
-<div class="grid">
-    <div class="card">
-        <span class="status dev">In Development</span>
-        <h3>WillSeeker</h3>
-        <p>A discipline tracking architecture utilizing reinforcement learning to align daily habits with long-term goals. Focuses on behavioral modification.</p>
-        <div class="tags"><span class="tag">Flutter</span><span class="tag">Behavioral Science</span></div>
-    </div>
+<div class="container">
+    <div class="grid">
+        
+        <div class="card">
+            <span class="status dev">In Development</span>
+            <h3>DoubtProof™</h3>
+            <p>
+                A hybrid forensic evidence platform safeguarding digital integrity. 
+                Leveraging <strong>Vertex AI</strong> for biometric liveness detection and 
+                <strong>NTP-based Crypto-Timestamping</strong>, it renders data manipulation 
+                technically impossible. A next-gen shield for legal and insurance sectors ensuring "Non-repudiation."
+            </p>
+            <div class="tags">
+                <span class="tag">Cybersecurity</span>
+                <span class="tag">Forensic Tech</span>
+                <span class="tag">Vertex AI</span>
+            </div>
+        </div>
 
-    <div class="card">
-        <span class="status concept">Concept Phase</span>
-        <h3>DoubtProof</h3>
-        <p>Blockchain-backed document verification and time-stamping system. Ensures the integrity of digital files for legal and corporate use.</p>
-        <div class="tags"><span class="tag">Legal Tech</span><span class="tag">Cryptography</span></div>
-    </div>
+        <div class="card">
+            <span class="status dev">In Development</span>
+            <h3>GrantFlow AI</h3>
+            <p>
+                A strategic BI tool automating grant applications for SMEs. 
+                Utilizing <strong>Gemini 1.5 Pro’s</strong> 128k+ context window and 
+                <strong>RAG architecture</strong>, it matches technical profiles with government funds 
+                and drafts compliant documentation in seconds. Democratizing capital access at AI speed.
+            </p>
+            <div class="tags">
+                <span class="tag">GovTech</span>
+                <span class="tag">RAG</span>
+                <span class="tag">B2B SaaS</span>
+            </div>
+        </div>
 
-    <div class="card">
-        <span class="status concept">Concept</span>
-        <h3>SalienTag</h3>
-        <p>Computer vision tool for social media optimization. Generates context-aware viral hashtags and captions to maximize organic reach.</p>
-        <div class="tags"><span class="tag">Vision AI</span><span class="tag">Marketing Tech</span></div>
+        <div class="card">
+            <span class="status dev">Beta Phase</span>
+            <h3>WillSeeker</h3>
+            <p>
+                More than a habit tracker; a "Discipline Operating System." 
+                Built on a unique <strong>Momentum Algorithm</strong> and a 90-day phase transition system. 
+                Features a "Privacy by Design" offline-first architecture to transform willpower 
+                into measurable, gamified metrics.
+            </p>
+            <div class="tags">
+                <span class="tag">EdTech</span>
+                <span class="tag">Behavioral Science</span>
+                <span class="tag">Flutter</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="status dev">Concept</span>
+            <h3>SalienTag</h3>
+            <p>
+                A vision-oriented marketing assistant transforming static images into viral assets. 
+                Uses <strong>Gemini Vision APIs</strong> for "psychological frequency" analysis, 
+                generating platform-aware captions (Instagram aesthetic vs. LinkedIn professional). 
+                Overcomes creativity blocks with real-time context.
+            </p>
+            <div class="tags">
+                <span class="tag">MarTech</span>
+                <span class="tag">AI Vision</span>
+                <span class="tag">Social Media</span>
+            </div>
+        </div>
+
     </div>
 </div>
 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectixore Solutions | System Architecture</title>
+    <style>
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --border: #334155; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; }
+
+        /* Navbar (Standart) */
+        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
+        .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { font-weight: 800; color: #fff; text-decoration: none; }
+        .nav-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        /* Header Area */
+        .header-sec { padding: 120px 20px 60px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #0f172a 0%, #172033 100%); }
+        .page-title { font-size: 2.5rem; font-weight: 800; color: #fff; margin: 0; letter-spacing: -1px; }
+        .page-sub { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-top: 10px; font-weight: 600; }
+        
+        /* Grid */
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        /* Kart Tasarımı (Clean & Corporate) */
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 30px; transition: transform 0.2s; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent); opacity: 0.5; }
+
+        .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; }
+        .dev { background: rgba(255, 183, 3, 0.1); color: #ffb703; }
+        .concept { background: rgba(148, 163, 184, 0.1); color: #94a3b8; }
+
+        h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.4rem; }
+        p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+        
+        .tags { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+        .tag { font-size: 0.75rem; color: var(--accent); border: 1px solid #334155; padding: 4px 10px; border-radius: 4px; }
+
+        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 10px; } .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 0; } .nav-links a { margin: 0; } }
+    </style>
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-content">
+        <a href="index.html" class="nav-brand">VECTIXORE LTD</a>
+        <div class="nav-links">
+            <a href="index.html">Main Page</a>
+            <a href="solutions.html" class="active">Vectixore Solutions</a>
+            <a href="entertainment.html">Panixircus Entertainment</a>
+        </div>
+    </div>
+</nav>
+
+<div class="header-sec">
+    <div class="page-sub">Logic. Law. Systems.</div>
+    <h1 class="page-title">Vectixore Solutions</h1>
+    <p style="max-width: 600px; margin: 20px auto 0; color: #94a3b8;">
+        Developing high-utility algorithms and disciplined software architectures for professional and personal optimization.
+    </p>
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <span class="status dev">In Development</span>
+            <h3>WillSeeker</h3>
+            <p>A discipline tracking architecture utilizing reinforcement learning to align daily habits with long-term goals (Ideal Self). Focuses on retention and behavioral modification.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Behavioral Science</span></div>
+        </div>
+
+        <div class="card">
+            <span class="status dev">Beta Phase</span>
+            <h3>DreamCipher</h3>
+            <p>AI-driven dream interpretation engine. Uses multi-persona analysis (Mystic, Analyst, Guide) to decode subconscious patterns and provide actionable insights.</p>
+            <div class="tags"><span class="tag">Gemini API</span><span class="tag">NLP</span></div>
+        </div>
+
+        <div class="card">
+            <span class="status concept">Concept</span>
+            <h3>SalienTag</h3>
+            <p>Computer vision tool for social media optimization. Generates context-aware viral hashtags and captions to maximize organic reach.</p>
+            <div class="tags"><span class="tag">Vision AI</span><span class="tag">Marketing Tech</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

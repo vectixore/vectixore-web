@@ -8,37 +8,38 @@
         :root { --bg: #0f0715; --card: #1a0b2e; --text: #e9d5ff; --accent: #d946ef; --border: #4a044e; }
         body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; }
 
-        /* Navbar (Aynı yapı, renkler uyumlu) */
+        /* Navbar */
         .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 7, 21, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
         .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; text-decoration: none; }
         .nav-links a { color: #a8a29e; text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* Header Area (Kaotik/Eğlenceli) */
+        /* Header */
         .header-sec { padding: 120px 20px 60px; text-align: center; border-bottom: 1px solid var(--border); 
                       background: radial-gradient(circle at center, #2e1065 0%, #0f0715 100%); }
         .page-title { font-size: 3rem; font-weight: 900; color: #fff; margin: 0; letter-spacing: -2px; font-style: italic; text-shadow: 2px 2px 0px var(--accent); }
         .page-sub { color: var(--accent); text-transform: uppercase; letter-spacing: 4px; font-size: 0.9rem; margin-top: 10px; font-weight: 700; }
 
-        /* Grid */
+        /* Grid Layout */
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
-        /* Kart Tasarımı (Playful & Dark) */
-        .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px; transition: all 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+        /* Card Design */
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px; transition: all 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
         .card:hover { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 20px rgba(217, 70, 239, 0.2); }
         
-        .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; }
+        .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; width: fit-content; }
         .coming { background: var(--accent); color: #2e1065; }
+        .planned { background: #4a044e; color: #d946ef; }
 
         h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.5rem; font-weight: 800; }
-        p { color: #d8b4fe; line-height: 1.6; font-size: 0.95rem; }
+        p { color: #d8b4fe; line-height: 1.6; font-size: 0.9rem; flex-grow: 1; }
 
-        .tags { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
-        .tag { font-size: 0.75rem; color: #fff; background: #4a044e; padding: 4px 10px; border-radius: 4px; }
+        .tags { margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag { font-size: 0.7rem; color: #fff; background: #4a044e; padding: 4px 8px; border-radius: 4px; border: 1px solid var(--accent); }
 
-        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 10px; } .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 0; } .nav-links a { margin: 0; } }
+        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 10px; } }
     </style>
 </head>
 <body>
@@ -51,7 +52,8 @@
             <a href="solutions.html">Vectixore Solutions</a>
             <a href="entertainment.html" class="active">Panixircus Entertainment</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <div class="header-sec">
     <div class="page-sub">Chaos. Dopamine. Play.</div>
@@ -62,26 +64,51 @@
     </p>
 </div>
 
-<div class="grid">
-    <div class="card">
-        <span class="status coming">Beta Phase</span>
-        <h3>DreamCipher</h3>
-        <p>AI-driven dream interpretation engine. Choose your guide (Mystic, Analyst, or Oracle) to decode subconscious symbols and hidden meanings.</p>
-        <div class="tags"><span class="tag">Gemini API</span><span class="tag">Mysticism</span></div>
-    </div>
+<div class="container">
+    <div class="grid">
+        
+        <div class="card">
+            <span class="status coming">Beta Phase</span>
+            <h3>DreamCipher</h3>
+            <p>
+                An advanced interpretation assistant analyzing the mysterious realm of human psychology. 
+                Powered by a unique <strong>"Model Cascade" (Gemini Flash)</strong> architecture, 
+                it synchronizes LLM layers to decode symbols, emotional frequencies, and archetypes. 
+                Transforms dream journaling into a journey of self-awareness.
+            </p>
+            <div class="tags">
+                <span class="tag">Mental Health</span>
+                <span class="tag">Gemini 2.0</span>
+                <span class="tag">Model Cascade</span>
+            </div>
+        </div>
 
-    <div class="card">
-        <span class="status coming">Coming Soon</span>
-        <h3>Project: TextRPG</h3>
-        <p>An AI-driven narrative experience where choices have infinite consequences. No scripts, just a responsive world engine adapting to your chaos.</p>
-        <div class="tags"><span class="tag">GenAI</span><span class="tag">Interactive Fiction</span></div>
-    </div>
+        <div class="card">
+            <span class="status planned">Coming Soon</span>
+            <h3>Project: TextRPG</h3>
+            <p>
+                An AI-driven narrative experience where choices have infinite consequences. 
+                No scripts, just a responsive world engine adapting to your chaos.
+            </p>
+            <div class="tags">
+                <span class="tag">GenAI</span>
+                <span class="tag">Interactive Fiction</span>
+            </div>
+        </div>
 
-    <div class="card">
-        <span class="status coming">Planned</span>
-        <h3>Panixircus Arcade</h3>
-        <p>Short-session, high-dopamine mini-games designed for rapid engagement. Simple mechanics, competitive leaderboards.</p>
-        <div class="tags"><span class="tag">Hyper-Casual</span><span class="tag">Mobile</span></div>
+        <div class="card">
+            <span class="status planned">Planned</span>
+            <h3>Panixircus Arcade</h3>
+            <p>
+                Short-session, high-dopamine mini-games designed for rapid engagement. 
+                Simple mechanics, competitive leaderboards.
+            </p>
+            <div class="tags">
+                <span class="tag">Hyper-Casual</span>
+                <span class="tag">Mobile</span>
+            </div>
+        </div>
+
     </div>
 </div>
 

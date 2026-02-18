@@ -3,137 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vectixore LTD | Software Development & Publishing</title>
+    <title>Vectixore LTD | Solutions & Entertainment</title>
     <style>
-        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --border: #334155; }
-        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        /* --- TEMEL DEĞİŞKENLER --- */
+        :root { 
+            --bg: #0f172a; 
+            --card: #1e293b; 
+            --text: #e2e8f0; 
+            --text-muted: #94a3b8;
+            --accent: #38bdf8; /* Sky Blue */
+            --border: #334155; 
+            --panic-bg: #1e1b4b; 
+            --panic-accent: #e879f9; 
+        }
 
-        /* Top Navigation Bar - Projects sayfası ile aynı standart */
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            padding: 0; 
+            overflow-x: hidden;
+        }
+
+        /* --- NAV BAR --- */
         .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
-        .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-content { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
-        .nav-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
-        .nav-links a.active { font-weight: 700; }
 
-        /* Main Container */
-        .container { max-width: 900px; width: 100%; padding: 120px 20px 40px 20px; text-align: center; flex: 1; }
+        /* --- SPLIT HERO SECTION (Gateway) --- */
+        .gateway-wrapper {
+            display: flex;
+            width: 100%;
+            height: 85vh; /* Yükseklik biraz kısıldı */
+            margin-top: 55px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .split-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* SOL: VECTIXORE */
+        .panel-vectixore { background-color: var(--bg); border-right: 1px solid var(--border); }
+        .panel-vectixore:hover { flex: 1.5; background-color: #020617; }
+        .panel-vectixore h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -2px; line-height: 1; }
+        .panel-vectixore h2 { color: var(--accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
         
-        .business-name { font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 5px; letter-spacing: -1px; }
-        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 50px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        /* SAĞ: PANIXIRCUS */
+        .panel-panixircus { background: linear-gradient(180deg, rgba(30,27,75,1) 0%, rgba(49,6,66,1) 100%); }
+        .panel-panixircus:hover { flex: 1.5; background: linear-gradient(180deg, rgba(49,6,66,1) 0%, rgba(88,28,135,1) 100%); }
+        .panel-panixircus h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -1px; font-style: italic; line-height: 1; }
+        .panel-panixircus h2 { color: var(--panic-accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+
+        /* Butonlar */
+        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; opacity: 0.8; transition: all 0.3s; transform: translateY(10px); }
+        .split-panel:hover .hero-btn { opacity: 1; transform: translateY(0); }
+        .btn-v { border: 1px solid var(--accent); color: var(--accent); }
+        .btn-v:hover { background: var(--accent); color: var(--bg); }
+        .btn-p { border: 1px solid var(--panic-accent); color: var(--panic-accent); }
+        .btn-p:hover { background: var(--panic-accent); color: #2e1065; box-shadow: 0 0 15px var(--panic-accent); }
+
+        /* --- KURUMSAL İÇERİK (YENİLENMİŞ) --- */
+        .container { max-width: 1000px; width: 100%; padding: 80px 20px 40px; margin: 0 auto; }
         
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-bottom: 20px; }
-        .card { background: var(--card); border: 1px solid var(--border); padding: 25px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+
+        /* Izgara Sistemleri */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+
+        .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-3px); border-color: var(--accent); }
         
-        h3 { color: #fff; margin-top: 0; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 10px; }
-        p { line-height: 1.6; font-size: 0.95rem; color: #94a3b8; }
-        
-        .footer { margin-top: 60px; font-size: 0.8rem; color: #475569; border-top: 1px solid var(--border); padding-top: 30px; line-height: 1.6; }
-        .ico-box { color: #94a3b8; font-weight: 600; margin: 5px 0; }
+        .card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; margin-bottom: 15px; }
+        .card p { line-height: 1.6; font-size: 0.95rem; color: var(--text-muted); margin: 0; }
 
-        .legal-links { margin-top: 30px; padding: 10px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .legal-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; margin: 0 15px; transition: color 0.2s; }
-        .legal-links a:hover { color: var(--accent); }
+        /* Özel Vurgu Alanları */
+        .feature-list { list-style: none; padding: 0; margin-top: 15px; }
+        .feature-list li { margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem; padding-left: 20px; position: relative; }
+        .feature-list li::before { content: '›'; color: var(--accent); position: absolute; left: 0; font-weight: bold; }
 
-        /* Cookie Banner */
-        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid var(--border); backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); display: none; animation: slideUp 0.5s ease-out; }
-        .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-        .banner-text { font-size: 0.9rem; color: #e2e8f0; text-align: left; flex: 2; }
-        .banner-actions { display: flex; gap: 10px; flex: 1; justify-content: flex-end; }
-        button { padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
-        .btn-action { background-color: #38bdf8; color: #0f172a; border: 1px solid #38bdf8; }
-        .btn-minimal { background-color: transparent; color: #94a3b8; border: 1px solid #475569; }
+        /* Legal Box */
+        .legal-box { background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
+        .legal-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1rem; }
+        .legal-warning { border-left: 3px solid #f59e0b; background: rgba(245, 158, 11, 0.05); } /* Sarı Uyarı */
 
-        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        /* Footer */
+        .footer { margin-top: 80px; font-size: 0.8rem; color: #475569; border-top: 1px solid var(--border); padding-top: 40px; text-align: center; line-height: 1.8; }
+        .footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
+        .footer a:hover { color: var(--accent); }
 
-        @media (max-width: 700px) {
-            .grid { grid-template-columns: 1fr; }
-            .business-name { font-size: 2rem; }
-            .legal-links a { display: block; margin: 10px 0; }
-            .banner-content { flex-direction: column; text-align: center; }
-            .banner-actions { width: 100%; justify-content: center; flex-direction: column; }
-            button { width: 100%; }
+        @media (max-width: 768px) {
+            .gateway-wrapper { flex-direction: column; height: auto; }
+            .split-panel { padding: 60px 20px; border-right: none; border-bottom: 1px solid var(--border); }
+            .grid-3, .grid-2 { grid-template-columns: 1fr; }
+            .hero-btn { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
 
-<nav class="nav-bar">
+    <nav class="nav-bar">
         <div class="nav-content">
             <a href="index.html" class="nav-brand">VECTIXORE LTD</a>
             <div class="nav-links">
-                <a href="index.html" class="active">Main Page</a>
-                <a href="solutions.html">Vectixore Solutions</a>
-                <a href="entertainment.html">Panixircus Entertainment</a>
+                <a href="index.html" class="active">Corporate</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="entertainment.html">Entertainment</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="business-name">VECTIXORE LTD</div>
-        <div class="tagline">Innovative Software Systems & Global Publishing</div>
+    <div class="gateway-wrapper">
+        <div class="split-panel panel-vectixore" onclick="window.location.href='solutions.html'">
+            <h2>Vectixore</h2>
+            <h1>SOLUTIONS</h1>
+            <div style="color:var(--text-muted); margin-top:10px;">Things People <strong>NEED</strong>.</div>
+            <a href="solutions.html" class="hero-btn btn-v">Examine System</a>
+        </div>
+
+        <div class="split-panel panel-panixircus" onclick="window.location.href='entertainment.html'">
+            <h2>Panixircus</h2>
+            <h1>ENTERTAINMENT</h1>
+            <div style="color:#e9d5ff; margin-top:10px;">Things People <strong>WANT</strong>.</div>
+            <a href="entertainment.html" class="hero-btn btn-p">Enter Circus</a>
+        </div>
+    </div>
+
+    <div id="corporate" class="container">
         
-        <div class="grid">
+        <div class="section-header">
+            <h2>Operational Profile</h2>
+            <p>
+                Vectixore LTD is a specialized technology firm focused on advanced computer programming and software publishing. 
+                We leverage cutting-edge AI integration, Zero-Trust security, and sophisticated architectures to transform complex challenges 
+                into streamlined, high-performance tools for global distribution.
+            </p>
+        </div>
+
+        <div class="grid-3">
             <div class="card">
-                <h3>Core Services</h3>
-                <p>We specialize in computer programming and software publishing. We deliver AI-driven utility applications designed for global distribution via the Google Play Store and Apple App Store, ensuring high-performance solutions for end-users.</p>
+                <h3>Digital Advertising</h3>
+                <p>Optimized ad-supported models (via AdMob) designed for entry-tier users.</p>
+                <ul class="feature-list">
+                    <li>High Accessibility</li>
+                    <li>Non-intrusive Integration</li>
+                    <li>Global Reach</li>
+                </ul>
             </div>
             <div class="card">
-                <h3>Business Model</h3>
-                <p>Our operations are sustained through integrated digital advertising solutions (AdMob), subscription-based software licensing (SaaS), and premium feature distribution for enterprise clients.</p>
+                <h3>SaaS & Licensing</h3>
+                <p>Scaling Software-as-a-Service solutions and perpetual license options.</p>
+                <ul class="feature-list">
+                    <li>Premium Features</li>
+                    <li>Individual Users</li>
+                    <li>Cloud Sync</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Enterprise</h3>
+                <p>Customized deployment protocols tailored for institutional workflows.</p>
+                <ul class="feature-list">
+                    <li>Site-wide Licensing</li>
+                    <li>API Access</li>
+                    <li>Dedicated Support</li>
+                </ul>
             </div>
         </div>
 
-        <div class="card" style="text-align: left; margin-bottom: 20px;">
-            <h3>Refund & Cancellation Policy</h3>
-            <p>Vectixore LTD is committed to customer satisfaction. For software licensing and digital services, refund requests are processed within 14 days of purchase in accordance with UK consumer laws.</p>
+        <div class="section-header" style="margin-bottom: 30px; text-align: left;">
+            <h2 style="font-size: 1.8rem;">Consumer Rights & Protocols</h2>
         </div>
 
-        <div class="card" style="text-align: center; margin-bottom: 20px;">
-            <p style="margin:0; color:#fff;">Corporate & Strategic Inquiries: <br>
-            <a href="mailto:info@vectixore.com" style="color:var(--accent); text-decoration:none; font-weight:600;">info@vectixore.com</a></p>
-        </div>
+        <div class="grid-2">
+            <div class="legal-box">
+                <h4>Refund Rights (UK Consumer Rights Act 2015)</h4>
+                <p style="color: #cbd5e1; margin-bottom: 10px;">
+                    For software licensing and digital services, refund requests are processed within a <strong>14-day statutory window</strong> from the date of purchase, in strict accordance with the UK Consumer Rights Act 2015 and applicable international digital commerce regulations.
+                </p>
+                <div style="font-size: 0.85rem; color: #94a3b8; border-top: 1px solid #334155; padding-top: 10px;">
+                    <strong>Exception:</strong> In cases where digital content is fully downloaded or utilized with the user's explicit consent prior to the expiration of the 14-day window, the right to cancel may be limited as per statutory exceptions.
+                </div>
+            </div>
 
-        <div class="legal-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <span style="color: #334155;">|</span>
-            <a href="terms.html">Terms of Service</a>
+            <div>
+                <div class="legal-box">
+                    <h4>Cancellation Policy</h4>
+                    <p style="color: #cbd5e1;">
+                        Subscriptions may be terminated at any time via the respected app store (Google Play / Apple App Store) or through our enterprise licensing portal. Access remains active until the end of the billing cycle.
+                    </p>
+                </div>
+                
+                <div class="legal-box legal-warning">
+                    <h4 style="color: #fbbf24;">Legal Disclaimer</h4>
+                    <p style="color: #e2e8f0;">
+                        Vectixore LTD acts solely as a technological solutions provider. Our applications do not constitute professional advice (Legal, Medical, or Financial). End-users assume full responsibility for the use and verification of AI-generated data.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
+            <div style="margin-bottom: 20px;">
+                <a href="privacy.html">Privacy Policy</a> • 
+                <a href="terms.html">Terms of Service</a> • 
+                <a href="mailto:info@vectixore.com">Contact</a>
+            </div>
             <strong>VECTIXORE LTD</strong><br>
             Registered in England & Wales | Company No: 16999592<br>
-            <div class="ico-box">ICO Registration: ZC087615</div>
+            <span style="opacity: 0.7;">ICO Registration: ZC087615</span><br>
             71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
         </div>
     </div>
 
-    <div id="cookie-banner">
-        <div class="banner-content">
-            <div class="banner-text">
-                <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity. Review our <a href="privacy.html" style="color:var(--accent); text-decoration:none;">Privacy Policy</a> for details.
-            </div>
-            <div class="banner-actions">
-                <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
-                <button onclick="acceptAll()" class="btn-action">Accept All</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (!localStorage.getItem("vectixore_consent")) {
-                document.getElementById("cookie-banner").style.display = "block";
-            }
-        });
-        function acceptAll() {
-            localStorage.setItem("vectixore_consent", "full");
-            document.getElementById("cookie-banner").style.display = "none";
-        }
-        function acceptNecessary() {
-            localStorage.setItem("vectixore_consent", "necessary");
-            document.getElementById("cookie-banner").style.display = "none";
-        }
-    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Privacy Policy | Vectixore LTD</title>
     <style>
         /* CORE VARIABLES */
-        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --ai-glow: #d000ff; }
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --danger: #ef4444; --ai-glow: #d000ff; }
         
         /* BODY SETTINGS */
         body { 
@@ -58,6 +58,23 @@
         }
         .warning-title { color: var(--warning); font-weight: bold; display: block; margin-bottom: 10px; }
 
+        /* BUTTONS */
+        .btn-deletion {
+            display: block; 
+            background: var(--danger); 
+            color: white !important; 
+            text-align: center; 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: opacity 0.2s;
+        }
+        .btn-deletion:hover { opacity: 0.9; text-decoration: none; }
+
         /* FOOTER */
         .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; }
         
@@ -102,127 +119,68 @@
             </ul>
 
             <h3>1.2. Identity Document & NFC Data (High-Assurance Verification)</h3>
-            <p>To achieve "Substantial Assurance" (NIST IAL2 / eIDAS High) levels of identity verification in our secure applications, the App accesses the NFC controller of your device to communicate with the RFID chip embedded in your government-issued Identity Document (Passport or National ID Card).</p>
+            <p>To achieve "Substantial Assurance" (NIST IAL2 / eIDAS High) levels of identity verification in our secure applications, the App accesses the NFC controller of your device to communicate with the RFID chip embedded in your government-issued Identity Document.</p>
             
             <h4>A. Data Extracted via OCR (Optical Character Recognition):</h4>
             <ul>
                 <li><strong>MRZ Data:</strong> We scan the "Machine Readable Zone" to extract Document Number, Expiry Date, Date of Birth, and Issuing State.</li>
-                <li><strong>Purpose:</strong> To unlock the encrypted NFC chip (PACE/BAC protocols) and visual verification.</li>
+                <li><strong>Purpose:</strong> To unlock the encrypted NFC chip (PACE/BAC protocols).</li>
             </ul>
 
             <h4>B. Data Extracted via NFC (Chip Read):</h4>
             <ul>
-                <li><strong>DG1 (Data Group 1):</strong> High-fidelity text data (Full Name, Document Type) stored immutably on the chip.</li>
-                <li><strong>DG2 (Data Group 2 - Biometric Face):</strong> The high-resolution, digitally signed biometric facial image stored by the issuing government.</li>
-                <li><strong>SOD (Document Security Object):</strong> The digital signature of the issuing government (Country Signing Certificate Authority - CSCA).</li>
-                <li><strong>Purpose:</strong>
-                    <ul>
-                        <li><strong>Anti-Forgery:</strong> We validate the SOD against the ICAO Public Key Directory (PKD) to cryptographically prove the physical ID is authentic and not a clone.</li>
-                        <li><strong>Face Matching:</strong> We compare the DG2 Chip Image against your "Live Selfie" (Section 1.3) to prove ownership.</li>
-                    </ul>
-                </li>
+                <li><strong>DG1 & DG2:</strong> Text data and high-resolution biometric facial images stored by the issuing government.</li>
+                <li><strong>Purpose:</strong> Anti-Forgery validation and ownership verification via 1:1 Face Matching.</li>
             </ul>
 
             <h3>1.3. Biometric Data (Liveness & Matching)</h3>
-            <ul>
-                <li><strong>Forensic Face Photo (Liveness):</strong> We capture a visual photograph of your face at the moment of signing.</li>
-                <li><strong>Process:</strong> This image is compared (1:1 Matching) against the trusted image extracted from the NFC Chip (DG2).</li>
-                <li><strong>Liveness Detection:</strong> We analyze the video stream for micro-movements and depth to ensure the user is a real human and not a photo/screen (Presentation Attack Detection).</li>
-                <li><strong>Authentication Signal:</strong> We utilize your device's native biometric sensors (Fingerprint/FaceID) as a secondary local authentication layer. We do NOT receive raw fingerprint templates from the OS.</li>
-            </ul>
+            <p>We process biometric signals strictly for identity verification. We do NOT receive raw biometric templates (Fingerprint/FaceID) from the device OS; we only receive an authentication signal.</p>
 
             <h3>1.4. Permanent Audit Trail (Hash Registry)</h3>
-            <p>We retain the SHA-256 Hash (Digital Fingerprint) and the Server Timestamp of your document indefinitely.</p>
-            <ul>
-                <li><strong>Purpose:</strong> To validate the authenticity and existence of a document at a specific point in time, even after the file itself is deleted.</li>
-                <li><strong>Privacy:</strong> A Hash is a mathematical summary (one-way function); it cannot be reversed to reveal the content of your document.</li>
-            </ul>
+            <p>We retain the SHA-256 Hash and the Server Timestamp of processed documents indefinitely to ensure legal validity and proof of existence.</p>
 
             <h3>1.5. Virtual Goods Data (Stamina)</h3>
-            <p>We process your "Stamina" balance and transaction history.</p>
-            <ul>
-                <li><strong>Legal Nature:</strong> "Stamina" is a virtual license/data point with no real-world monetary value. It cannot be refunded, exchanged for cash, or transferred between accounts, except through authorized in-app mechanisms.</li>
-            </ul>
+            <p>We process your "Stamina" balance. This is a virtual license with no real-world monetary value and cannot be refunded or exchanged for cash.</p>
 
             <h3>1.6. Phone Number & Identity Binding</h3>
-            <p>Your phone number is collected strictly for SMS-based identity verification (OTP) and account security (2FA).</p>
-            <ul>
-                <li><strong>Identity Binding:</strong> We cryptographically link the verified Phone Number to the Verified ID Document (NFC) to create a persistent "Mobile Identity."</li>
-            </ul>
+            <p>Phone numbers are collected for SMS-based verification (OTP) and cryptographically linked to Verified IDs for persistent security.</p>
 
             <h3>1.7. Network & Device Data</h3>
-            <ul>
-                <li><strong>IP Address:</strong> Collected during server connections (Time Sync, Cloud Relay, Auth) for security logs and fraud prevention.</li>
-                <li><strong>Device Integrity:</strong> We collect Device Model, Hardware IDs, and Root/Jailbreak Status to verify that the signing environment has not been tampered with.</li>
-                <li><strong>Advertising ID (AAID/IDFA):</strong> Collected solely for analytics and fraud prevention (e.g., detecting Stamina abuse).</li>
-            </ul>
+            <p>We collect IP addresses and hardware identifiers strictly for security logs, fraud prevention (detecting Stamina abuse), and ensuring device integrity.</p>
 
             <h3>1.8. Location & Motion Data</h3>
-            <ul>
-                <li><strong>GPS Coordinates:</strong> Processed locally to generate the forensic seal. Coordinates are sent to Google Maps Platform strictly to generate a static map snapshot embedded in the PDF.</li>
-                <li><strong>Motion Sensors:</strong> We process Gyroscope and Accelerometer data locally to verify "Proof of Human" presence (Anti-Bot) during the signing process.</li>
-            </ul>
+            <p>GPS coordinates are processed locally for forensic seals. Motion sensors (Gyro/Accel) are used locally for "Proof of Human" verification.</p>
 
-            <h3>1.9. Referral & Interaction Data</h3>
-            <p>If you participate in our "Invite a Friend" program, we process Referral Codes and the linkage between accounts strictly to distribute "Stamina" rewards. We do not access your contact list without explicit permission.</p>
+            <h3>1.9. Diagnostics & Cloud Relay</h3>
+            <p>Crash logs are collected via Firebase Crashlytics. Encrypted files in "Cloud Relay" are stored as AES-256 blobs and automatically deleted after 7 days.</p>
+        </div>
 
-            <h3>1.10. Customer Support & Diagnostics</h3>
-            <ul>
-                <li><strong>Support:</strong> If you contact us, we collect your email, device info, and message content to resolve issues.</li>
-                <li><strong>Diagnostics:</strong> We collect crash logs, battery level, storage status, and thermal state via Firebase Crashlytics to identify bugs and improve stability.</li>
-            </ul>
-
-            <h3>1.11. Cloud Relay (Transient Storage)</h3>
-            <p>When using "Cloud Relay," the encrypted file is temporarily stored on our secure infrastructure (Google Cloud/Firebase).</p>
-            <ul>
-                <li><strong>Transmission:</strong> Data is transmitted via TLS 1.2 or higher.</li>
-                <li><strong>Storage:</strong> Files are stored as AES-256 Encrypted Binary Blobs. Vectixore LTD does not possess the decryption keys.</li>
-                <li><strong>Retention:</strong> Files are automatically deleted from active servers 7 Days after upload.</li>
-                <li><strong>Backup Latency:</strong> Residual encrypted copies may exist in off-site backup systems for a limited technical cycle before being overwritten.</li>
-            </ul>
-
-            <h3>1.12. Inactive Account Policy</h3>
-            <p>Vectixore LTD reserves the right to delete accounts (and associated Virtual Goods) that have been inactive for a period of 24 Months. The Hash Registry is exempt from deletion to ensure legal validity.</p>
-
-            <h3>1.13. Children's Privacy</h3>
-            <p>Our Service is not intended for anyone under the age of 13 (or 16 in certain jurisdictions). We do not knowingly collect personal data from children. If we become aware that we have collected personal data from a child without parental consent, we will take steps to remove that information.</p>
-
-            <h3>1.14. Roles & Responsibilities</h3>
-            <ul>
-                <li>Vectixore LTD is the <strong>Data Controller</strong> for Account Data (Phone, IP, Logs, Stamina).</li>
-                <li>You (The User) are the <strong>Data Controller</strong> for the Content of your documents. Vectixore LTD acts strictly as a Data Processor regarding document content.</li>
-            </ul>
-
-            <h3>1.15. Do Not Track (DNT) Signals</h3>
-            <p>Our systems do not currently recognize or respond to "Do Not Track" signals from web browsers or mobile operating systems, as no uniform standard has been adopted.</p>
+        <div class="card" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.05);">
+            <h2 style="color: var(--danger); border-bottom-color: rgba(239, 68, 68, 0.2);">ACCOUNT & DATA DELETION</h2>
+            <p>In accordance with Global Privacy Regulations and Google Play Policies, users have the right to request the permanent removal of their accounts and associated data.</p>
+            
+            <a href="data-deletion.html" class="btn-deletion">Go to Data Deletion Request Form →</a>
+            
+            <p style="font-size: 0.8rem; margin-top: 15px; color: #64748b; margin-bottom: 0;">
+                * Caution: Requesting data erasure will result in the immediate and irreversible loss of all Virtual Goods (Stamina/Credits).
+            </p>
         </div>
 
         <div class="card">
             <h2>2. GLOBAL RIGHTS & JURISDICTION</h2>
 
             <h3>2.1. Rights of the Data Subject</h3>
-            <p>Regardless of your location, Vectixore LTD grants you the following rights, subject to the critical exception below:</p>
-            <ul>
-                <li><strong>Right to Access:</strong> Request a copy of your Account Data.</li>
-                <li><strong>Right to Rectification:</strong> Correct inaccurate Account Data.</li>
-                <li><strong>Right to Erasure:</strong> Request account deletion.</li>
-                <li><strong>Right to Portability:</strong> Request data in a machine-readable format.</li>
-                <li><strong>Right to Restriction:</strong> Limit processing for analytics.</li>
-            </ul>
+            <p>Regardless of your location, Vectixore LTD grants you the right to Access, Rectification, Erasure, Portability, and Restriction of your Account Data.</p>
 
             <div class="warning-box">
                 <span class="warning-title">⚠️ CRITICAL EXCEPTION: IMMUTABLE EVIDENCE</span>
-                <p style="margin-bottom:0; color: #e2e8f0;">You CANNOT request the "Rectification" or "Erasure" of a sealed PDF document or its corresponding Hash in our Registry. Changing a signed document invalidates its cryptographic integrity (Hash) and destroys its value as forensic evidence. This data is retained under the legal basis of "Establishment, Exercise or Defense of Legal Claims" (GDPR Art. 17(3)(e)) and is exempt from the "Right to be Forgotten" globally.</p>
+                <p style="margin-bottom:0; color: #e2e8f0;">You CANNOT request the erasure of a sealed PDF document or its corresponding Hash in our Registry. This data is retained under the legal basis of "Establishment, Exercise or Defense of Legal Claims" (GDPR Art. 17(3)(e)) to ensure forensic integrity.</p>
             </div>
 
             <h3>2.2. Governing Law</h3>
-            <p>To the extent permitted by local law, this Privacy Policy shall be governed by the Laws of England and Wales. You agree to submit to the exclusive jurisdiction of the courts located in London, United Kingdom.</p>
+            <p>This Privacy Policy is governed by the Laws of England and Wales. Users submit to the exclusive jurisdiction of the courts in London, United Kingdom.</p>
 
-            <h3>2.3. Severability</h3>
-            <p>If any provision of this Privacy Policy is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law, and the remaining provisions will continue in full force and effect.</p>
-
-            <h3>2.4. Contact & DPO</h3>
-            <p>To exercise your rights, please contact our Data Protection Officer (DPO):</p>
+            <h3>2.3. Contact & DPO</h3>
             <ul>
                 <li><strong>Email:</strong> info@vectixore.com</li>
                 <li><strong>Subject:</strong> "Data Subject Request"</li>
@@ -232,128 +190,17 @@
 
         <div class="card">
             <h2>3. COOKIES & LOCAL STORAGE PROTOCOLS</h2>
-            
-            <p>Vectixore LTD employs advanced client-side storage technologies, including HTTP Cookies, HTML5 Local Storage, and Session Tokens, to ensure the operational integrity, security, and performance of our Services. Unlike traditional tracking, our architecture prioritizes functional necessity over behavioral profiling.</p>
-
-            <h3>3.1. Technical Definitions</h3>
+            <p>We use HTTP Cookies, HTML5 Local Storage, and JWT tokens for strictly necessary operational security and analytics.</p>
             <ul>
-                <li><strong>HTTP Cookies:</strong> Small text files transmitted from our server to your client device (browser/app) to maintain stateful sessions (e.g., keeping you logged in).</li>
-                <li><strong>HTML5 Local Storage:</strong> A client-side database used to store non-sensitive preference data and UI states locally on your device, reducing server calls and latency.</li>
-                <li><strong>Session Tokens (JWT):</strong> JSON Web Tokens used for secure, stateless authentication during forensic operations.</li>
-            </ul>
-
-            <h3>3.2. Categories of Data Storage</h3>
-            <p>We classify our storage technologies into three strict categories based on forensic and operational necessity:</p>
-
-            <h4>A. Strictly Necessary (Kernel)</h4>
-            <p>These are technically essential for the Service to function and cannot be disabled. They do not store personally identifiable information (PII) for marketing purposes.</p>
-            <ul>
-                <li><strong>Security Tokens (CSRF/XSRF):</strong> To prevent Cross-Site Request Forgery attacks during document signing.</li>
-                <li><strong>Authentication State:</strong> To verify your identity across different pages or app screens (OAuth 2.0 / OpenID Connect).</li>
-                <li><strong>Load Balancing:</strong> To distribute network traffic efficiently across our secure server clusters.</li>
-            </ul>
-
-            <h4>B. Performance & Telemetry (Analytics)</h4>
-            <p>We use these technologies to collect anonymous technical data to detect crashes, latency issues, and platform instability.</p>
-            <ul>
-                <li><strong>Crash Reporting:</strong> (e.g., Firebase Crashlytics) Collects stack traces and device state at the moment of application failure.</li>
-                <li><strong>Latency Metrics:</strong> Measures the time taken for cryptographic operations (Hashing/Sealing) to optimize performance.</li>
-            </ul>
-
-            <h4>C. Advertising & Attribution (Mobile Only)</h4>
-            <p>In our mobile applications supported by ad revenue, we utilize standard identifiers to prevent fraud and attribute installations.</p>
-            <ul>
-                <li><strong>Advertising ID (AAID/IDFA):</strong> Used strictly to cap frequency (limit how often you see the same ad) and detect "click farms" or bot activity (Anti-Fraud).</li>
-                <li><strong>Attribution:</strong> To determine if an installation originated from a specific marketing campaign, without revealing your personal identity.</li>
-            </ul>
-
-            <h3>3.3. Management & Control</h3>
-            <p>You have the right to control how these technologies are used on your device:</p>
-            <ul>
-                <li><strong>Browser Settings:</strong> You can block or delete cookies via your browser's privacy settings (Chrome, Safari, Firefox, Edge). Note that blocking "Strictly Necessary" cookies will render the Service unusable.</li>
-                <li><strong>Mobile Device Settings:</strong> You can reset your Advertising ID or enable "Limit Ad Tracking" (iOS) / "Opt out of Ads Personalization" (Android) in your device settings.</li>
-                <li><strong>Consent Banner:</strong> Upon your first visit, our Consent Management Platform allows you to Accept or Reject non-essential storage technologies.</li>
+                <li><strong>Strictly Necessary:</strong> Security tokens (CSRF) and Authentication state.</li>
+                <li><strong>Analytics:</strong> Crash reporting and latency metrics.</li>
+                <li><strong>Advertising ID:</strong> Used solely for frequency capping and fraud detection (Anti-Click Farm).</li>
             </ul>
         </div>
 
         <div class="card">
             <h2>4. REGIONAL ANNEXES</h2>
-
-            <h3>ANNEX A: EUROPE (GDPR - EU/UK/Swiss)</h3>
-            <p><strong>Applicable Law:</strong> General Data Protection Regulation (GDPR) / UK GDPR / nFADP.</p>
-            <p>You have the following specific rights under Articles 15-22 of the GDPR:</p>
-            <ul>
-                <li><strong>Article 15 (Right of Access):</strong> Confirmation of processing and access to data.</li>
-                <li><strong>Article 16 (Right to Rectification):</strong> Correction of inaccurate personal data.</li>
-                <li><strong>Article 17 (Right to Erasure):</strong> Erasure of data ("Right to be Forgotten"), subject to the "Immutable Evidence" exception (Art. 17(3)(e)).</li>
-                <li><strong>Article 18 (Restriction):</strong> Restriction of processing under certain grounds.</li>
-                <li><strong>Article 20 (Portability):</strong> Receiving data in a structured format.</li>
-                <li><strong>Article 21 (Object):</strong> Right to object to processing based on legitimate interests.</li>
-                <li><strong>Article 22 (Automated Decision-Making):</strong> Right not to be subject to a decision based solely on automated processing (e.g., security blocks), and to request human intervention.</li>
-            </ul>
-
-            <h3>ANNEX B: USA (CCPA / CPRA / VCDPA)</h3>
-            <p><strong>Applicable Law:</strong> California Consumer Privacy Act (CCPA) & State Laws.</p>
-            <ul>
-                <li><strong>Right to Know:</strong> Request disclosure of collection/use of info over past 12 months.</li>
-                <li><strong>Right to Delete:</strong> Request deletion of personal info, subject to security/legal exceptions.</li>
-                <li><strong>Right to Correct:</strong> Request correction of inaccurate info.</li>
-                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising rights.</li>
-                <li><strong>"Do Not Sell or Share":</strong> Vectixore LTD does not sell your personal information. We use Advertising IDs solely for fraud prevention and internal analytics.</li>
-            </ul>
-
-            <h3>ANNEX C: BRAZIL (LGPD)</h3>
-            <p><strong>Applicable Law:</strong> Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
-            <p>Pursuant to Article 18 of the LGPD, you have the right to request:</p>
-            <ul>
-                <li>I. Confirmation of the existence of processing.</li>
-                <li>II. Access to the data.</li>
-                <li>III. Correction of incomplete, inaccurate, or outdated data.</li>
-                <li>IV. Anonymization, blocking, or elimination of unnecessary/excessive data.</li>
-                <li>V. Portability of the data.</li>
-                <li>VI. Elimination of personal data processed with consent (except for Legal Obligation).</li>
-                <li>VII. Information about shared entities.</li>
-                <li>VIII. Information about denying consent.</li>
-                <li>IX. Revocation of consent.</li>
-            </ul>
-            <p><strong>Person in Charge (Encarregado):</strong> The Data Protection Officer at info@vectixore.com.</p>
-
-            <h3>ANNEX D: TURKEY (KVKK / LPPD)</h3>
-            <p><strong>Applicable Law:</strong> Law on Protection of Personal Data No. 6698.</p>
-            <p>Pursuant to Article 11 of the KVKK, everyone has the right to:</p>
-            <ul>
-                <li>a) Learn whether personal data is processed.</li>
-                <li>b) Request information if processed.</li>
-                <li>c) Learn the purpose of processing and conformity to purpose.</li>
-                <li>ç) Know third parties (domestic/abroad) to whom data is transferred.</li>
-                <li>d) Request rectification of incomplete/inaccurate data.</li>
-                <li>e) Request deletion/destruction (subject to Art. 7).</li>
-                <li>f) Request notification of operations (d) and (e) to third parties.</li>
-                <li>g) Object to automated analysis results detrimental to the person.</li>
-                <li>ğ) Request compensation for unlawful processing damages.</li>
-            </ul>
-            <p><strong>Data Controller:</strong> Vectixore LTD (United Kingdom).<br>
-            <strong>Application Method:</strong> Submit requests to info@vectixore.com.</p>
-
-            <h3>ANNEX E: SOUTH AFRICA (POPIA)</h3>
-            <p><strong>Applicable Law:</strong> Protection of Personal Information Act.</p>
-            <ul>
-                <li><strong>Right to be Notified:</strong> Know when data is collected or compromised.</li>
-                <li><strong>Right of Access:</strong> Establish if we hold data and request access.</li>
-                <li><strong>Right to Correction/Deletion:</strong> Request correction/destruction of data.</li>
-                <li><strong>Right to Object:</strong> Object to processing on reasonable grounds.</li>
-                <li><strong>Right to Complain:</strong> Submit a complaint to the Information Regulator (complaints.IR@justice.gov.za).</li>
-            </ul>
-            <p><strong>Information Officer:</strong> The DPO at info@vectixore.com.</p>
-
-            <h3>ANNEX F: CANADA (PIPEDA)</h3>
-            <p><strong>Applicable Law:</strong> Personal Information Protection and Electronic Documents Act.</p>
-            <ul>
-                <li><strong>Access:</strong> Right to access personal info and challenge accuracy.</li>
-                <li><strong>Withdrawal of Consent:</strong> Withdraw consent subject to legal restrictions.</li>
-                <li><strong>Challenging Compliance:</strong> Address challenges to the Privacy Officer.</li>
-            </ul>
-            <p><strong>Privacy Officer:</strong> Contact at info@vectixore.com.</p>
+            <p>Specific rights are granted under GDPR (Europe), CCPA (USA), LGPD (Brazil), KVKK (Turkey), POPIA (South Africa), and PIPEDA (Canada) as detailed in our full legal documentation.</p>
         </div>
 
         <div class="footer">
@@ -368,11 +215,11 @@
         <div class="banner-content">
             <div class="banner-text">
                 <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity. 
-                Review our <a href="privacy.html">Privacy Policy</a> for details.
+                Review our <a href="#">Privacy Policy</a> for details.
             </div>
             <div class="banner-actions">
-                <button onclick="acceptNecessary()" class="btn-minimal">Necessary Cookies Only</button>
-                <button onclick="acceptAll()" class="btn-action">Accept All Cookies</button>
+                <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
+                <button onclick="acceptAll()" class="btn-action">Accept All</button>
             </div>
         </div>
     </div>
@@ -396,20 +243,14 @@
     </script>
     
     <style>
-        /* BANNER STYLES */
-        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); animation: slideUp 0.5s ease-out; }
+        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; }
         .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-        .banner-text { font-family: 'Inter', system-ui, sans-serif; font-size: 0.9rem; color: #e2e8f0; line-height: 1.5; flex: 2; }
-        .banner-text a { color: #38bdf8; text-decoration: none; }
-        .banner-text a:hover { text-decoration: underline; }
-        .banner-actions { display: flex; gap: 10px; flex: 1; justify-content: flex-end; }
-        button { padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
-        .btn-action { background-color: #38bdf8; color: #0f172a; border: 1px solid #38bdf8; }
-        .btn-action:hover { background-color: #7dd3fc; }
+        .banner-text { font-size: 0.9rem; color: #e2e8f0; flex: 2; text-align: left; }
+        .banner-actions { display: flex; gap: 10px; }
+        button { padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .btn-action { background-color: #38bdf8; color: #0f172a; border: none; }
         .btn-minimal { background-color: transparent; color: #94a3b8; border: 1px solid #475569; }
-        .btn-minimal:hover { color: #fff; border-color: #fff; }
-        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-        @media (max-width: 700px) { .banner-content { flex-direction: column; text-align: center; } .banner-actions { width: 100%; justify-content: center; flex-direction: column; } button { width: 100%; } }
+        @media (max-width: 700px) { .banner-content { flex-direction: column; text-align: center; } .banner-actions { width: 100%; } button { width: 100%; } }
     </style>
 </body>
 </html>

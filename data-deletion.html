@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request | Vectixore LTD</title>
+    <style>
+        /* CORE VARIABLES (Vectixore Theme Sync) */
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --danger: #ef4444; }
+        
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container { max-width: 700px; padding: 60px 20px; width: 100%; box-sizing: border-box; }
+        
+        .business-name { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 5px; text-align: center; }
+        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; text-align: center; }
+        
+        /* CARD */
+        .card { 
+            background: var(--card); 
+            border: 1px solid #334155; 
+            padding: 40px; 
+            border-radius: 12px; 
+            text-align: left; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h2 { color: #fff; font-size: 1.4rem; margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        p { line-height: 1.6; font-size: 0.95rem; color: #94a3b8; margin-bottom: 20px; }
+
+        /* FORM STYLES */
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 600; color: #cbd5e1; }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            color: #fff;
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+        input:focus { border-color: var(--accent); outline: none; }
+
+        /* WARNING BOX */
+        .warning-box {
+            border: 1px solid var(--warning);
+            background: rgba(255, 183, 3, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--danger);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-submit:hover { opacity: 0.9; }
+
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: #64748b; text-decoration: none; }
+        .back-link:hover { color: var(--accent); }
+
+        .footer { margin-top: 40px; font-size: 0.75rem; color: #475569; text-align: center; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="privacy.html" class="back-link">← Back to Privacy Policy</a>
+
+        <div class="business-name">DATA ERASURE <br>REQUEST FORM</div>
+        <div class="tagline">Vectixore LTD Data Governance</div>
+
+        <div class="card">
+            <h2>Account & Data Deletion</h2>
+            <p>In accordance with GDPR, KVKK, and Google Play policies, you may request the permanent deletion of your account and associated data.</p>
+
+            <div class="warning-box">
+                <strong>⚠️ Pragmatic Notice:</strong> 
+                By submitting this request, your <strong>UID</strong> and all <strong>Virtual Goods (Stamina/Credits)</strong> will be permanently destroyed. 
+                Due to our <em>Zero-Knowledge</em> architecture, this action is irreversible.
+            </div>
+
+            <form action="mailto:info@vectixore.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="app-name">Select Application</label>
+                    <select id="app-name" name="Application" required>
+                        <option value="DreamCipher">DreamCipher</option>
+                        <option value="WillSeeker">WillSeeker (Ideal Self)</option>
+                        <option value="PocketNotary">PocketNotary / DoubtProof</option>
+                        <option value="Other">Other Vectixore App</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-id">User ID or Phone Number (Used in App)</label>
+                    <input type="text" id="user-id" name="UserID" placeholder="e.g. +44 123 456 78 90 or Anonymous UID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Deletion (Optional)</label>
+                    <textarea id="reason" name="Reason" rows="3" placeholder="How can we improve?"></textarea>
+                </div>
+
+                <p style="font-size: 0.75rem; color: #64748b;">
+                    * Upon submission, your request will be processed within 30 days. Forensic audit hashes are exempt from erasure for legal validity (See Privacy Policy 2.1).
+                </p>
+
+                <button type="submit" class="btn-submit">Request Permanent Erasure</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <strong>VECTIXORE LTD</strong><br>
+            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UK<br>
+            Data Protection Officer: info@vectixore.com
+        </div>
+    </div>
+
+</body>
+</html>

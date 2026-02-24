@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Vectixore LTD</title>
+    <title>Privacy Policy | Vectixore LTD - Data Governance</title>
+    
+    <meta name="description" content="Vectixore LTD Privacy Policy & Explicit Consent Statement. Data minimization, forensic integrity, and user rights under GDPR/UK Law.">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Privacy Policy | Vectixore LTD">
+    <meta property="og:description" content="Official data governance and privacy protocols of Vectixore LTD.">
+    <meta property="og:image" content="https://vectixore.com/assets/og-image.png">
+    <meta property="og:url" content="https://vectixore.com/privacy.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
     <style>
         /* CORE VARIABLES */
         :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --danger: #ef4444; --ai-glow: #d000ff; }
@@ -18,7 +35,7 @@
             text-align: center; 
         }
 
-        .container { max-width: 900px; padding: 60px 20px; margin: 0 auto; }
+        .container { max-width: 900px; padding: 100px 20px 60px; margin: 0 auto; } /* Nav bar yüksekliği için padding artırıldı */
         
         .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; line-height: 1.2; }
         .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
@@ -36,11 +53,8 @@
 
         /* TYPOGRAPHY */
         h2 { color: var(--accent); font-size: 1.5rem; border-bottom: 1px solid #334155; padding-bottom: 15px; margin-top: 0; margin-bottom: 25px; }
-        
         h3 { color: #fff; margin-top: 35px; margin-bottom: 10px; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 15px; }
-        
         h4 { color: #cbd5e1; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 700; }
-
         p { line-height: 1.7; font-size: 0.95rem; color: #94a3b8; margin-bottom: 15px; }
         
         /* LIST STYLES */
@@ -76,7 +90,7 @@
         .btn-deletion:hover { opacity: 0.9; text-decoration: none; }
 
         /* FOOTER */
-        .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; }
+        .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; padding-bottom: 120px; } /* Banner için alt boşluk */
         
         /* LINKS */
         a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
@@ -84,10 +98,20 @@
         
         .back-link { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: #64748b; }
         .back-link:hover { color: var(--accent); }
+
+        /* Cookie Banner Styles */
+        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; display:none; }
+        .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+        .banner-text { font-size: 0.9rem; color: #e2e8f0; flex: 2; text-align: left; }
+        .banner-actions { display: flex; gap: 10px; }
+        .btn-action { background-color: #38bdf8; color: #0f172a; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+        .btn-minimal { background-color: transparent; color: #94a3b8; border: 1px solid #475569; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+        @media (max-width: 700px) { .banner-content { flex-direction: column; text-align: center; } .banner-actions { width: 100%; } .banner-actions button { width: 100%; } }
     </style>
 </head>
 <body>
-
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <a href="index.html" class="back-link">← Back to Home</a>
 
@@ -102,105 +126,49 @@
 
         <div class="card">
             <h2>1. GLOBAL DATA PRACTICES (ARCHITECTURE)</h2>
-            
             <p>Vectixore LTD operates a diverse portfolio of applications ranging from general utility tools to high-security forensic solutions. Our approach to data privacy is adaptive to the specific purpose of each application:</p>
             <ul>
                 <li><strong>General Utility Products:</strong> For our standard applications, we strictly adhere to <strong>Data Minimization</strong> principles, processing only the absolute minimum data required for functionality.</li>
                 <li><strong>High-Assurance & Forensic Products:</strong> For applications requiring legal validity, identity verification, or cryptographic sealing (such as PocketNotary), we process sensitive and biometric data under strict forensic protocols.</li>
             </ul>
-            <p><em>By using our Services, you acknowledge that the following data practices apply where relevant to the specific functionality of the application being used.</em></p>
-            <hr style="border: 0; border-top: 1px solid #334155; margin: 25px 0;">
+        </div>
 
+        <div class="card">
             <h3>1.1. Handwritten Signature Data</h3>
             <p>Where applicable, we collect the visual representation (image) and vector paths (stroke data) of the signature you draw on the screen.</p>
             <ul>
-                <li><strong>Purpose:</strong> This data is processed strictly as "Document Content" to be embedded into the PDF.</li>
-                <li><strong>Disclaimer:</strong> Vectixore LTD does NOT perform graphological analysis or dynamic biometric verification (pressure/speed analysis) on this signature. We only cryptographically seal the image provided.</li>
+                <li><strong>Purpose:</strong> Embedded into PDFs as Document Content.</li>
+                <li><strong>Disclaimer:</strong> Vectixore LTD does NOT perform graphological analysis.</li>
             </ul>
 
-            <h3>1.2. Identity Document & NFC Data (High-Assurance Verification)</h3>
-            <p>To achieve "Substantial Assurance" (NIST IAL2 / eIDAS High) levels of identity verification in our secure applications, the App accesses the NFC controller of your device to communicate with the RFID chip embedded in your government-issued Identity Document.</p>
+            <h3>1.2. Identity Document & NFC Data</h3>
+            <p>To achieve levels of identity verification in our secure applications, the App accesses the NFC controller of your device.</p>
             
-            <h4>A. Data Extracted via OCR (Optical Character Recognition):</h4>
+            <h4>A. Data Extracted via OCR:</h4>
             <ul>
-                <li><strong>MRZ Data:</strong> We scan the "Machine Readable Zone" to extract Document Number, Expiry Date, Date of Birth, and Issuing State.</li>
-                <li><strong>Purpose:</strong> To unlock the encrypted NFC chip (PACE/BAC protocols).</li>
+                <li><strong>MRZ Data:</strong> Scanned to extract Document Number, Expiry, and DOB.</li>
             </ul>
 
             <h4>B. Data Extracted via NFC (Chip Read):</h4>
             <ul>
-                <li><strong>DG1 & DG2:</strong> Text data and high-resolution biometric facial images stored by the issuing government.</li>
-                <li><strong>Purpose:</strong> Anti-Forgery validation and ownership verification via 1:1 Face Matching.</li>
+                <li><strong>DG1 & DG2:</strong> Text data and biometric facial images stored by the issuing government.</li>
             </ul>
-
-            <h3>1.3. Biometric Data (Liveness & Matching)</h3>
-            <p>We process biometric signals strictly for identity verification. We do NOT receive raw biometric templates (Fingerprint/FaceID) from the device OS; we only receive an authentication signal.</p>
-
-            <h3>1.4. Permanent Audit Trail (Hash Registry)</h3>
-            <p>We retain the SHA-256 Hash and the Server Timestamp of processed documents indefinitely to ensure legal validity and proof of existence.</p>
-
-            <h3>1.5. Virtual Goods Data (Stamina)</h3>
-            <p>We process your "Stamina" balance. This is a virtual license with no real-world monetary value and cannot be refunded or exchanged for cash.</p>
-
-            <h3>1.6. Phone Number & Identity Binding</h3>
-            <p>Phone numbers are collected for SMS-based verification (OTP) and cryptographically linked to Verified IDs for persistent security.</p>
-
-            <h3>1.7. Network & Device Data</h3>
-            <p>We collect IP addresses and hardware identifiers strictly for security logs, fraud prevention (detecting Stamina abuse), and ensuring device integrity.</p>
-
-            <h3>1.8. Location & Motion Data</h3>
-            <p>GPS coordinates are processed locally for forensic seals. Motion sensors (Gyro/Accel) are used locally for "Proof of Human" verification.</p>
-
-            <h3>1.9. Diagnostics & Cloud Relay</h3>
-            <p>Crash logs are collected via Firebase Crashlytics. Encrypted files in "Cloud Relay" are stored as AES-256 blobs and automatically deleted after 7 days.</p>
         </div>
 
         <div class="card" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.05);">
             <h2 style="color: var(--danger); border-bottom-color: rgba(239, 68, 68, 0.2);">ACCOUNT & DATA DELETION</h2>
-            <p>In accordance with Global Privacy Regulations and Google Play Policies, users have the right to request the permanent removal of their accounts and associated data.</p>
-            
+            <p>Users have the right to request the permanent removal of their accounts and associated data.</p>
             <a href="data-deletion.html" class="btn-deletion">Go to Data Deletion Request Form →</a>
-            
-            <p style="font-size: 0.8rem; margin-top: 15px; color: #64748b; margin-bottom: 0;">
-                * Caution: Requesting data erasure will result in the immediate and irreversible loss of all Virtual Goods (Stamina/Credits).
-            </p>
         </div>
 
         <div class="card">
             <h2>2. GLOBAL RIGHTS & JURISDICTION</h2>
-
-            <h3>2.1. Rights of the Data Subject</h3>
-            <p>Regardless of your location, Vectixore LTD grants you the right to Access, Rectification, Erasure, Portability, and Restriction of your Account Data.</p>
-
             <div class="warning-box">
                 <span class="warning-title">⚠️ CRITICAL EXCEPTION: IMMUTABLE EVIDENCE</span>
-                <p style="margin-bottom:0; color: #e2e8f0;">You CANNOT request the erasure of a sealed PDF document or its corresponding Hash in our Registry. This data is retained under the legal basis of "Establishment, Exercise or Defense of Legal Claims" (GDPR Art. 17(3)(e)) to ensure forensic integrity.</p>
+                <p style="margin-bottom:0; color: #e2e8f0;">You CANNOT request the erasure of a sealed PDF document or its corresponding Hash in our Registry. This is retained under <strong>GDPR Art. 17(3)(e)</strong>.</p>
             </div>
-
             <h3>2.2. Governing Law</h3>
-            <p>This Privacy Policy is governed by the Laws of England and Wales. Users submit to the exclusive jurisdiction of the courts in London, United Kingdom.</p>
-
-            <h3>2.3. Contact & DPO</h3>
-            <ul>
-                <li><strong>Email:</strong> info@vectixore.com</li>
-                <li><strong>Subject:</strong> "Data Subject Request"</li>
-                <li><strong>Response Time:</strong> 30 Days.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>3. COOKIES & LOCAL STORAGE PROTOCOLS</h2>
-            <p>We use HTTP Cookies, HTML5 Local Storage, and JWT tokens for strictly necessary operational security and analytics.</p>
-            <ul>
-                <li><strong>Strictly Necessary:</strong> Security tokens (CSRF) and Authentication state.</li>
-                <li><strong>Analytics:</strong> Crash reporting and latency metrics.</li>
-                <li><strong>Advertising ID:</strong> Used solely for frequency capping and fraud detection (Anti-Click Farm).</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>4. REGIONAL ANNEXES</h2>
-            <p>Specific rights are granted under GDPR (Europe), CCPA (USA), LGPD (Brazil), KVKK (Turkey), POPIA (South Africa), and PIPEDA (Canada) as detailed in our full legal documentation.</p>
+            <p>This Privacy Policy is governed by the Laws of England and Wales. Jurisdiction: London, UK.</p>
         </div>
 
         <div class="footer">
@@ -211,11 +179,10 @@
         </div>
     </div>
 
-    <div id="cookie-banner" style="display:none;">
+    <div id="cookie-banner">
         <div class="banner-content">
             <div class="banner-text">
-                <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity. 
-                Review our <a href="#">Privacy Policy</a> for details.
+                <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity. Review our Privacy Policy for details.
             </div>
             <div class="banner-actions">
                 <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
@@ -241,16 +208,5 @@
             document.getElementById("cookie-banner").style.display = "none";
         }
     </script>
-    
-    <style>
-        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; }
-        .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-        .banner-text { font-size: 0.9rem; color: #e2e8f0; flex: 2; text-align: left; }
-        .banner-actions { display: flex; gap: 10px; }
-        button { padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-        .btn-action { background-color: #38bdf8; color: #0f172a; border: none; }
-        .btn-minimal { background-color: transparent; color: #94a3b8; border: 1px solid #475569; }
-        @media (max-width: 700px) { .banner-content { flex-direction: column; text-align: center; } .banner-actions { width: 100%; } button { width: 100%; } }
-    </style>
 </body>
 </html>

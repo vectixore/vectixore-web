@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
     <style>
         /* --- CORE VARIABLES --- */
@@ -29,7 +29,7 @@
             --card: #1e293b; 
             --text: #e2e8f0; 
             --text-muted: #94a3b8;
-            --accent: #38bdf8; /* Sky Blue */
+            --accent: #38bdf8; 
             --border: #334155; 
             --panic-bg: #1e1b4b; 
             --panic-accent: #e879f9; 
@@ -51,7 +51,7 @@
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* --- SPLIT HERO SECTION (GATEWAY) --- */
+        /* --- HERO SECTION --- */
         .gateway-wrapper {
             display: flex;
             width: 100%;
@@ -74,53 +74,41 @@
             overflow: hidden;
         }
 
-        /* LEFT: VECTIXORE */
         .panel-vectixore { background-color: var(--bg); border-right: 1px solid var(--border); }
-        .panel-vectixore:hover { flex: 1.5; background-color: #020617; }
+        .panel-vectixore:hover { flex: 1.2; background-color: #020617; }
         .panel-vectixore h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -2px; line-height: 1; }
         .panel-vectixore h2 { color: var(--accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
         
-        /* RIGHT: PANIXIRCUS */
         .panel-panixircus { background: linear-gradient(180deg, rgba(30,27,75,1) 0%, rgba(49,6,66,1) 100%); }
-        .panel-panixircus:hover { flex: 1.5; background: linear-gradient(180deg, rgba(49,6,66,1) 0%, rgba(88,28,135,1) 100%); }
+        .panel-panixircus:hover { flex: 1.2; background: linear-gradient(180deg, rgba(49,6,66,1) 0%, rgba(88,28,135,1) 100%); }
         .panel-panixircus h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -1px; font-style: italic; line-height: 1; }
         .panel-panixircus h2 { color: var(--panic-accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
 
-        /* BUTTONS */
-        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; opacity: 0.8; transition: all 0.3s; transform: translateY(10px); }
-        .split-panel:hover .hero-btn { opacity: 1; transform: translateY(0); }
+        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: all 0.3s; }
         .btn-v { border: 1px solid var(--accent); color: var(--accent); }
         .btn-v:hover { background: var(--accent); color: var(--bg); }
         .btn-p { border: 1px solid var(--panic-accent); color: var(--panic-accent); }
         .btn-p:hover { background: var(--panic-accent); color: #2e1065; box-shadow: 0 0 15px var(--panic-accent); }
 
-        /* --- CORPORATE CONTENT --- */
+        /* --- CONTENT --- */
         .container { max-width: 1000px; width: 100%; padding: 80px 20px 40px; margin: 0 auto; }
-        
         .section-header { text-align: center; margin-bottom: 60px; }
         .section-header h2 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
         .section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6; }
 
-        /* GRID SYSTEMS */
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
 
-        .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-3px); border-color: var(--accent); }
-        
+        .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; }
         .card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; margin-bottom: 15px; }
         .card p { line-height: 1.6; font-size: 0.95rem; color: var(--text-muted); margin: 0; }
 
-        .feature-list { list-style: none; padding: 0; margin-top: 15px; }
-        .feature-list li { margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem; padding-left: 20px; position: relative; }
-        .feature-list li::before { content: '›'; color: var(--accent); position: absolute; left: 0; font-weight: bold; }
-
         .legal-box { background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
-        .legal-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1rem; }
-        .legal-warning { border-left: 3px solid #f59e0b; background: rgba(245, 158, 11, 0.05); }
+        .legal-box h4 { color: #fff; margin: 0 0 10px 0; }
+        .legal-warning { border-left: 3px solid #f59e0b; }
 
         /* --- FOOTER --- */
-        .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 40px; padding-bottom: 40px; text-align: center; line-height: 1.8; }
+        .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding: 40px 20px; text-align: center; line-height: 1.8; }
         .footer-links { margin-bottom: 20px; }
         .footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
         .footer a:hover { color: var(--accent); }
@@ -129,7 +117,6 @@
             .gateway-wrapper { flex-direction: column; height: auto; }
             .split-panel { padding: 60px 20px; border-right: none; border-bottom: 1px solid var(--border); }
             .grid-3, .grid-2 { grid-template-columns: 1fr; }
-            .hero-btn { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -177,61 +164,25 @@
             <div class="card">
                 <h3>Digital Advertising</h3>
                 <p>Optimized ad-supported models (via AdMob) designed for entry-tier users.</p>
-                <ul class="feature-list">
-                    <li>High Accessibility</li>
-                    <li>Non-intrusive Integration</li>
-                    <li>Global Reach</li>
-                </ul>
             </div>
             <div class="card">
                 <h3>SaaS & Licensing</h3>
                 <p>Scaling Software-as-a-Service solutions and perpetual license options.</p>
-                <ul class="feature-list">
-                    <li>Premium Features</li>
-                    <li>Individual Users</li>
-                    <li>Cloud Sync</li>
-                </ul>
             </div>
             <div class="card">
                 <h3>Enterprise</h3>
                 <p>Customized deployment protocols tailored for institutional workflows.</p>
-                <ul class="feature-list">
-                    <li>Site-wide Licensing</li>
-                    <li>API Access</li>
-                    <li>Dedicated Support</li>
-                </ul>
             </div>
-        </div>
-
-        <div class="section-header" style="margin-bottom: 30px; text-align: left;">
-            <h2 style="font-size: 1.8rem;">Consumer Rights & Protocols</h2>
         </div>
 
         <div class="grid-2">
             <div class="legal-box">
                 <h4>Refund Rights (UK Consumer Rights Act 2015)</h4>
-                <p style="color: #cbd5e1; margin-bottom: 10px;">
-                    For software licensing and digital services, refund requests are processed within a <strong>14-day statutory window</strong> from the date of purchase, in strict accordance with the UK Consumer Rights Act 2015.
-                </p>
-                <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid #334155; padding-top: 10px;">
-                    <strong>Exception:</strong> Digital content fully utilized with explicit consent prior to 14 days may limit cancellation rights.
-                </div>
+                <p>Digital content refund requests are processed within a 14-day statutory window.</p>
             </div>
-
-            <div>
-                <div class="legal-box">
-                    <h4>Cancellation Policy</h4>
-                    <p style="color: #cbd5e1;">
-                        Subscriptions may be terminated via app stores or our portal. Access remains active until the end of the billing cycle.
-                    </p>
-                </div>
-                
-                <div class="legal-box legal-warning">
-                    <h4 style="color: #fbbf24;">Legal Disclaimer</h4>
-                    <p style="color: #e2e8f0;">
-                        Vectixore LTD acts as a technological provider. Our applications do not constitute professional advice (Legal, Medical, or Financial).
-                    </p>
-                </div>
+            <div class="legal-box legal-warning">
+                <h4>Legal Disclaimer</h4>
+                <p>Vectixore LTD acts as a technological provider. Applications do not constitute professional advice.</p>
             </div>
         </div>
 

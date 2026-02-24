@@ -41,15 +41,14 @@
 
         /* Grid */
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; justify-content: center; }
 
         /* Card */
         .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px; transition: all 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
         .card:hover { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 20px rgba(217, 70, 239, 0.2); }
         
         .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; width: fit-content; }
-        .coming { background: var(--accent); color: #2e1065; }
-        .planned { background: #4a044e; color: #d946ef; }
+        .testing { background: #22c55e; color: #052e16; }
 
         h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.5rem; font-weight: 800; }
         p { color: var(--text-muted); line-height: 1.6; font-size: 0.9rem; flex-grow: 1; }
@@ -57,7 +56,7 @@
         .tags { margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap; }
         .tag { font-size: 0.7rem; color: #fff; background: #4a044e; padding: 4px 8px; border-radius: 4px; border: 1px solid var(--accent); }
 
-        /* FOOTER (UNIFORM COLOR) */
+        /* FOOTER */
         .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 40px; padding-bottom: 40px; text-align: center; line-height: 1.8; }
         .footer-links { margin-bottom: 20px; }
         .footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
@@ -96,24 +95,10 @@
         <div class="grid">
             
             <div class="card">
-                <span class="status coming">Beta Phase</span>
+                <span class="status testing">Open Testing</span>
                 <h3>DreamCipher</h3>
                 <p>Advanced interpretation assistant analyzing human psychology. Powered by a unique <strong>"Model Cascade" (Gemini Flash)</strong> architecture to decode symbols and archetypes.</p>
                 <div class="tags"><span class="tag">Mental Health</span><span class="tag">Gemini 2.0</span><span class="tag">Model Cascade</span></div>
-            </div>
-
-            <div class="card">
-                <span class="status planned">Coming Soon</span>
-                <h3>Project: TextRPG</h3>
-                <p>AI-driven narrative experience where choices have infinite consequences. No scripts, just a responsive world engine adapting to your chaos.</p>
-                <div class="tags"><span class="tag">GenAI</span><span class="tag">Interactive Fiction</span></div>
-            </div>
-
-            <div class="card">
-                <span class="status planned">Planned</span>
-                <h3>Panixircus Arcade</h3>
-                <p>Short-session, high-dopamine mini-games designed for rapid engagement. Simple mechanics, competitive leaderboards.</p>
-                <div class="tags"><span class="tag">Hyper-Casual</span><span class="tag">Mobile</span></div>
             </div>
 
         </div>

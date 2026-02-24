@@ -8,129 +8,62 @@
     })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vectixore LTD | Solutions & Entertainment</title>
+    <title>Panixircus | Interactive Entertainment</title>
     
-    <meta name="description" content="Official website of Vectixore LTD. Advanced computer programming, AI integration, and software publishing solutions.">
+    <meta name="description" content="Explore Panixircus: AI-driven narrative experiences, DreamCipher analysis, and high-dopamine interactive play by Vectixore LTD.">
     <meta name="author" content="Vectixore LTD">
     
-    <meta property="og:title" content="Vectixore LTD | Solutions & Entertainment">
-    <meta property="og:description" content="Transforming complex challenges into high-performance software tools.">
+    <meta property="og:title" content="Panixircus | Interactive Entertainment">
+    <meta property="og:description" content="Designing interactive experiences based on the 'Bread & Circuses' philosophy.">
     <meta property="og:image" content="https://vectixore.com/assets/og-image.png">
-    <meta property="og:url" content="https://vectixore.com/">
+    <meta property="og:url" content="https://vectixore.com/entertainment.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
     <style>
-        /* --- CORE VARIABLES --- */
-        :root { 
-            --bg: #0f172a; 
-            --card: #1e293b; 
-            --text: #e2e8f0; 
-            --text-muted: #94a3b8;
-            --accent: #38bdf8; /* Sky Blue */
-            --border: #334155; 
-            --panic-bg: #1e1b4b; 
-            --panic-accent: #e879f9; 
-        }
+        :root { --bg: #0f0715; --card: #1a0b2e; --text: #e9d5ff; --text-muted: #d8b4fe; --accent: #d946ef; --border: #4a044e; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; }
 
-        body { 
-            font-family: 'Inter', system-ui, sans-serif; 
-            background-color: var(--bg); 
-            color: var(--text); 
-            margin: 0; 
-            padding: 0; 
-            overflow-x: hidden;
-        }
-
-        /* --- NAV BAR --- */
-        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
-        .nav-content { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
-        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
+        /* Navbar */
+        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 7, 21, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
+        .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { font-weight: 800; color: #fff; text-decoration: none; }
+        .nav-links a { color: #a8a29e; text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* --- SPLIT HERO SECTION (GATEWAY) --- */
-        .gateway-wrapper {
-            display: flex;
-            width: 100%;
-            height: 85vh;
-            margin-top: 55px;
-            border-bottom: 1px solid var(--border);
-        }
+        /* Header */
+        .header-sec { padding: 120px 20px 60px; text-align: center; border-bottom: 1px solid var(--border); 
+                      background: radial-gradient(circle at center, #2e1065 0%, #0f0715 100%); }
+        .page-title { font-size: 3rem; font-weight: 900; color: #fff; margin: 0; letter-spacing: -2px; font-style: italic; text-shadow: 2px 2px 0px var(--accent); }
+        .page-sub { color: var(--accent); text-transform: uppercase; letter-spacing: 4px; font-size: 0.9rem; margin-top: 10px; font-weight: 700; }
 
-        .split-panel {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
+        /* Grid */
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
-        /* LEFT: VECTIXORE */
-        .panel-vectixore { background-color: var(--bg); border-right: 1px solid var(--border); }
-        .panel-vectixore:hover { flex: 1.5; background-color: #020617; }
-        .panel-vectixore h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -2px; line-height: 1; }
-        .panel-vectixore h2 { color: var(--accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+        /* Card */
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px; transition: all 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
+        .card:hover { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 20px rgba(217, 70, 239, 0.2); }
         
-        /* RIGHT: PANIXIRCUS */
-        .panel-panixircus { background: linear-gradient(180deg, rgba(30,27,75,1) 0%, rgba(49,6,66,1) 100%); }
-        .panel-panixircus:hover { flex: 1.5; background: linear-gradient(180deg, rgba(49,6,66,1) 0%, rgba(88,28,135,1) 100%); }
-        .panel-panixircus h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -1px; font-style: italic; line-height: 1; }
-        .panel-panixircus h2 { color: var(--panic-accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+        .status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; width: fit-content; }
+        .coming { background: var(--accent); color: #2e1065; }
+        .planned { background: #4a044e; color: #d946ef; }
 
-        /* BUTTONS */
-        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; opacity: 0.8; transition: all 0.3s; transform: translateY(10px); }
-        .split-panel:hover .hero-btn { opacity: 1; transform: translateY(0); }
-        .btn-v { border: 1px solid var(--accent); color: var(--accent); }
-        .btn-v:hover { background: var(--accent); color: var(--bg); }
-        .btn-p { border: 1px solid var(--panic-accent); color: var(--panic-accent); }
-        .btn-p:hover { background: var(--panic-accent); color: #2e1065; box-shadow: 0 0 15px var(--panic-accent); }
+        h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.5rem; font-weight: 800; }
+        p { color: var(--text-muted); line-height: 1.6; font-size: 0.9rem; flex-grow: 1; }
 
-        /* --- CORPORATE CONTENT --- */
-        .container { max-width: 1000px; width: 100%; padding: 80px 20px 40px; margin: 0 auto; }
-        
-        .section-header { text-align: center; margin-bottom: 60px; }
-        .section-header h2 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
-        .section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+        .tags { margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag { font-size: 0.7rem; color: #fff; background: #4a044e; padding: 4px 8px; border-radius: 4px; border: 1px solid var(--accent); }
 
-        /* GRID SYSTEMS */
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
-
-        .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-3px); border-color: var(--accent); }
-        
-        .card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; margin-bottom: 15px; }
-        .card p { line-height: 1.6; font-size: 0.95rem; color: var(--text-muted); margin: 0; }
-
-        .feature-list { list-style: none; padding: 0; margin-top: 15px; }
-        .feature-list li { margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem; padding-left: 20px; position: relative; }
-        .feature-list li::before { content: '›'; color: var(--accent); position: absolute; left: 0; font-weight: bold; }
-
-        .legal-box { background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
-        .legal-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1rem; }
-        .legal-warning { border-left: 3px solid #f59e0b; background: rgba(245, 158, 11, 0.05); }
-
-        /* --- FOOTER (UNIFORM COLOR) --- */
+        /* FOOTER (UNIFORM COLOR) */
         .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 40px; padding-bottom: 40px; text-align: center; line-height: 1.8; }
         .footer-links { margin-bottom: 20px; }
         .footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
         .footer a:hover { color: var(--accent); }
 
-        @media (max-width: 768px) {
-            .gateway-wrapper { flex-direction: column; height: auto; }
-            .split-panel { padding: 60px 20px; border-right: none; border-bottom: 1px solid var(--border); }
-            .grid-3, .grid-2 { grid-template-columns: 1fr; }
-            .hero-btn { opacity: 1; transform: translateY(0); }
-        }
+        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 10px; } }
     </style>
 </head>
 <body>
@@ -141,111 +74,58 @@
         <div class="nav-content">
             <a href="index.html" class="nav-brand">VECTIXORE LTD</a>
             <div class="nav-links">
-                <a href="index.html" class="active">Corporate</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="entertainment.html">Entertainment</a>
+                <a href="index.html">Main Page</a>
+                <a href="solutions.html">Vectixore Solutions</a>
+                <a href="entertainment.html" class="active">Panixircus Entertainment</a>
             </div>
         </div>
     </nav>
 
-    <div class="gateway-wrapper">
-        <div class="split-panel panel-vectixore" onclick="window.location.href='solutions.html'">
-            <h2>Vectixore</h2>
-            <h1>SOLUTIONS</h1>
-            <div style="color:var(--text-muted); margin-top:10px;">Things People <strong>NEED</strong>.</div>
-            <a href="solutions.html" class="hero-btn btn-v">Examine System</a>
-        </div>
+    <div class="header-sec">
+        <div class="page-sub">Chaos. Dopamine. Play.</div>
+        <h1 class="page-title">Panixircus</h1>
+        <p style="max-width: 600px; margin: 20px auto 0; color: var(--text-muted);">
+            Designing interactive experiences based on the 'Bread & Circuses' philosophy. 
+            Where reality ends, the show begins.
+        </p>
+    </div>
 
-        <div class="split-panel panel-panixircus" onclick="window.location.href='entertainment.html'">
-            <h2>Panixircus</h2>
-            <h1>ENTERTAINMENT</h1>
-            <div style="color:#e9d5ff; margin-top:10px;">Things People <strong>WANT</strong>.</div>
-            <a href="entertainment.html" class="hero-btn btn-p">Enter Circus</a>
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <span class="status coming">Beta Phase</span>
+                <h3>DreamCipher</h3>
+                <p>Advanced interpretation assistant analyzing human psychology. Powered by a unique <strong>"Model Cascade" (Gemini Flash)</strong> architecture to decode symbols and archetypes.</p>
+                <div class="tags"><span class="tag">Mental Health</span><span class="tag">Gemini 2.0</span><span class="tag">Model Cascade</span></div>
+            </div>
+
+            <div class="card">
+                <span class="status planned">Coming Soon</span>
+                <h3>Project: TextRPG</h3>
+                <p>AI-driven narrative experience where choices have infinite consequences. No scripts, just a responsive world engine adapting to your chaos.</p>
+                <div class="tags"><span class="tag">GenAI</span><span class="tag">Interactive Fiction</span></div>
+            </div>
+
+            <div class="card">
+                <span class="status planned">Planned</span>
+                <h3>Panixircus Arcade</h3>
+                <p>Short-session, high-dopamine mini-games designed for rapid engagement. Simple mechanics, competitive leaderboards.</p>
+                <div class="tags"><span class="tag">Hyper-Casual</span><span class="tag">Mobile</span></div>
+            </div>
+
         </div>
     </div>
 
-    <div id="corporate" class="container">
-        <div class="section-header">
-            <h2>Operational Profile</h2>
-            <p>
-                Vectixore LTD is a specialized technology firm focused on advanced computer programming and software publishing. 
-                We leverage cutting-edge AI integration, Zero-Trust security, and sophisticated architectures to transform complex challenges 
-                into streamlined, high-performance tools for global distribution.
-            </p>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a> • 
+            <a href="terms.html">Terms of Service</a> • 
+            <a href="mailto:info@vectixore.com">Contact</a>
         </div>
-
-        <div class="grid-3">
-            <div class="card">
-                <h3>Digital Advertising</h3>
-                <p>Optimized ad-supported models (via AdMob) designed for entry-tier users.</p>
-                <ul class="feature-list">
-                    <li>High Accessibility</li>
-                    <li>Non-intrusive Integration</li>
-                    <li>Global Reach</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>SaaS & Licensing</h3>
-                <p>Scaling Software-as-a-Service solutions and perpetual license options.</p>
-                <ul class="feature-list">
-                    <li>Premium Features</li>
-                    <li>Individual Users</li>
-                    <li>Cloud Sync</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Enterprise</h3>
-                <p>Customized deployment protocols tailored for institutional workflows.</p>
-                <ul class="feature-list">
-                    <li>Site-wide Licensing</li>
-                    <li>API Access</li>
-                    <li>Dedicated Support</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section-header" style="margin-bottom: 30px; text-align: left;">
-            <h2 style="font-size: 1.8rem;">Consumer Rights & Protocols</h2>
-        </div>
-
-        <div class="grid-2">
-            <div class="legal-box">
-                <h4>Refund Rights (UK Consumer Rights Act 2015)</h4>
-                <p style="color: #cbd5e1; margin-bottom: 10px;">
-                    For software licensing and digital services, refund requests are processed within a <strong>14-day statutory window</strong> from the date of purchase, in strict accordance with the UK Consumer Rights Act 2015 and applicable international digital commerce regulations.
-                </p>
-                <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid #334155; padding-top: 10px;">
-                    <strong>Exception:</strong> In cases where digital content is fully downloaded or utilized with the user's explicit consent prior to the expiration of the 14-day window, the right to cancel may be limited as per statutory exceptions.
-                </div>
-            </div>
-
-            <div>
-                <div class="legal-box">
-                    <h4>Cancellation Policy</h4>
-                    <p style="color: #cbd5e1;">
-                        Subscriptions may be terminated at any time via the respected app store (Google Play / Apple App Store) or through our enterprise licensing portal. Access remains active until the end of the billing cycle.
-                    </p>
-                </div>
-                
-                <div class="legal-box legal-warning">
-                    <h4 style="color: #fbbf24;">Legal Disclaimer</h4>
-                    <p style="color: #e2e8f0;">
-                        Vectixore LTD acts solely as a technological solutions provider. Our applications do not constitute professional advice (Legal, Medical, or Financial). End-users assume full responsibility for the use and verification of AI-generated data.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a> • 
-                <a href="terms.html">Terms of Service</a> • 
-                <a href="mailto:info@vectixore.com">Contact</a>
-            </div>
-            <strong>VECTIXORE LTD</strong><br>
-            Registered in England & Wales | Company No: 16999592 | ICO Registration: ZC087615<br>
-            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
-        </div>
+        <strong>VECTIXORE LTD</strong><br>
+        Registered in England & Wales | Company No: 16999592 | ICO Registration: ZC087615<br>
+        71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
     </div>
 
 </body>

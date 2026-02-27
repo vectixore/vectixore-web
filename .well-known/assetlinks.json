@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vectixore.dreamcipher",
+      "sha256_cert_fingerprints": [
+        "09:BF:1D:05:4F:74:94:F8:99:6C:61:C3:0D:90:02:DC:B1:AD:2D:EE:F5:D9:34:64:84:26:4F:9F:7E:B5:C0:6E"
+      ]
+    }
+  }
+]

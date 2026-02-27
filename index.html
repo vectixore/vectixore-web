@@ -32,8 +32,6 @@
             --text-muted: #94a3b8;
             --accent: #38bdf8; /* Sky Blue */
             --border: #334155; 
-            --panic-bg: #1e1b4b; 
-            --panic-accent: #e879f9; 
         }
 
         body { 
@@ -52,51 +50,33 @@
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* --- SPLIT HERO SECTION (GATEWAY) --- */
-        .gateway-wrapper {
-            display: flex;
-            width: 100%;
-            height: 85vh;
-            margin-top: 55px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .split-panel {
-            flex: 1;
+        /* --- UNIFIED HERO SECTION --- */
+        .hero-section {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            width: 100%;
+            height: 70vh;
+            margin-top: 55px;
+            border-bottom: 1px solid var(--border);
+            background-color: var(--bg);
             padding: 20px;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
+            box-sizing: border-box;
+            background: radial-gradient(circle at center, #1e293b 0%, var(--bg) 70%);
         }
 
-        /* LEFT: VECTIXORE */
-        .panel-vectixore { background-color: var(--bg); border-right: 1px solid var(--border); }
-        .panel-vectixore:hover { flex: 1.5; background-color: #020617; }
-        .panel-vectixore h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -2px; line-height: 1; }
-        .panel-vectixore h2 { color: var(--accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+        .hero-section h1 { color: #fff; font-size: 4.5rem; margin: 0; letter-spacing: -2px; line-height: 1; }
+        .hero-section h2 { color: var(--accent); font-size: 1.2rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; opacity: 0.8; }
         
-        /* RIGHT: PANIXIRCUS */
-        .panel-panixircus { background: linear-gradient(180deg, rgba(30,27,75,1) 0%, rgba(49,6,66,1) 100%); }
-        .panel-panixircus:hover { flex: 1.5; background: linear-gradient(180deg, rgba(49,6,66,1) 0%, rgba(88,28,135,1) 100%); }
-        .panel-panixircus h1 { color: #fff; font-size: 3.5rem; margin: 0; letter-spacing: -1px; font-style: italic; line-height: 1; }
-        .panel-panixircus h2 { color: var(--panic-accent); font-size: 1rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
-
         /* BUTTONS */
-        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; opacity: 0.8; transition: all 0.3s; transform: translateY(10px); }
-        .split-panel:hover .hero-btn { opacity: 1; transform: translateY(0); }
+        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: all 0.3s; display: inline-block; }
         .btn-v { border: 1px solid var(--accent); color: var(--accent); }
-        .btn-v:hover { background: var(--accent); color: var(--bg); }
-        .btn-p { border: 1px solid var(--panic-accent); color: var(--panic-accent); }
-        .btn-p:hover { background: var(--panic-accent); color: #2e1065; box-shadow: 0 0 15px var(--panic-accent); }
+        .btn-v:hover { background: var(--accent); color: var(--bg); box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); }
 
         /* --- CORPORATE CONTENT --- */
-        .container { max-width: 1000px; width: 100%; padding: 80px 20px 40px; margin: 0 auto; }
+        .container { max-width: 1000px; width: 100%; padding: 80px 20px 40px; margin: 0 auto; box-sizing: border-box; }
         
         .section-header { text-align: center; margin-bottom: 60px; }
         .section-header h2 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
@@ -127,10 +107,8 @@
         .footer a:hover { color: var(--accent); }
 
         @media (max-width: 768px) {
-            .gateway-wrapper { flex-direction: column; height: auto; }
-            .split-panel { padding: 60px 20px; border-right: none; border-bottom: 1px solid var(--border); }
+            .hero-section h1 { font-size: 3rem; }
             .grid-3, .grid-2 { grid-template-columns: 1fr; }
-            .hero-btn { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -138,6 +116,7 @@
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="index.html" class="nav-brand">VECTIXORE LTD</a>
@@ -149,24 +128,12 @@
         </div>
     </nav>
 
-    <div class="gateway-wrapper">
-        <div class="split-panel panel-vectixore" onclick="window.location.href='solutions.html'">
-            <img src="https://vectixore.com/assets/vectixore-logo.png?v=2" alt="Vectixore Logo" style="height: 85px; width: auto; max-width: 90%; margin-bottom: 20px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.2));">
-            
-            <h2>Vectixore</h2>
-            <h1>SOLUTIONS</h1>
-            <div style="color:var(--text-muted); margin-top:10px;">Things People <strong>NEED</strong>.</div>
-            <a href="solutions.html" class="hero-btn btn-v">Examine System</a>
-        </div>
-
-        <div class="split-panel panel-panixircus" onclick="window.location.href='entertainment.html'">
-            <img src="https://vectixore.com/assets/panixircus-logo.png?v=2" alt="Panixircus Logo" style="height: 85px; width: auto; max-width: 90%; margin-bottom: 20px; object-fit: contain; filter: drop-shadow(0 0 15px rgba(232, 121, 249, 0.4));">
-            
-            <h2>Panixircus</h2>
-            <h1>ENTERTAINMENT</h1>
-            <div style="color:#e9d5ff; margin-top:10px;">Things People <strong>WANT</strong>.</div>
-            <a href="entertainment.html" class="hero-btn btn-p">Enter Circus</a>
-        </div>
+    <div class="hero-section">
+        <img src="https://vectixore.com/assets/vectixore-logo.png?v=2" alt="Vectixore Logo" style="height: 110px; width: auto; max-width: 90%; margin-bottom: 25px; object-fit: contain; filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.3));">
+        <h2>Vectixore</h2>
+        <h1>SOLUTIONS</h1>
+        <div style="color:var(--text-muted); margin-top:15px; font-size: 1.1rem;">Things People <strong>NEED</strong>.</div>
+        <a href="solutions.html" class="hero-btn btn-v">Examine System</a>
     </div>
 
     <div id="corporate" class="container">

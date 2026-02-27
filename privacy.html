@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Vectixore LTD</title>
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
     <style>
         /* CORE VARIABLES */
-        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --ai-glow: #d000ff; }
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --ai-glow: #d000ff; --danger: #ef4444; }
         
         /* BODY SETTINGS */
         body { 
@@ -14,11 +20,20 @@
             background-color: var(--bg); 
             color: var(--text); 
             margin: 0; 
+            padding-top: 80px;
             min-height: 100vh; 
             text-align: center; 
         }
 
-        .container { max-width: 900px; padding: 60px 20px; margin: 0 auto; }
+        /* NAVIGATION BAR */
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid #334155; z-index: 1000; }
+        .nav-content { max-width: 900px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 1px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #94a3b8; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        .container { max-width: 900px; padding: 20px 20px 60px 20px; margin: 0 auto; }
         
         .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; line-height: 1.2; }
         .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
@@ -61,19 +76,46 @@
         /* FOOTER */
         .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; }
         
-        /* LINKS */
+        /* LINKS & BUTTONS */
         a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
         a:hover { opacity: 0.8; text-decoration: underline; }
-        
-        .back-link { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: #64748b; }
-        .back-link:hover { color: var(--accent); }
+
+        .btn-deletion {
+            display: inline-block;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.2s;
+        }
+        .btn-deletion:hover {
+            background: var(--danger);
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <a href="index.html" class="back-link">← Back to Home</a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-brand">
+                <img src="https://vectixore.com/assets/favicon.png?v=2" onerror="this.src='https://vectixore.com/assets/favicon.ico?v=2'" alt="Vectixore Icon" style="width: 24px; height: 24px; object-fit: contain;">
+                VECTIXORE LTD
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container">
         <div class="business-name">PRIVACY POLICY & <br>EXPLICIT CONSENT STATEMENT</div>
         <div class="tagline">Effective Date: February 2026</div>
 
@@ -228,6 +270,15 @@
                 <li><strong>Subject:</strong> "Data Subject Request"</li>
                 <li><strong>Response Time:</strong> 30 Days.</li>
             </ul>
+        </div>
+
+        <div class="card" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.05);">
+            <h2>ACCOUNT & DATA DELETION</h2>
+            <p>In accordance with Global Privacy Regulations and Google Play Policies, users have the right to request the permanent removal of their accounts and associated data.</p>
+            <a href="data-deletion.html" class="btn-deletion">Go to Data Deletion Request Form →</a>
+            <p style="font-size: 0.8rem; margin-top: 15px; color: #64748b; margin-bottom: 0;">
+                * Caution: Requesting data erasure will result in the immediate and irreversible loss of all Virtual Goods (Stamina/Credits).
+            </p>
         </div>
 
         <div class="card">
@@ -387,11 +438,15 @@
         function acceptAll() {
             localStorage.setItem("vectixore_consent", "full");
             document.getElementById("cookie-banner").style.display = "none";
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({'event': 'cookie_consent_full'});
         }
 
         function acceptNecessary() {
             localStorage.setItem("vectixore_consent", "necessary");
             document.getElementById("cookie-banner").style.display = "none";
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({'event': 'cookie_consent_necessary'});
         }
     </script>
     

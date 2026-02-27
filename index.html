@@ -50,33 +50,9 @@
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* --- UNIFIED HERO SECTION --- */
-        .hero-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            height: 70vh;
-            margin-top: 55px;
-            border-bottom: 1px solid var(--border);
-            background-color: var(--bg);
-            padding: 20px;
-            box-sizing: border-box;
-            background: radial-gradient(circle at center, #1e293b 0%, var(--bg) 70%);
-        }
-
-        .hero-section h1 { color: #fff; font-size: 4.5rem; margin: 0; letter-spacing: -2px; line-height: 1; }
-        .hero-section h2 { color: var(--accent); font-size: 1.2rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; opacity: 0.8; }
-        
-        /* BUTTONS */
-        .hero-btn { margin-top: 30px; padding: 12px 25px; border-radius: 4px; font-weight: 600; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: all 0.3s; display: inline-block; }
-        .btn-v { border: 1px solid var(--accent); color: var(--accent); }
-        .btn-v:hover { background: var(--accent); color: var(--bg); box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); }
-
         /* --- CORPORATE CONTENT --- */
-        .container { max-width: 1000px; width: 100%; padding: 80px 20px 40px; margin: 0 auto; box-sizing: border-box; }
+        /* Eklenen margin-top ile navbar altında içerik boşluğu sağlanmıştır */
+        .container { max-width: 1000px; width: 100%; padding: 120px 20px 40px; margin: 0 auto; box-sizing: border-box; }
         
         .section-header { text-align: center; margin-bottom: 60px; }
         .section-header h2 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
@@ -107,7 +83,7 @@
         .footer a:hover { color: var(--accent); }
 
         @media (max-width: 768px) {
-            .hero-section h1 { font-size: 3rem; }
+            .container { padding-top: 100px; }
             .grid-3, .grid-2 { grid-template-columns: 1fr; }
         }
     </style>
@@ -127,14 +103,6 @@
             </div>
         </div>
     </nav>
-
-    <div class="hero-section">
-        <img src="https://vectixore.com/assets/vectixore-logo.png?v=2" alt="Vectixore Logo" style="height: 110px; width: auto; max-width: 90%; margin-bottom: 25px; object-fit: contain; filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.3));">
-        <h2>Vectixore</h2>
-        <h1>SOLUTIONS</h1>
-        <div style="color:var(--text-muted); margin-top:15px; font-size: 1.1rem;">Things People <strong>NEED</strong>.</div>
-        <a href="solutions.html" class="hero-btn btn-v">Examine System</a>
-    </div>
 
     <div id="corporate" class="container">
         <div class="section-header">

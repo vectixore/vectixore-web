@@ -3,4 +3,7 @@ Allow: /
 
 # Disallow: /private-folder/
 
+User-agent: Google-adstxt
+Disallow:
+
 Sitemap: https://vectixore.com/sitemap.xml

@@ -1,0 +1,12 @@
+# Vectixore LTD
+
+> Advanced software engineering and publishing entity specializing in AI-driven productivity and secure verification systems.
+
+## Key Information
+- [Corporate](https://vectixore.com/) - Overview of Vectixore operations.
+- [Solutions](https://vectixore.com/solutions.html) - AI-driven architectures and forensic tech.
+- [Entertainment](https://vectixore.com/entertainment.html) - Interactive entertainment and AI narrative apps.
+
+## Documentation & Legal
+- [Privacy Policy](https://vectixore.com/privacy.html)
+- [Terms of Service](https://vectixore.com/terms.html)

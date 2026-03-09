@@ -351,11 +351,17 @@
     function acceptAll() {
         localStorage.setItem("vectixore_consent", "full");
         document.getElementById("cookie-banner").style.display = "none";
+        // GTM Olay Bildirimi
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'event': 'cookie_consent_full'});
     }
 
     function acceptNecessary() {
         localStorage.setItem("vectixore_consent", "necessary");
         document.getElementById("cookie-banner").style.display = "none";
+        // GTM Olay Bildirimi
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'event': 'cookie_consent_necessary'});
     }
 </script>
 </body>

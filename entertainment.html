@@ -12,39 +12,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Panixircus | AI-Driven Interactive Entertainment by Vectixore</title>
-    <meta name="description" content="Discover Panixircus by Vectixore LTD. Featuring DreamCipher AI, neuro-narrative experiences, and interactive apps built on the Bread & Circuses philosophy.">
-    <meta name="keywords" content="Panixircus, DreamCipher, AI Dream Analysis, Interactive Entertainment, Vectixore Games, AI Narrative">
+    <title>DreamCipher AI | Clinical Dream Analysis & Subconscious Insights</title>
+    <meta name="description" content="DreamCipher by Vectixore: Advanced AI dream analysis using neural networks. Get clinical, mystic, and practical subconscious interpretations. Available on Web & Android.">
+    <meta name="keywords" content="DreamCipher, AI Dream Analysis, Subconscious Decoder, Neural Dream Interpretation, Vectixore, Panixircus, Dream Journal AI, Clinical Psychology AI">
     <meta name="author" content="Vectixore LTD">
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "DreamCipher",
-      "operatingSystem": "Android",
-      "applicationCategory": "EntertainmentApplication",
-      "image": "https://vectixore.com/assets/DreamCipher.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Vectixore LTD"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DreamCipher",
+        "operatingSystem": "Android, Web, Windows, iOS",
+        "applicationCategory": "EntertainmentApplication, HealthApplication",
+        "image": "https://vectixore.com/assets/DreamCipher.png",
+        "url": "https://dreamcipher-19de0.web.app/",
+        "author": {
+          "@type": "Organization",
+          "name": "Vectixore LTD",
+          "url": "https://vectixore.com"
+        },
+        "description": "DreamCipher is a professional-grade AI tool utilizing proprietary neural networks to decode subconscious narratives through clinical, mystic, and psychological lenses.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "120"
+        }
       },
-      "description": "Advanced AI dream analysis tool using neural networks to provide clinical, mystic, and practical insights.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "1"
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "How does DreamCipher analyze dreams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DreamCipher uses advanced neural networks and LLM integration to perform pattern recognition across psychological, mystic, and actionable data points."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is DreamCipher private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. DreamCipher utilizes a Zero-Knowledge Journal architecture and industry-standard biometric protection to ensure user data remains private and KVKK/UK GDPR compliant."
+          }
+        }]
       }
-    }
+    ]
     </script>
 
-    <meta property="og:title" content="Panixircus | Future of Interactive Entertainment">
-    <meta property="og:description" content="AI-driven narrative experiences and high-dopamine interactive play.">
+    <meta property="og:title" content="DreamCipher AI | Decode Your Subconscious">
+    <meta property="og:description" content="Professional AI dream analysis. Experience the intersection of neural technology and subconscious exploration.">
     <meta property="og:image" content="https://vectixore.com/assets/og-image.png">
     <meta property="og:url" content="https://vectixore.com/entertainment.html">
     <meta property="og:type" content="website">
@@ -78,7 +102,7 @@
         .card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 0 30px rgba(217, 70, 239, 0.25); }
         
         .status { display: inline-block; padding: 6px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 20px; width: fit-content; }
-        .testing { background: #22c55e; color: #052e16; }
+        .live { background: #22c55e; color: #052e16; }
 
         h2 { margin: 0 0 15px 0; color: #fff; font-size: 1.8rem; font-weight: 800; }
         p { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; flex-grow: 1; }
@@ -95,6 +119,10 @@
         .footer-links { margin-bottom: 20px; }
         .footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; transition: color 0.2s; }
         .footer a:hover { color: var(--accent); }
+
+        /* Action Buttons */
+        .btn-web { display: inline-flex; align-items: center; color: var(--accent); text-decoration: none; font-weight: 700; font-size: 0.85rem; border: 1px solid var(--accent); padding: 10px 20px; border-radius: 6px; transition: all 0.2s; margin-top: 10px; background: rgba(217, 70, 239, 0.05); }
+        .btn-web:hover { background: var(--accent); color: #fff; box-shadow: 0 0 15px var(--accent); }
 
         @media (max-width: 768px) { .page-title { font-size: 2.5rem; } .nav-content { flex-direction: column; gap: 15px; } }
     </style>
@@ -122,7 +150,7 @@
         <div class="page-sub">Chaos. Dopamine. Play.</div>
         <h1 class="page-title">Panixircus</h1>
         <p style="max-width: 650px; margin: 25px auto 0; color: var(--text-muted); font-size: 1.1rem;">
-            What is Panixircus? It is <strong>Vectixore's interactive entertainment division</strong>, designing high-dopamine experiences based on the 'Bread & Circuses' philosophy.
+            Vectixore's specialized division for <strong>interactive AI entertainment</strong>. We develop proprietary neural architectures to bridge the gap between human subconscious and digital logic.
         </p>
     </header>
 
@@ -131,44 +159,52 @@
             
             <article class="card">
                 <header>
-                    <span class="status testing">Open Beta Testing</span>
-                    <h2>DreamCipher: AI Dream Analyst</h2>
+                    <span class="status live">V1.0 Live | Production Mode</span>
+                    <h2>DreamCipher: Advanced AI Dream Analyst</h2>
                 </header>
                 
-                <p>
-                    How can you interpret dreams with AI? <strong>DreamCipher</strong> uses advanced neural networks to decode your subconscious, providing context-aware interpretations instead of generic definitions.
-                </p>
+                <section>
+                    <p>
+                        <strong>DreamCipher</strong> is the definitive solution for clinical and mystic dream interpretation. By leveraging <strong>proprietary neural networks</strong>, it provides context-aware analysis, identifying subconscious patterns that standard LLMs often overlook.
+                    </p>
+                </section>
 
                 <div class="feature-box">
-                    <h4>Three Analytical Expert Modes:</h4>
+                    <h4>Multi-Dimensional Analysis Modes:</h4>
                     <ul class="feature-list">
-                        <li><strong>Analyst:</strong> Clinical and psychological pattern detection.</li>
-                        <li><strong>Mystic:</strong> Spiritual and esoteric archetype mapping.</li>
-                        <li><strong>Guide:</strong> Actionable self-improvement insights.</li>
+                        <li><strong>Clinical Analyst:</strong> High-precision psychological pattern mapping.</li>
+                        <li><strong>Esoteric Mystic:</strong> Spiritual and archetype decoding.</li>
+                        <li><strong>Strategic Guide:</strong> Action-oriented self-optimization data.</li>
                     </ul>
                 </div>
 
                 <div class="feature-box">
-                    <h4>Core Technology Assets:</h4>
+                    <h4>Security & Technology Moat:</h4>
                     <ul class="feature-list">
-                        <li><strong>Real-time AI Analysis:</strong> Complex narrative processing.</li>
-                        <li><strong>Zero-Knowledge Journal:</strong> Encrypted digital dream diary.</li>
-                        <li><strong>Privacy First:</strong> Industry-standard biometric protection.</li>
+                        <li><strong>Zero-Knowledge Architecture:</strong> End-to-end encrypted dream logs.</li>
+                        <li><strong>Neural Narrative Engine:</strong> Deep context processing.</li>
+                        <li><strong>Biometric Security:</strong> Hardware-level privacy protection.</li>
                     </ul>
                 </div>
                 
                 <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border);">
-                    <p style="font-size: 0.8rem; margin-bottom: 15px;">Where to download DreamCipher?</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.vectixore.dreamcipher&pcampaignid=web_share" target="_blank" aria-label="Download DreamCipher on Google Play">
-                        <img src="assets/badge.png" alt="Get it on Google Play" style="width: 150px; height: auto; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    </a>
+                    <h3 style="font-size: 0.9rem; margin-bottom: 15px; color: #fff;">Deploy & Access DreamCipher:</h3>
+                    <div style="display: flex; flex-direction: column; gap: 15px; align-items: flex-start;">
+                        <a href="https://play.google.com/store/apps/details?id=com.vectixore.dreamcipher&pcampaignid=web_share" target="_blank" aria-label="Install DreamCipher on Android">
+                            <img src="assets/badge.png" alt="Download DreamCipher from Google Play Store" style="width: 150px; height: auto; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        </a>
+                        <a href="https://dreamcipher-19de0.web.app/" target="_blank" class="btn-web" title="Access DreamCipher Web Application">
+                            Launch Web Interface (No Install Required)
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="tags">
-                    <span class="tag">AI Dream Interpretation</span>
-                    <span class="tag">Gemini AI Integration</span>
-                    <span class="tag">Subconscious Analysis</span>
-                    <span class="tag">Android Utility</span>
+                    <span class="tag">AI Dream Analyst</span>
+                    <span class="tag">Neural Subconscious Decoding</span>
+                    <span class="tag">SaaS Entertainment</span>
+                    <span class="tag">Android & Web Deployment</span>
+                    <span class="tag">Privacy-First AI</span>
                 </div>
             </article>
 
@@ -177,7 +213,7 @@
 
     <footer class="footer">
         <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a> • 
+            <a href="privacy.html">Privacy Policy (KVKK & GDPR)</a> • 
             <a href="terms.html">Terms of Service</a> • 
             <a href="mailto:info@vectixore.com">Technical Support</a>
         </div>

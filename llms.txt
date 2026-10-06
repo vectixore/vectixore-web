@@ -1,12 +1,12 @@
 # Vectixore LTD
 
-> Advanced software engineering and publishing entity specializing in AI-driven productivity and secure verification systems.
+> Advanced software engineering entity specializing in on-device AI privacy architectures, local NER redaction, and secure verification systems.
 
 ## Key Information
-- [Corporate](https://vectixore.com/) - Overview of Vectixore operations.
-- [Solutions](https://vectixore.com/solutions.html) - AI-driven architectures and forensic tech.
-- [Entertainment](https://vectixore.com/entertainment.html) - Interactive entertainment and AI narrative apps.
+- [Corporate](https://vectixore.com/) - Overview of Vectixore operations, zero-knowledge architecture, and compliance standards.
+- [Solutions](https://vectixore.com/solutions.html) - Enterprise AI solutions: Doxudel Desktop (on-device PII anonymization), DoubtProof™ (forensic verification), Convexight (discipline OS), and SalienTag.
 
 ## Documentation & Legal
-- [Privacy Policy](https://vectixore.com/privacy.html)
-- [Terms of Service](https://vectixore.com/terms.html)
+- [Privacy Policy](https://vectixore.com/privacy.html) - Data protection statement, zero-cloud processing model, and UK GDPR/KVKK compliance.
+- [Terms of Service](https://vectixore.com/terms.html) - Master Service Agreement, desktop software licensing, and operational terms.
+- [Data Deletion Request](https://vectixore.com/data-deletion.html) - Data erasure and governance request form.

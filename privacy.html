@@ -16,10 +16,8 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
     <style>
-        /* CORE VARIABLES */
-        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --ai-glow: #d000ff; --danger: #ef4444; }
+        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; --danger: #ef4444; }
         
-        /* BODY SETTINGS */
         body { 
             font-family: 'Inter', system-ui, sans-serif; 
             background-color: var(--bg); 
@@ -30,7 +28,6 @@
             text-align: center; 
         }
 
-        /* NAVIGATION BAR */
         .nav-bar { position: fixed; top: 0; left: 0; width: 100%; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid #334155; z-index: 1000; }
         .nav-content { max-width: 900px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 1px; }
@@ -43,7 +40,6 @@
         .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; line-height: 1.2; }
         .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
         
-        /* CARD COMPONENT */
         .card { 
             background: var(--card); 
             border: 1px solid #334155; 
@@ -54,21 +50,16 @@
             margin-bottom: 30px; 
         }
 
-        /* TYPOGRAPHY */
         h2 { color: var(--accent); font-size: 1.5rem; border-bottom: 1px solid #334155; padding-bottom: 15px; margin-top: 0; margin-bottom: 25px; }
-        
         h3 { color: #fff; margin-top: 35px; margin-bottom: 10px; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 15px; }
-        
         h4 { color: #cbd5e1; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 700; }
 
         p { line-height: 1.7; font-size: 0.95rem; color: #94a3b8; margin-bottom: 15px; }
         
-        /* LIST STYLES */
         ul { padding-left: 20px; color: #94a3b8; margin-bottom: 15px; }
         li { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
         li::marker { color: var(--accent); } 
 
-        /* WARNING BOX */
         .warning-box {
             border: 1px solid var(--warning);
             background: rgba(255, 183, 3, 0.05);
@@ -78,10 +69,8 @@
         }
         .warning-title { color: var(--warning); font-weight: bold; display: block; margin-bottom: 10px; }
 
-        /* FOOTER */
         .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; }
         
-        /* LINKS & BUTTONS */
         a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
         a:hover { opacity: 0.8; text-decoration: underline; }
 
@@ -108,6 +97,7 @@
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="./" class="nav-brand">
@@ -116,317 +106,130 @@
             </a>
             <div class="nav-links">
                 <a href="./">Home</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="terms.html">Terms</a>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="business-name">PRIVACY POLICY & <br>EXPLICIT CONSENT STATEMENT</div>
-        <div class="tagline">Effective Date: April 8, 2026</div>
+        <div class="business-name">PRIVACY POLICY &amp;<br>DATA PROTECTION STATEMENT</div>
+        <div class="tagline">Enterprise, Forensic &amp; Core Systems Scope</div>
 
         <div style="margin-bottom: 30px; color: #94a3b8; font-size: 0.95rem; text-align: left; background: rgba(56, 189, 248, 0.05); padding: 20px; border-radius: 8px; border: 1px dashed var(--accent);">
-            <strong>Legal Entity & Scope:</strong> This Privacy Policy is issued by <strong>VECTIXORE LTD</strong> (the "Data Controller"). This policy applies to all mobile applications, games, and services published by Vectixore LTD on the Google Play Store and other platforms, including those released under the trading name (brand) <strong>Panixircus Entertainment</strong>.
-            <br><br>
             <strong>Data Controller:</strong> VECTIXORE LTD (Company No: 16999592)<br>
             <strong>Registered Office:</strong> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom<br>
-            <strong>Contact:</strong> info@vectixore.com
+            <strong>ICO Registration:</strong> Data Protection Act 2018 / UK GDPR Registered Controller<br>
+            <strong>Official Contact:</strong> info@vectixore.com
         </div>
 
         <div class="card">
-            <h2>1. GLOBAL DATA PRACTICES (ARCHITECTURE)</h2>
-            
-            <p>Vectixore LTD operates a diverse portfolio of applications ranging from general utility tools (including DreamCipher) to high-security forensic solutions and digital entertainment (games) under various brands including Panixircus Entertainment. Our approach to data privacy is adaptive to the specific purpose of each application:</p>
-            <ul>
-                <li><strong>General Utility & Entertainment Products:</strong> For our standard applications and games, we strictly adhere to <strong>Data Minimization</strong> principles, processing only the absolute minimum data required for functionality and user experience.</li>
-                <li><strong>High-Assurance & Forensic Products:</strong> For applications requiring legal validity, identity verification, or cryptographic sealing (such as PocketNotary), we process sensitive and biometric data under strict forensic protocols.</li>
-            </ul>
-            <p><em>By using our Services, you acknowledge that the following data practices apply where relevant to the specific functionality of the application being used.</em></p>
-            <hr style="border: 0; border-top: 1px solid #334155; margin: 25px 0;">
+            <h2>1. DATA ARCHITECTURE &amp; OPERATIONAL PRACTICES</h2>
+            <p>Vectixore LTD engineers software solutions, digital signature platforms, and privacy-preserving toolchains. Our operational architecture is grounded strictly in <strong>Data Minimization</strong> and <strong>Zero-Knowledge</strong> design paradigms.</p>
 
-            <h3>1.1. Handwritten Signature Data</h3>
-            <p>Where applicable, we collect the visual representation (image) and vector paths (stroke data) of the signature you draw on the screen.</p>
+            <h3>1.1. Handwritten Signature Capture &amp; Sealing</h3>
+            <p>Where digital document execution services are invoked, we process vector paths (stroke data) and visual rasterizations of signatures input by the user.</p>
             <ul>
-                <li><strong>Purpose:</strong> This data is processed strictly as "Document Content" to be embedded into the PDF.</li>
-                <li><strong>Disclaimer:</strong> Vectixore LTD does NOT perform graphological analysis or dynamic biometric verification (pressure/speed analysis) on this signature. We only cryptographically seal the image provided.</li>
+                <li><strong>Purpose:</strong> Processed strictly as user-supplied document payloads embedded within target PDF/binary containers.</li>
+                <li><strong>Scope:</strong> Vectixore LTD does not perform behavioral graphology or unauthorized biometric pressure profiling on this input; it is cryptographically bound into the resultant payload.</li>
             </ul>
 
-            <h3>1.2. Identity Document & NFC Data (High-Assurance Verification)</h3>
-            <p>To achieve "Substantial Assurance" (NIST IAL2 / eIDAS High) levels of identity verification in our secure applications, the App accesses the NFC controller of your device to communicate with the RFID chip embedded in your government-issued Identity Document (Passport or National ID Card).</p>
-            
-            <h4>A. Data Extracted via OCR (Optical Character Recognition):</h4>
+            <h3>1.2. Identity Verification &amp; Cryptographic NFC Attestation</h3>
+            <p>In high-assurance digital verification toolchains, the software communicates directly via device-level NFC hardware with the electronic security chip embedded within ICAO Doc 9303-compliant identity credentials (ePassports or national eID cards):</p>
             <ul>
-                <li><strong>MRZ Data:</strong> We scan the "Machine Readable Zone" to extract Document Number, Expiry Date, Date of Birth, and Issuing State.</li>
-                <li><strong>Purpose:</strong> To unlock the encrypted NFC chip (PACE/BAC protocols) and visual verification.</li>
+                <li><strong>Machine Readable Zone (MRZ):</strong> Read visually or via OCR solely to derive entropy for cryptographic chip handshake keys (BAC/PACE protocols).</li>
+                <li><strong>Chip Security Object (SOD):</strong> Validated against Country Signing Certificate Authority (CSCA) public key registries to cryptographically confirm structural non-tampering and authenticity.</li>
+                <li><strong>Data Group 1 &amp; 2 (DG1 / DG2):</strong> Processed locally or under explicit user instructions to match document integrity against cryptographic seals.</li>
             </ul>
 
-            <h4>B. Data Extracted via NFC (Chip Read):</h4>
+            <h3>1.3. Cryptographic Verification &amp; Tamper Detection</h3>
             <ul>
-                <li><strong>DG1 (Data Group 1):</strong> High-fidelity text data (Full Name, Document Type) stored immutably on the chip.</li>
-                <li><strong>DG2 (Data Group 2 - Biometric Face):</strong> The high-resolution, digitally signed biometric facial image stored by the issuing government.</li>
-                <li><strong>SOD (Document Security Object):</strong> The digital signature of the issuing government (Country Signing Certificate Authority - CSCA).</li>
-                <li><strong>Purpose:</strong>
-                    <ul>
-                        <li><strong>Anti-Forgery:</strong> We validate the SOD against the ICAO Public Key Directory (PKD) to cryptographically prove the physical ID is authentic and not a clone.</li>
-                        <li><strong>Face Matching:</strong> We compare the DG2 Chip Image against your "Live Selfie" (Section 1.3) to prove ownership.</li>
-                    </ul>
-                </li>
+                <li><strong>Presence &amp; Anti-Spoofing:</strong> When executing certified digital transactions, visual match feeds or device sensor checks (depth and passive liveness signals) are evaluated to ensure active physical authorization.</li>
+                <li><strong>Local Biometric Signals:</strong> When device-level biometrics (TouchID, FaceID, Biometric Prompt) are used to authorize document sealing, processing is handled locally by the OS Secure Element. Vectixore LTD receives only boolean success/failure cryptographic tokens, never raw biometric templates.</li>
             </ul>
 
-            <h3>1.3. Biometric Data (Liveness & Matching)</h3>
+            <h3>1.4. SHA-256 Audit Registry &amp; Immutability</h3>
+            <p>We maintain an immutable registry of mathematical SHA-256 digests (cryptographic hashes) alongside trusted UTC timestamps for sealed records.</p>
             <ul>
-                <li><strong>Forensic Face Photo (Liveness):</strong> We capture a visual photograph of your face at the moment of signing.</li>
-                <li><strong>Process:</strong> This image is compared (1:1 Matching) against the trusted image extracted from the NFC Chip (DG2).</li>
-                <li><strong>Liveness Detection:</strong> We analyze the video stream for micro-movements and depth to ensure the user is a real human and not a photo/screen (Presentation Attack Detection).</li>
-                <li><strong>Authentication Signal:</strong> We utilize your device's native biometric sensors (Fingerprint/FaceID) as a secondary local authentication layer. We do NOT receive raw fingerprint templates from the OS.</li>
+                <li><strong>Mathematical Nature:</strong> A hash digest is a one-way mathematical function; raw document contents cannot be reverse-engineered or extracted from our registry.</li>
+                <li><strong>Integrity:</strong> Serves as verifiable mathematical proof of document existence and integrity at a specific historical moment.</li>
             </ul>
 
-            <h3>1.4. Permanent Audit Trail (Hash Registry)</h3>
-            <p>We retain a SHA-256 Hash (Digital Fingerprint) and the Server Timestamp of your interpreted dreams or signed documents indefinitely.</p>
+            <h3>1.5. Identity Binding &amp; Multi-Factor Telemetry</h3>
+            <p>Where verification services mandate persistent identity binding, verified phone numbers (via SMS OTP) or cryptographic device keys are bound to transaction IDs to prevent impersonation and fraud.</p>
+
+            <h3>1.6. Network, System Integrity &amp; Client Telemetry</h3>
             <ul>
-                <li><strong>Purpose:</strong> To validate the authenticity and existence of a record at a specific point in time, even after the file itself is deleted.</li>
-                <li><strong>Privacy:</strong> A Hash is a mathematical summary (one-way function); it cannot be reversed to reveal the content of your document or dream.</li>
+                <li><strong>Connection Metadata:</strong> IP addresses and system timestamps are logged during server operations strictly for security monitoring, DDoS mitigation, and rate limiting.</li>
+                <li><strong>Environment Attestation:</strong> To preserve security boundaries, device integrity signals (detecting rooted or jailbroken operating environments) are processed prior to executing cryptographic operations.</li>
+                <li><strong>Diagnostics:</strong> Application performance, crash logs, and non-identifying telemetry are processed through secure telemetry infrastructure (e.g., Firebase Crashlytics) to ensure enterprise stability.</li>
             </ul>
 
-            <h3>1.5. Virtual Goods Data (Payments & RevenueCat)</h3>
-            <p>We process daily free usage limits, subscription data, transaction history, and virtual assets via <strong>RevenueCat</strong> and native platform billing systems.</p>
+            <h3>1.7. Ephemeral Cloud Relay</h3>
+            <p>When files or document envelopes are transmitted via encrypted relay channels:</p>
             <ul>
-                <li><strong>Legal Nature:</strong> Virtual items (e.g., "Energy", "Stamina") are virtual licenses/data points with no real-world monetary value. They cannot be refunded, exchanged for cash, or transferred between accounts, except through authorized in-app mechanisms provided by Vectixore LTD or Panixircus Entertainment.</li>
+                <li><strong>Encryption:</strong> Data is secured using TLS 1.2+ during transit and AES-256 at rest.</li>
+                <li><strong>Retention:</strong> Relayed files are stored ephemerally and automatically purged from active storage buffers after seven (7) days.</li>
             </ul>
 
-            <h3>1.6. Phone Number & Identity Binding</h3>
-            <p>Your phone number is collected strictly for SMS-based identity verification (OTP) and account security (2FA).</p>
+            <h3>1.8. Controller &amp; Processor Demarcation</h3>
             <ul>
-                <li><strong>Identity Binding:</strong> We cryptographically link the verified Phone Number to the Verified ID Document (NFC) to create a persistent "Mobile Identity."</li>
-            </ul>
-
-            <h3>1.7. Network & Device Data</h3>
-            <ul>
-                <li><strong>IP Address:</strong> Collected during server connections (Time Sync, Cloud Relay, Auth) for security logs and fraud prevention.</li>
-                <li><strong>Device Integrity:</strong> We collect Device Model, Hardware IDs, and Root/Jailbreak Status to verify that the environment has not been tampered with.</li>
-                <li><strong>Advertising ID (AAID/IDFA):</strong> Collected solely for analytics, attribution, and fraud prevention (e.g., detecting asset abuse).</li>
-            </ul>
-
-            <h3>1.8. Location & Motion Data</h3>
-            <ul>
-                <li><strong>GPS Coordinates:</strong> Processed locally to generate forensic seals where required. Coordinates may be sent to third-party maps platforms (e.g., Google Maps) strictly to generate a static map snapshot for the Service.</li>
-                <li><strong>Motion Sensors:</strong> We process Gyroscope and Accelerometer data locally to verify "Proof of Human" presence (Anti-Bot).</li>
-            </ul>
-
-            <h3>1.9. Referral & Interaction Data</h3>
-            <p>If you participate in our referral programs, we process Referral Codes and the linkage between accounts strictly to distribute rewards. We do not access your contact list without explicit permission.</p>
-
-            <h3>1.10. Customer Support, Diagnostics & Analytics</h3>
-            <ul>
-                <li><strong>Support:</strong> If you contact us, we collect your email, device info, and message content to resolve issues.</li>
-                <li><strong>Diagnostics:</strong> We collect crash logs, battery level, storage status, and thermal state via <strong>Firebase Crashlytics</strong> to identify bugs and improve stability.</li>
-                <li><strong>Analytics & Attribution:</strong> We utilize <strong>Google Firebase</strong> and <strong>Yandex AppMetrica</strong> to collect aggregated, non-identifying analytics, performance metrics, and crash logs to monitor application stability and optimize user experience. This data does not contain individual dream or document content.</li>
-            </ul>
-
-            <h3>1.11. Cloud Relay (Transient Storage)</h3>
-            <p>When using "Cloud Relay," encrypted files are temporarily stored on our secure infrastructure (Google Cloud/Firebase).</p>
-            <ul>
-                <li><strong>Transmission:</strong> Data is transmitted via TLS 1.2 or higher.</li>
-                <li><strong>Storage:</strong> Files are stored as AES-256 Encrypted Binary Blobs. Vectixore LTD does not possess the decryption keys.</li>
-                <li><strong>Retention:</strong> Files are automatically deleted from active servers 7 Days after upload.</li>
-            </ul>
-
-            <h3>1.12. Inactive Account Policy</h3>
-            <p>Vectixore LTD reserves the right to delete accounts (and associated Virtual Goods) that have been inactive for a period of 24 Months. The Hash Registry is exempt from deletion to ensure legal validity.</p>
-
-            <h3>1.13. Children's Privacy & Age Assurance</h3>
-            <p>Our Service identifies and protects minor users through active technical measures. We utilize the <strong>Google Play Age Signals API</strong> to detect users under the age of 13 (or 16-18 in certain jurisdictions). We do not knowingly collect personal data from children without parental consent for any purpose other than legal compliance and safety. If we become aware of unauthorized collection, we will remove the information immediately.</p>
-
-            <h3>1.14. Roles & Responsibilities</h3>
-            <ul>
-                <li>Vectixore LTD is the <strong>Data Controller</strong> for Account Data (Phone, IP, Logs, Virtual Assets).</li>
-                <li>You (The User) are the <strong>Data Controller</strong> for the Content of your documents/files/dreams. Vectixore LTD acts strictly as a Data Processor regarding bunded content.</li>
-            </ul>
-
-            <h3>1.15. Do Not Track (DNT) Signals</h3>
-            <p>Our systems do not currently recognize or respond to "Do Not Track" signals, as no uniform standard has been adopted across the industry.</p>
-
-            <h3>1.16. Global Age Compliance (Mandatory Disclosures)</h3>
-            <p>Pursuant to global regulations such as the <strong>Brazil Digital ECA</strong> and the <strong>UK Online Safety Act</strong>, we implement the following protocols:</p>
-            <ul>
-                <li><strong>Age Verification:</strong> We receive technical age range signals (e.g., minor or adult) from Google Play. We do NOT receive raw identity or birth date data.</li>
-                <li><strong>Loot Box Restriction:</strong> We strictly prohibit and technically disable the sale of loot boxes or randomized virtual goods to users identified as minors in regulated jurisdictions (e.g., Brazil).</li>
-            </ul>
-
-            <h3>1.17. Automated Minor Protection (Firebase & Advertising)</h3>
-            <p>When a minor user is detected via the Age Signals API:</p>
-            <ul>
-                <li><strong>Restricted Data Processing (RDP):</strong> We automatically trigger Firebase RDP mode, ensuring Google acts only as a service provider and is prohibited from using minor data for commercial profiling.</li>
-                <li><strong>Compliance Tagging:</strong> All advertising requests are tagged with <strong>TFCD</strong> (Child-Directed) or <strong>TFUA</strong> (Under Age of Consent) flags to disable behavioral tracking and interest-based advertising.</li>
-            </ul>
-
-            <hr style="border: 0; border-top: 1px dashed #334155; margin: 25px 0;">
-
-            <h3>1.18. Account Management & Anonymous Data (DreamCipher Specific)</h3>
-            <p>DreamCipher utilizes Firebase Authentication's Anonymous Sign-in feature. We do not collect your email address, name, or any direct personally identifiable information by default. You are assigned a unique, random "Anonymous User ID" (UID) only.</p>
-
-            <h3>1.19. Dream Text & Processing (AI Analysis)</h3>
-            <p>When you input a dream for interpretation in DreamCipher, the text is processed by Vectixore LTD's AI Cascade.</p>
-            <ul>
-                <li><strong>Purpose:</strong> This data is processed strictly as "User Content" to generate symbolic interpretations.</li>
-                <li><strong>Privacy:</strong> We utilize "Zero-Knowledge" principles. We do not associate the input text with your permanent server-side identity for interpretation purposes.</li>
-                <li><strong>Constraint:</strong> Vectixore LTD does not perform psychological profiling or medical diagnosis on your dream text.</li>
-            </ul>
-
-            <h3>1.20. User Reporting Data</h3>
-            <p>When you submit a report regarding an interpretation (e.g., inappropriate content), we collect the dream text, the AI interpretation, and your provided reason.</p>
-            <ul>
-                <li><strong>Purpose:</strong> This data is processed for manual review by Vectixore LTD staff to ensure safety, audit model performance, and improve our AI interpretation logic.</li>
-                <li><strong>Privacy:</strong> This data is stored separately in a dedicated "Reports" repository and is accessed only on a need-to-know basis for administrative purposes.</li>
-            </ul>
-
-            <h3>1.21. Third-Party Advertising & Mediation</h3>
-            <p>DreamCipher uses <strong>Yandex Mobile Ads</strong> as its primary advertising provider. To optimize ad delivery and ensure regulatory compliance, we utilize <strong>Unity Ads</strong> as a mediation partner and <strong>Google</strong> (User Messaging Platform) for privacy-compliant consent management.</p>
-
-            <h3>1.22. Account Synchronization & Cloud Backup (Optional)</h3>
-            <p>You may optionally choose to link your anonymous account to a permanent Google account.</p>
-            <ul>
-                <li><strong>Purpose:</strong> Linking enhances data recovery and provides cross-device synchronization. This ensures your dream history and purchased energy credits are preserved.</li>
-                <li><strong>Privacy:</strong> Vectixore LTD receives your associated email address and name from the identity provider solely for authentication. This data is not used for behavioral profiling or sold to third parties.</li>
+                <li><strong>Vectixore LTD as Controller:</strong> Governs identity verification transactions, licensing systems, access control, and diagnostic security telemetry.</li>
+                <li><strong>User as Controller / Vectixore as Processor:</strong> You remain the primary data controller for third-party personal data, documents, and corporate records processed through our utility software.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>2. GLOBAL RIGHTS & JURISDICTION</h2>
-
-            <h3>2.1. Rights of the Data Subject</h3>
-            <p>Regardless of your location, Vectixore LTD grants you the following rights, subject to the critical exception below:</p>
+            <h2>2. GLOBAL DATA SUBJECT RIGHTS &amp; COMPLIANCE</h2>
+            <p>In accordance with the UK GDPR, EU GDPR, KVKK, and international data privacy statutes, users maintain clear statutory rights regarding their personal records:</p>
             <ul>
-                <li><strong>Right to Access:</strong> Request a copy of your Account Data.</li>
-                <li><strong>Right to Rectification:</strong> Correct inaccurate Account Data.</li>
-                <li><strong>Right to Erasure:</strong> Request account deletion.</li>
-                <li><strong>Right to Portability:</strong> Request data in a machine-readable format.</li>
-                <li><strong>Right to Restriction:</strong> Limit processing for analytics.</li>
+                <li><strong>Right to Access:</strong> The right to obtain confirmation and copies of personal data maintained in active systems.</li>
+                <li><strong>Right to Rectification:</strong> The right to amend inaccurate identity or administrative records.</li>
+                <li><strong>Right to Erasure:</strong> The right to request data deletion, subject to overriding statutory requirements.</li>
+                <li><strong>Right to Restriction &amp; Objection:</strong> The right to halt specific automated processing or profiling.</li>
             </ul>
 
             <div class="warning-box">
-                <span class="warning-title">⚠️ CRITICAL EXCEPTION: IMMUTABLE EVIDENCE</span>
-                <p style="margin-bottom:0; color: #e2e8f0;">You CANNOT request the "Rectification" or "Erasure" of a sealed document, interpreted dream record, or its corresponding Hash in our Registry. Changing a signed document/record invalidates its cryptographic integrity (Hash). This data is retained under the legal basis of "Establishment, Exercise or Defense of Legal Claims" (GDPR Art. 17(3)(e)) and is exempt from the "Right to be Forgotten" globally.</p>
+                <span class="warning-title">&#9888; CRITICAL EXCEPTION: CRYPTOGRAPHIC AUDIT INTEGRITY</span>
+                <p style="margin-bottom:0; color: #e2e8f0;">Right to Erasure or Rectification CANNOT be applied retroactively to mathematically sealed document hashes or transaction timestamp ledgers. Modifying a sealed record invalidates cryptographic chain-of-custody. This ledger retention is mandated under the legal basis of "Establishment, Exercise, or Defense of Legal Claims" (UK GDPR Art. 17(3)(e)) and regulatory compliance obligations.</p>
             </div>
 
-            <h3>2.2. Governing Law</h3>
-            <p>To the extent permitted by local law, this Privacy Policy shall be governed by the Laws of England and Wales. You agree to submit to the exclusive jurisdiction of the courts located in London, United Kingdom.</p>
-
-            <h3>2.3. Severability</h3>
-            <p>If any provision is held unenforceable, such provision will be interpreted to accomplish its objectives to the greatest extent possible, and remaining provisions will continue in full force.</p>
-
-            <h3>2.4. Contact & DPO</h3>
-            <p>To exercise your rights, please contact our Data Protection Officer (DPO):</p>
+            <h3>2.1. Inquiries &amp; Data Subject Access Requests (DSAR)</h3>
+            <p>To exercise statutory rights or query data governance procedures, submit formal requests to:</p>
             <ul>
                 <li><strong>Email:</strong> info@vectixore.com</li>
-                <li><strong>Subject:</strong> "Data Subject Request"</li>
-                <li><strong>Response Time:</strong> 30 Days.</li>
+                <li><strong>Subject:</strong> "Legal / Data Subject Access Request"</li>
+                <li><strong>Response Window:</strong> Processed within 30 calendar days.</li>
             </ul>
         </div>
 
         <div class="card" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.05);">
-            <h2>ACCOUNT & DATA DELETION</h2>
-            <p>In accordance with Global Privacy Regulations and Google Play Policies, users have the right to request the permanent removal of their accounts and associated data.</p>
-            <a href="data-deletion.html" class="btn-deletion">Go to Data Deletion Request Form →</a>
-            <p style="font-size: 0.8rem; margin-top: 15px; color: #64748b; margin-bottom: 0;">
-                * Caution: Requesting data erasure will result in the immediate and irreversible loss of all Virtual Goods and assets.
-            </p>
+            <h2>DATA DELETION REQUESTS</h2>
+            <p>Enterprise clients and software users may request account termination and purging of non-immutable data at any time.</p>
+            <a href="mailto:info@vectixore.com?subject=Account%20and%20Data%20Deletion%20Request" class="btn-deletion">Submit Data Deletion Request &rarr;</a>
         </div>
 
         <div class="card">
-            <h2>3. COOKIES & LOCAL STORAGE PROTOCOLS</h2>
-            
-            <p>Vectixore LTD employs advanced client-side storage technologies, including HTTP Cookies, HTML5 Local Storage, and Session Tokens, to ensure the operational integrity, security, and performance of our Services across all brands (Vectixore, Panixircus Entertainment).</p>
-
-            <h3>3.1. Technical Definitions</h3>
-            <ul>
-                <li><strong>HTTP Cookies:</strong> Small text files used to maintain stateful sessions.</li>
-                <li><strong>HTML5 Local Storage:</strong> A client-side database used for preference data and UI states.</li>
-                <li><strong>Session Tokens (JWT):</strong> Used for secure, stateless authentication.</li>
-            </ul>
-
-            <h3>3.2. Categories of Data Storage</h3>
-
-            <h4>A. Strictly Necessary (Kernel)</h4>
-            <p>Essential for the Service to function. These do not store PII for marketing.</p>
-            <ul>
-                <li><strong>Security Tokens (CSRF/XSRF):</strong> To prevent Cross-Site Request Forgery.</li>
-                <li><strong>Authentication State:</strong> To verify identity across screens.</li>
-            </ul>
-
-            <h4>B. Performance & Telemetry (Analytics)</h4>
-            <p>Used to collect anonymous technical data for system optimization.</p>
-            <ul>
-                <li><strong>Crash Reporting:</strong> (e.g., Firebase Crashlytics) Collects stack traces during failure.</li>
-                <li><strong>Latency Metrics:</strong> Measures performance of cryptographic operations.</li>
-            </ul>
-
-            <h4>C. Advertising & Attribution (Mobile Only)</h4>
-            <p>Used in ad-supported applications to prevent fraud and attribute installs.</p>
-            <ul>
-                <li><strong>Advertising ID (AAID/IDFA):</strong> Used for frequency capping and anti-fraud.</li>
-                <li><strong>Attribution:</strong> Used to determine installation source campaigns.</li>
-            </ul>
-
-            <h3>3.3. Management & Control</h3>
-            <ul>
-                <li><strong>Browser/Device Settings:</strong> You can block cookies or reset Advertising IDs via your device privacy settings.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>4. REGIONAL ANNEXES</h2>
-
-            <h3>ANNEX A: EUROPE (GDPR - EU/UK/Swiss)</h3>
-            <p><strong>Applicable Law:</strong> General Data Protection Regulation (GDPR) / UK GDPR.</p>
-            <ul>
-                <li><strong>Article 15-22 Rights:</strong> Including Access, Rectification, Erasure (subject to exceptions), Portability, and Objection.</li>
-                <li><strong>Minor Safety:</strong> Processing of age-related technical signals is conducted under <strong>Art. 6(1)(c)</strong> (Legal Obligation) to ensure the safety of minors.</li>
-            </ul>
-
-            <h3>ANNEX B: USA (CCPA / CPRA / VCDPA)</h3>
-            <p><strong>Applicable Law:</strong> California Consumer Privacy Act & State Laws.</p>
-            <ul>
-                <li><strong>Right to Know & Delete:</strong> Vectixore LTD does not sell your personal information.</li>
-            </ul>
-
-            <h3>ANNEX C: BRAZIL (LGPD & Digital ECA)</h3>
-            <p><strong>Applicable Law:</strong> Lei Geral de Proteção de Dados (Lei 13.709/2018) and the <strong>Digital Child and Adolescent Statute (Digital ECA)</strong>.</p>
-            <ul>
-                <li><strong>Enforcement:</strong> We confirm the use of Google Play Age Signals to comply with loot box prohibitions and minor profiling bans under the Digital ECA.</li>
-                <li><strong>Person in Charge:</strong> The DPO at info@vectixore.com.</li>
-            </ul>
-
-            <h3>ANNEX D: TURKEY (KVKK / LPPD)</h3>
-            <p><strong>Applicable Law:</strong> Law on Protection of Personal Data No. 6698.</p>
-            <ul>
-                <li><strong>Legal Basis:</strong> Technical signals for age verification are processed pursuant to <strong>Article 5/2(ç)</strong> (Legal Obligation of the Data Controller) to fulfill our legal obligations.</li>
-                <li><strong>Data Controller:</strong> Vectixore LTD (United Kingdom). All Article 11 rights are recognized.</li>
-            </ul>
-
-            <h3>ANNEX E: SOUTH AFRICA (POPIA)</h3>
-            <p><strong>Applicable Law:</strong> Protection of Personal Information Act.</p>
-
-            <h3>ANNEX F: CANADA (PIPEDA)</h3>
-            <p><strong>Applicable Law:</strong> Personal Information Protection and Electronic Documents Act.</p>
+            <h2>3. COOKIE &amp; LOCAL STORAGE NOTIFICATION</h2>
+            <p>Vectixore LTD utilizes local storage tokens, session identifiers, and CSRF protection headers strictly necessary for secure authentication, administrative state persistence, and platform operation. We do not sell tracking cookies or provide user data to third-party ad brokers.</p>
         </div>
 
         <div class="footer">
             <strong>VECTIXORE LTD</strong><br>
-            Registered in England & Wales | Company No: 16999592<br>
+            Registered in England &amp; Wales | Company No: 16999592<br>
             71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom<br>
-            (c) 2026 Vectixore LTD. All rights reserved. Operates also under the brand Panixircus Entertainment.
+            &copy; 2026 Vectixore LTD. All rights reserved.
         </div>
     </div>
 
     <div id="cookie-banner" style="display:none;">
         <div class="banner-content">
             <div class="banner-text">
-                <strong>🍪 Data Governance:</strong> We use cookies to ensure system security and integrity across our services. 
-                Review our <a href="privacy.html">Privacy Policy</a> for details.
+                <strong>&#127850; Data Governance:</strong> We use essential cookies and storage tokens to maintain system security and enterprise session integrity. Review our <a href="privacy.html">Privacy Policy</a> for details.
             </div>
             <div class="banner-actions">
-                <button onclick="acceptNecessary()" class="btn-minimal">Necessary Cookies Only</button>
-                <button onclick="acceptAll()" class="btn-action">Accept All Cookies</button>
+                <button onclick="acceptNecessary()" class="btn-minimal">Necessary Only</button>
+                <button onclick="acceptAll()" class="btn-action">Accept All</button>
             </div>
         </div>
     </div>
@@ -454,7 +257,6 @@
     </script>
     
     <style>
-        /* BANNER STYLES */
         #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); animation: slideUp 0.5s ease-out; }
         .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
         .banner-text { font-family: 'Inter', system-ui, sans-serif; font-size: 0.9rem; color: #e2e8f0; line-height: 1.5; flex: 2; }

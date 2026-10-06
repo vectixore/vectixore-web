@@ -21,8 +21,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Vectixore LTD | Advanced AI Software & Enterprise Solutions</title>
-    <meta name="description" content="Vectixore LTD specializes in AI integration, software publishing, and secure verification systems. High-performance solutions for modern digital challenges.">
-    <meta name="keywords" content="Vectixore, AI Software, Enterprise Solutions, Software Publishing UK, Verification Systems">
+    <meta name="description" content="Vectixore LTD specializes in on-device AI redaction, verification architectures, and enterprise productivity software. High-performance solutions for modern digital compliance.">
+    <meta name="keywords" content="Vectixore, Doxudel, AI Software, Enterprise Solutions, Local NER, Document Anonymization, Verification Systems">
     <meta name="author" content="Vectixore LTD">
     
     <script type="application/ld+json">
@@ -45,12 +45,12 @@
         "contactType": "customer service"
       },
       "identifier": "16999592",
-      "description": "Vectixore LTD is an advanced software engineering and publishing entity specializing in AI-driven productivity and secure verification systems."
+      "description": "Vectixore LTD is an advanced software engineering entity specializing in local AI redaction architectures, productivity software, and secure verification systems."
     }
     </script>
 
-    <meta property="og:title" content="Vectixore LTD | AI Solutions & Entertainment">
-    <meta property="og:description" content="Transforming complex challenges into high-performance software tools through AI integration.">
+    <meta property="og:title" content="Vectixore LTD | Advanced AI Software & Enterprise Solutions">
+    <meta property="og:description" content="Transforming complex privacy and verification challenges into high-performance software tools through localized AI integration.">
     <meta property="og:image" content="https://vectixore.com/assets/og-image.png?v=2">
     <meta property="og:url" content="https://vectixore.com/">
     <meta property="og:type" content="website">
@@ -61,12 +61,15 @@
 
     <style>
         :root { 
-            --bg: #0f172a; 
-            --card: #1e293b; 
-            --text: #e2e8f0; 
-            --text-muted: #94a3b8;
-            --accent: #38bdf8; 
-            --border: #334155; 
+            --bg: #121212; 
+            --card: #1a1a1a; 
+            --card-subtle: #202020;
+            --text: #f3f4f6; 
+            --text-muted: #9ca3af; 
+            --accent: #0066FF; 
+            --accent-hover: #3385ff;
+            --border: #2a2a2a; 
+            --warning: #f59e0b;
         }
 
         body { 
@@ -75,10 +78,10 @@
             color: var(--text); 
             margin: 0; 
             padding: 0; 
-            overflow-x: hidden;
+            overflow-x: hidden; 
         }
 
-        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
+        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(18, 18, 18, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
         .nav-content { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
@@ -93,19 +96,19 @@
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
 
-        .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12); }
         
         .card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; margin-bottom: 15px; }
         .card p { line-height: 1.6; font-size: 0.95rem; color: var(--text-muted); margin: 0; }
 
         .feature-list { list-style: none; padding: 0; margin-top: 15px; }
         .feature-list li { margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem; padding-left: 20px; position: relative; }
-        .feature-list li::before { content: '›'; color: var(--accent); position: absolute; left: 0; font-weight: bold; }
+        .feature-list li::before { content: '›'; color: var(--accent); position: absolute; left: 0; font-weight: bold; font-size: 1.1rem; line-height: 1; }
 
-        .legal-box { background: rgba(30, 41, 59, 0.5); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
+        .legal-box { background: var(--card-subtle); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
         .legal-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1rem; }
-        .legal-warning { border-left: 3px solid #f59e0b; background: rgba(245, 158, 11, 0.05); }
+        .legal-warning { border-left: 3px solid var(--warning); background: rgba(245, 158, 11, 0.05); }
 
         .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 40px; padding-bottom: 40px; text-align: center; line-height: 1.8; }
         .footer-links { margin-bottom: 20px; }
@@ -129,7 +132,7 @@
             <div class="nav-links">
                 <a href="./" class="active">Corporate</a>
                 <a href="solutions.html">Solutions</a>
-                <a href="entertainment.html">Entertainment</a>
+                <a href="terms.html">Terms</a>
             </div>
         </div>
     </nav>
@@ -138,36 +141,36 @@
         <article class="section-header">
             <h1>Vectixore LTD: What We Do</h1>
             <p>
-                Vectixore LTD is an advanced software engineering and publishing entity. Our operational matrix integrates <strong>AI-driven productivity architectures</strong>, <strong>automated content algorithms</strong>, and <strong>secure verification systems</strong>. We prioritize measurable digital ROI and strict adherence to global compliance frameworks.
+                Vectixore LTD is an advanced software engineering entity. Our operational matrix integrates <strong>on-device AI privacy architectures (Doxudel)</strong>, <strong>high-assurance verification systems</strong>, and <strong>strategic productivity toolchains</strong>. We prioritize zero-knowledge infrastructure, compliance automation, and absolute data sovereignty.
             </p>
         </article>
 
         <section class="grid-3">
             <div class="card">
-                <h3>Consumer Utilities</h3>
-                <p>What are Vectixore's consumer services? We provide AI-integrated mobile applications for algorithmic lifestyle optimization and content synthesis.</p>
+                <h3>On-Device Privacy & Redaction</h3>
+                <p>How does Vectixore safeguard sensitive data? Through localized NLP solutions like <strong>Doxudel Desktop</strong>, performing offline PII sanitization and anonymization directly on hardware endpoints.</p>
                 <ul class="feature-list">
-                    <li>AdMob Monetization</li>
-                    <li>Premium Tiers</li>
-                    <li>Localized AI Processing</li>
+                    <li>Zero Cloud Upload Architecture</li>
+                    <li>On-Device NER Processing</li>
+                    <li>Multi-Jurisdiction Compliance (UK GDPR / KVKK)</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>Verification Systems</h3>
-                <p>How does Vectixore handle security? We deploy cryptographic document authentication and compliance-driven automation protocols for enterprise integrity.</p>
+                <p>How does Vectixore handle audit-grade security? We deploy cryptographic document authentication, biometric attestation, and compliance-driven automation protocols.</p>
                 <ul class="feature-list">
-                    <li>E-Signature Integration</li>
-                    <li>Immutable Integrity</li>
-                    <li>API Deployment</li>
+                    <li>E-Signature Verification</li>
+                    <li>Cryptographic Integrity Hashes</li>
+                    <li>API & Desktop Deployment</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>SaaS Infrastructure</h3>
-                <p>Does Vectixore offer cloud services? Yes, we provide cloud-supported, highly available software architectures distributing continuous feature updates.</p>
+                <h3>Enterprise Architectures</h3>
+                <p>What drives our productivity stacks? We build high-performance client-side and cloud-supported utility systems designed for verifiable ROI and zero-trust workflows.</p>
                 <ul class="feature-list">
-                    <li>Subscription Architectures</li>
-                    <li>Global Cloud Sync</li>
-                    <li>Zero-Trust Security</li>
+                    <li>Zero-Trust Privacy Design</li>
+                    <li>Offline-First Capabilities</li>
+                    <li>Statutory Regulatory Alignment</li>
                 </ul>
             </div>
         </section>
@@ -181,33 +184,33 @@
                 <div class="legal-box">
                     <h4>What is the Refund Policy for Vectixore?</h4>
                     <p style="color: #cbd5e1; margin-bottom: 10px;">
-                        Refund requests for digital services are processed within a <strong>14-day statutory window</strong> in strict accordance with the <strong>UK Consumer Rights Act 2015</strong>.
+                        Refund requests for digital licenses and software services are processed within a <strong>14-day statutory window</strong> in strict accordance with the <strong>UK Consumer Rights Act 2015</strong>.
                     </p>
-                    <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid #334155; padding-top: 10px;">
-                        <strong>Note:</strong> Cancellation rights may be limited if digital content is fully downloaded with explicit user consent.
+                    <div style="font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 10px;">
+                        <strong>Note:</strong> Statutory cancellation rights terminate once software binaries are downloaded or activated with explicit consumer consent.
                     </div>
                 </div>
 
                 <div class="legal-box">
-                    <h4>Is Vectixore GDPR Compliant?</h4>
+                    <h4>Is Vectixore GDPR & KVKK Compliant?</h4>
                     <p style="color: #cbd5e1;">
-                        Yes. Data processing architectures are engineered for strict compliance with the <strong>UK GDPR</strong>. We prioritize localized computation to minimize third-party data exposure.
+                        Yes. System architectures are engineered under strict <strong>Privacy-by-Design</strong> principles. Toolchains such as Doxudel process documents completely on-device, ensuring zero server-side exposure of confidential records.
                     </p>
                 </div>
             </div>
 
             <div>
                 <div class="legal-box">
-                    <h4>How to Cancel Subscriptions?</h4>
+                    <h4>How to Manage Software Licenses?</h4>
                     <p style="color: #cbd5e1;">
-                        Subscriptions can be terminated via the Google Play Store, Apple App Store, or our enterprise licensing portal. Access remains active until the end of the current billing cycle.
+                        Licensing subscriptions and standalone seats can be managed via authorized platform distribution channels (e.g., Microsoft Store) or through direct enterprise provisioning keys.
                     </p>
                 </div>
                 
                 <div class="legal-box legal-warning">
                     <h4 style="color: #fbbf24;">Legal Disclaimer</h4>
                     <p style="color: #e2e8f0;">
-                        Vectixore LTD acts as a technological solutions provider. Our applications do not constitute professional legal, medical, or financial advice.
+                        Vectixore LTD acts strictly as a technological software provider. Our applications, redaction toolchains, and forensic modules do not constitute formal legal counsel or statutory legal representation.
                     </p>
                 </div>
             </div>

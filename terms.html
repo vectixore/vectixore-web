@@ -22,14 +22,21 @@
     <link rel="icon" type="image/x-icon" href="https://vectixore.com/assets/favicon.ico?v=2">
 
     <style>
-        :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --accent: #38bdf8; --warning: #ffb703; }
+        :root { 
+            --bg: #121212; 
+            --card: #1a1a1a; 
+            --text: #f3f4f6; 
+            --accent: #0066FF; 
+            --border: #2a2a2a; 
+            --warning: #f59e0b; 
+        }
         
         body { 
             font-family: 'Inter', system-ui, sans-serif; 
             background-color: var(--bg); 
             color: var(--text); 
             margin: 0; 
-            padding: 0;
+            padding: 0; 
             min-height: 100vh; 
             text-align: center; 
         }
@@ -41,7 +48,7 @@
         
         .card { 
             background: var(--card); 
-            border: 1px solid #334155; 
+            border: 1px solid var(--border); 
             padding: 35px; 
             border-radius: 12px; 
             box-sizing: border-box; 
@@ -50,21 +57,21 @@
         }
 
         h3 { color: #fff; margin-top: 0; margin-bottom: 15px; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; text-transform: uppercase; }
-        p { line-height: 1.7; font-size: 0.95rem; color: #94a3b8; margin-bottom: 15px; }
+        p { line-height: 1.7; font-size: 0.95rem; color: #9ca3af; margin-bottom: 15px; }
         strong { color: #e2e8f0; }
         
-        ul { padding-left: 20px; color: #94a3b8; margin-bottom: 15px; }
+        ul { padding-left: 20px; color: #9ca3af; margin-bottom: 15px; }
         li { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
         li::marker { color: var(--accent); } 
 
         .disclaimer-text { text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; font-weight: 600; color: var(--warning); }
 
-        .footer { margin-top: 50px; font-size: 0.8rem; color: #475569; border-top: 1px solid #334155; padding-top: 30px; line-height: 1.5; padding-bottom: 100px; }
+        .footer { margin-top: 50px; font-size: 0.8rem; color: #6b7280; border-top: 1px solid var(--border); padding-top: 30px; line-height: 1.5; padding-bottom: 100px; }
         
         a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
         a:hover { opacity: 0.8; text-decoration: underline; }
         
-        .back-link { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: #64748b; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 0.9rem; color: #6b7280; }
         .back-link:hover { color: var(--accent); }
     </style>
 </head>
@@ -89,24 +96,24 @@
 
         <div class="card">
             <h3>01. Acceptance of Terms</h3>
-            <p>By accessing, browsing, or using the Vectixore LTD website (the &ldquo;Site&rdquo;) or software toolchains, APIs, document verification engines, or professional services provided by Vectixore LTD (collectively, the &ldquo;Services&rdquo;), you enter into a legally binding agreement between you (the &ldquo;User&rdquo; or &ldquo;Client&rdquo;) and <strong>VECTIXORE LTD</strong> (&ldquo;Company&rdquo;, &ldquo;We&rdquo;, &ldquo;Us&rdquo;). If you do not accept these Terms in their entirety, you must discontinue use immediately.</p>
+            <p>By accessing, browsing, or using the Vectixore LTD website (the &ldquo;Site&rdquo;) or software toolchains, desktop applications (including Doxudel Desktop), document verification engines, or professional services provided by Vectixore LTD (collectively, the &ldquo;Services&rdquo;), you enter into a legally binding agreement between you (the &ldquo;User&rdquo; or &ldquo;Client&rdquo;) and <strong>VECTIXORE LTD</strong> (&ldquo;Company&rdquo;, &ldquo;We&rdquo;, &ldquo;Us&rdquo;). If you do not accept these Terms in their entirety, you must discontinue use immediately.</p>
         </div>
 
         <div class="card">
             <h3>02. Scope of Services &amp; License Grant</h3>
-            <p>Vectixore LTD provides digital signature tooling, forensic document verification architectures, and specialized developer software solutions. We grant you a revocable, non-exclusive, non-transferable, limited license to access and utilize the Services in strict compliance with these Terms and applicable enterprise service level agreements.</p>
+            <p>Vectixore LTD provides local AI-assisted anonymization utilities, digital signature tooling, forensic document verification architectures, and specialized productivity software. We grant you a revocable, non-exclusive, non-transferable, limited license to access and utilize the Services in strict compliance with these Terms and applicable End-User License Agreements (EULA).</p>
         </div>
 
         <div class="card">
             <h3>03. System Integrity &amp; Environment Requirements</h3>
-            <p>Certain cryptographic and verification components depend on specific hardware-enforced primitives (such as NFC controllers, secure enclaves, or cryptographic chip communication interfaces). You are responsible for ensuring that devices accessing the Services run supported, tamper-free operating systems. Accessing cryptographic or verification modules from rooted, jailbroken, or compromised environments is strictly prohibited.</p>
+            <p>Certain cryptographic, machine-learning, and verification components depend on specific hardware runtime environments (such as 64-bit architectures, local NER runtimes, WebView2 runtimes, or OS secure enclaves). You are responsible for ensuring that devices running the Services satisfy documented hardware specifications and run supported, tamper-free operating systems.</p>
         </div>
 
         <div class="card">
-            <h3>04. Immutability &amp; Cryptographic Audit Records</h3>
+            <h3>04. Local Redaction &amp; Verification Duty</h3>
             <ul>
-                <li><strong>Irreversibility of Seals:</strong> Where Services involve the creation of cryptographic timestamps, PDF digital seals, or mathematical hashes, you acknowledge that once registered, these mathematical digests are <strong>permanent and immutable</strong>. Records cannot be edited, altered, or modified.</li>
-                <li><strong>Client Verification Duty:</strong> Verification of source documents and identity parameters prior to execution remains the sole responsibility of the Client. Vectixore LTD accepts no liability for errors contained within sealed user files.</li>
+                <li><strong>Human-in-the-Loop Review:</strong> Automated redaction and NER features provided by software such as Doxudel are designed as algorithmic calibration aids. Due to linguistic variability, users bear the sole responsibility to inspect, accept, or reject redacted suggestions prior to disseminating sanitized documents.</li>
+                <li><strong>Irreversibility of Seals:</strong> Where Services involve the creation of cryptographic timestamps, PDF digital seals, or mathematical hashes, you acknowledge that once registered, these mathematical digests are permanent and immutable.</li>
             </ul>
         </div>
 
@@ -114,15 +121,15 @@
             <h3>05. Zero-Knowledge Design &amp; Confidentiality</h3>
             <ul>
                 <li><strong>Confidentiality:</strong> Vectixore LTD treats user payloads, source files, and documents as strictly Confidential Information.</li>
-                <li><strong>Zero-Knowledge Encryption:</strong> Wherever client-side encryption is implemented, cryptographic keys are maintained solely by the user. Vectixore LTD does not possess client decryption keys and cannot access raw encrypted payloads stored or relayed via its infrastructure.</li>
+                <li><strong>Local Execution:</strong> On-device desktop software suites operate without uploading document bodies or extracted personal data to external corporate infrastructure.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h3>06. Commercial Licensing &amp; Service Credits</h3>
+            <h3>06. Commercial Licensing &amp; Activation</h3>
             <ul>
-                <li><strong>Licensing:</strong> Enterprise API keys, transactional execution quotas, and software service credits constitute revocable, commercial licenses to utilize specific computational services. They do not constitute property, legal tender, or investment instruments.</li>
-                <li><strong>Immediate Delivery:</strong> Software licenses and operational compute resources begin provisioning immediately upon purchase or configuration, waiving statutory withdrawal rights once fulfillment occurs.</li>
+                <li><strong>Licensing:</strong> Desktop software licenses, API access keys, and transactional quotas constitute revocable, commercial licenses to utilize computational tools. They do not convey proprietary rights to underlying algorithms.</li>
+                <li><strong>Immediate Delivery:</strong> Software licenses and digital binary downloads begin provisioning immediately upon purchase or configuration, waiving statutory withdrawal rights once installation or activation occurs.</li>
             </ul>
         </div>
 
@@ -130,10 +137,10 @@
             <h3>07. Prohibited Usage</h3>
             <p>You expressly agree NOT to:</p>
             <ul>
-                <li>Reverse engineer, decompile, dissassemble, or extract algorithms from Vectixore LTD binaries or API infrastructures.</li>
-                <li>Forge or manipulate NFC payloads, cryptographic certificates, or biometric authentication tokens.</li>
-                <li>Utilize automated crawlers, botnets, or volumetric load tools to stress or disrupt service endpoints.</li>
-                <li>Process documents containing fraudulent instruments, counterfeit signatures, or unlawfully obtained personal data.</li>
+                <li>Reverse engineer, decompile, dissassemble, or extract proprietary neural weights or rule tables from Vectixore LTD binaries or API infrastructures.</li>
+                <li>Forge or manipulate cryptographic certificates or audit attestations.</li>
+                <li>Utilize automated volumetric tools to stress or disrupt online service endpoints.</li>
+                <li>Process documents containing fraudulent instruments, counterfeit records, or unlawfully obtained personal data.</li>
             </ul>
         </div>
 
@@ -144,12 +151,12 @@
 
         <div class="card" style="border-left: 3px solid var(--warning);">
             <h3 style="border-left-color: var(--warning); color: var(--warning);">09. Warranty Disclaimers</h3>
-            <p>THE SERVICES ARE PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS. VECTIXORE LTD DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND SYSTEM COMPATIBILITY. WE DO NOT GUARANTEE THAT COURTS OR REGULATORY BODIES IN EVERY JURISDICTION WILL UNCONDITIONALLY ACCEPT SPECIFIC CRYPTOGRAPHIC SEALS OR SIGNATURE ARTIFACTS WITHOUT ADDITIONAL PROCEDURAL EVIDENCE.</p>
+            <p>THE SERVICES ARE PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS. VECTIXORE LTD DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND REGULATORY GUARANTEE. WE DO NOT GUARANTEE THAT AUTOMATED ANONYMIZATION OR CRYPTOGRAPHIC TOOLS WILL UNCONDITIONALLY SHIELD CLIENTS FROM REGULATORY LIABILITY WITHOUT APPROPRIATE ORGANISATIONAL MEASURES.</p>
         </div>
 
         <div class="card" style="border-left: 3px solid var(--warning);">
             <h3 style="border-left-color: var(--warning); color: var(--warning);">10. Limitation of Liability</h3>
-            <p>TO THE MAXIMUM EXTENT PERMITTED BY ENGLISH LAW, VECTIXORE LTD SHALL NOT BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, PUNITIVE, OR SPECIAL DAMAGES, NOR FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF DATA, OR FAILURE OF EXTERNAL INFRASTRUCTURE (INCLUDING CLOUD PROVIDERS OR GSM NETWORKS). OUR AGGREGATE LIABILITY FOR DIRECT LOSSES SHALL NOT EXCEED THE TOTAL FEES PAID BY THE USER IN THE PRECEDING TWELVE (12) MONTHS.</p>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY ENGLISH LAW, VECTIXORE LTD SHALL NOT BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, PUNITIVE, OR SPECIAL DAMAGES, NOR FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF DATA, OR REGULATORY FINES ARISING FROM UNCHECKED OUTPUTS. OUR AGGREGATE LIABILITY FOR DIRECT LOSSES SHALL NOT EXCEED THE TOTAL FEES PAID BY THE USER IN THE PRECEDING TWELVE (12) MONTHS.</p>
         </div>
 
         <div class="card">
@@ -202,16 +209,16 @@
     </div>
 
     <style>
-        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(15, 23, 42, 0.95); border-top: 1px solid #334155; backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); animation: slideUp 0.5s ease-out; }
+        #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(18, 18, 18, 0.95); border-top: 1px solid var(--border); backdrop-filter: blur(10px); z-index: 9999; padding: 15px 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.5); animation: slideUp 0.5s ease-out; }
         .banner-content { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
         .banner-text { font-family: 'Inter', system-ui, sans-serif; font-size: 0.9rem; color: #e2e8f0; line-height: 1.5; flex: 2; }
-        .banner-text a { color: #38bdf8; text-decoration: none; }
+        .banner-text a { color: var(--accent); text-decoration: none; }
         .banner-text a:hover { text-decoration: underline; }
         .banner-actions { display: flex; gap: 10px; flex: 1; justify-content: flex-end; }
         button { padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
-        .btn-action { background-color: #38bdf8; color: #0f172a; border: 1px solid #38bdf8; }
-        .btn-action:hover { background-color: #7dd3fc; }
-        .btn-minimal { background-color: transparent; color: #94a3b8; border: 1px solid #475569; }
+        .btn-action { background-color: var(--accent); color: #fff; border: 1px solid var(--accent); }
+        .btn-action:hover { background-color: #3385ff; }
+        .btn-minimal { background-color: transparent; color: #9ca3af; border: 1px solid #404040; }
         .btn-minimal:hover { color: #fff; border-color: #fff; }
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
         @media (max-width: 700px) { .banner-content { flex-direction: column; text-align: center; } .banner-actions { width: 100%; justify-content: center; flex-direction: column; } button { width: 100%; } }

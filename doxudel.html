@@ -3,7 +3,8 @@
 <head>
     <link rel="canonical" href="https://vectixore.com/doxudel.html" />
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- GTM: Gated behind consent -->
+    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -13,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Doxudel Desktop | Zero-Cloud PII Redaction & Data Sanitization</title>
-    <meta name="description" content="Doxudel replaces heavy cloud LLMs with lightweight on-device NER architecture for secure, zero-leak PII redaction. Fully compliant with UK GDPR and DPA.">
-    <meta name="keywords" content="Doxudel, On-device AI, PII Redaction, Local NER, Zero-Cloud Anonymization, GDPR Compliance, Data Sanitization, Vectixore">
+    <meta name="description" content="Doxudel replaces cloud LLMs with local NER architecture for secure PII redaction. Designed to support UK DPA and GDPR compliance goals natively on Windows.">
+    <meta name="keywords" content="Doxudel, On-device AI, PII Redaction, Local NER, Zero-Cloud Anonymization, GDPR Compliance, Vectixore">
     <meta name="author" content="Vectixore LTD">
 
     <!-- Schema.org for Software Application -->
@@ -29,16 +30,21 @@
         "@type": "Organization",
         "name": "Vectixore LTD"
       },
-      "description": "Enterprise-grade, on-device PII redaction and data sanitization software. Uses local NER models and deterministic rule packs to process files without cloud transit."
+      "description": "Enterprise-grade, on-device PII redaction software. Uses local NER models and deterministic rule packs.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://apps.microsoft.com/detail/9NJSG1PNMLLZ",
+        "description": "Free download with 7-day trial. Local pricing and subscription handled securely via Microsoft Store."
+      }
     }
     </script>
 
     <meta property="og:title" content="Doxudel Desktop | Zero-Cloud PII Redaction">
-    <meta property="og:description" content="Secure your chain-of-custody. Doxudel pairs on-device NER models with deterministic checksum validation for absolute data sanitization.">
+    <meta property="og:description" content="Secure your chain-of-custody. Doxudel pairs on-device NER models with deterministic validations for verifiable data sanitization.">
     <meta property="og:image" content="https://vectixore.com/assets/doxudel-og.png">
     <meta property="og:url" content="https://vectixore.com/doxudel.html">
-    <meta property="og:type" content="product">
-    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" type="image/x-icon" href="https://vectixore.com/assets/favicon.ico?v=2">
 
@@ -47,19 +53,12 @@
 
     <style>
         :root { 
-            --bg: #121212; 
-            --card: #1a1a1a; 
-            --text: #f3f4f6; 
-            --text-muted: #9ca3af; 
-            --accent: #0066FF; 
-            --accent-hover: #3385ff;
-            --border: #2a2a2a; 
-            --danger: #ef4444;
-            --success: #10b981;
+            --bg: #121212; --card: #1a1a1a; --text: #f3f4f6; --text-muted: #9ca3af; 
+            --accent: #0066FF; --accent-hover: #3385ff; --border: #2a2a2a; 
+            --danger: #ef4444; --success: #10b981;
         }
         body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
 
-        /* Navbar */
         .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(18, 18, 18, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
         .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
@@ -67,26 +66,42 @@
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
         /* Header / Hero */
-        .header-sec { padding: 160px 20px 100px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #121212 0%, #161a2b 100%); }
+        .header-sec { padding: 160px 20px 80px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #121212 0%, #161a2b 100%); }
         .page-title { font-size: 3.2rem; font-weight: 800; color: #fff; margin: 0; letter-spacing: -1px; }
         .page-sub { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 15px; font-weight: 700; }
-        .hero-desc { max-width: 700px; margin: 25px auto 40px; color: var(--text-muted); font-size: 1.15rem; line-height: 1.7; }
+        .hero-desc { max-width: 750px; margin: 25px auto 30px; color: var(--text-muted); font-size: 1.15rem; line-height: 1.7; }
         
-        .badge-container { display: flex; justify-content: center; margin-top: 30px; }
+        .cta-group { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 30px; }
+        .cta-buttons { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; align-items: center; }
+        
+        .fallback-btn, .secondary-btn { padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+        .fallback-btn { background: #2a2a2a; color: #fff; border: 1px solid #404040; }
+        .fallback-btn:hover { background: #333; }
+        .secondary-btn { background: transparent; color: #80b3ff; border: 1px solid rgba(0,102,255,0.4); }
+        .secondary-btn:hover { background: rgba(0,102,255,0.1); }
+        
+        .pricing-note { font-size: 0.85rem; color: #6b7280; max-width: 600px; margin-top: 10px; font-weight: 500; }
 
-        /* Content Container */
-        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
-        
+        /* Media Placeholder */
+        .media-placeholder { max-width: 900px; margin: 0 auto 60px; background: #0a0a0a; border: 1px solid var(--border); border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #404040; font-size: 1.2rem; font-weight: 600; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
         .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #fff; }
         .section-desc { color: var(--text-muted); margin-bottom: 40px; font-size: 1.05rem; }
+
+        /* Specs Grid */
+        .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 60px; }
+        .spec-box { background: var(--card); border: 1px solid var(--border); padding: 25px; border-radius: 8px; }
+        .spec-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1.05rem; }
+        .spec-box p { margin: 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+        .spec-highlight { color: var(--accent); font-weight: 600; }
 
         /* Comparison Table */
         .table-wrapper { overflow-x: auto; margin-bottom: 60px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); border-radius: 12px; }
         .compare-table { width: 100%; min-width: 800px; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); }
         .compare-table th, .compare-table td { padding: 18px 15px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
-        .compare-table th { background: #1a1a1a; color: #fff; font-weight: 700; position: sticky; top: 0; }
+        .compare-table th { background: #1a1a1a; color: #fff; font-weight: 700; }
         .compare-table tr:last-child td { border-bottom: none; }
-        
         .doxudel-col { background: rgba(0, 102, 255, 0.08); border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); }
         .doxudel-header { background: var(--accent) !important; color: #fff !important; border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); }
         
@@ -100,20 +115,19 @@
         .arg-card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; }
         .arg-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0; }
 
-        /* FOOTER */
-        .footer { margin-top: 40px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding: 60px 20px; text-align: center; line-height: 1.8; }
-        .footer-links { margin-bottom: 20px; }
-        .footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; transition: color 0.2s; }
+        .footer { margin-top: 40px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding: 60px 20px; text-align: center; }
+        .footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; }
         .footer a:hover { color: var(--accent); }
-
-        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 15px; } .page-title { font-size: 2.2rem; } }
+        
+        /* Cookie Banner */
+        .cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #1a1a1a; border-top: 1px solid var(--border); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; transform: translateY(100%); transition: transform 0.3s; }
+        .cookie-banner.show { transform: translateY(0); }
+        .cookie-text { font-size: 0.85rem; color: var(--text-muted); }
+        .cookie-btn { background: var(--accent); color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="./" class="nav-brand">
@@ -130,29 +144,52 @@
 
     <header class="header-sec">
         <div class="page-sub">Available Now for Windows</div>
-        <h1 class="page-title">Doxudel Desktop</h1>
+        <h1 class="page-title">Redact PII offline — with proof.</h1>
         <p class="hero-desc">
-            Organizations have long struggled with the lack of reliable, privacy-first tools for digital PII redaction. <strong>Doxudel</strong> replaces heavy cloud LLMs with a lightweight, on-device NER architecture. 
-            No cloud. No APIs. No volume fees.
+            Doxudel masks personal data in PDFs, scans, and Office files on your Windows PC. Nothing is uploaded. Featuring 19 country formats, checksum-validated IDs, and fail-closed masking designed to support strict DPIA requirements.
         </p>
-        <div class="badge-container">
-            <ms-store-badge
-                productid="9NJSG1PNMLLZ"
-                productname="Doxudel"
-                window-mode="direct"
-                theme="auto"
-                size="large"
-                language="tr-tr"
-                animation="on">
-            </ms-store-badge>
+        
+        <div class="cta-group">
+            <div class="cta-buttons">
+                <!-- Primary Store Badge (en-gb enforced) -->
+                <ms-store-badge productid="9NJSG1PNMLLZ" window-mode="direct" theme="auto" size="large" language="en-gb" animation="on"></ms-store-badge>
+                <!-- Fallback standard link for non-Windows/no-JS -->
+                <a href="https://apps.microsoft.com/detail/9NJSG1PNMLLZ" target="_blank" class="fallback-btn">Web Store</a>
+                <!-- Secondary B2B CTA -->
+                <a href="mailto:info@vectixore.com?subject=Doxudel%20Enterprise%20Pilot%20Request" class="secondary-btn">Request a Written Pilot</a>
+            </div>
+            <div class="pricing-note">
+                Free download · 7-day free trial · Subscription via Microsoft Store (local pricing handled securely by MS)
+            </div>
         </div>
     </header>
 
     <main class="container">
         
+        <!-- Video/Screenshot Placeholder -->
+        <div class="media-placeholder">
+            [ UI / Workflow Video Placeholder (90 sec) ]
+        </div>
+
+        <!-- Capability & Specs Overview -->
+        <div class="specs-grid">
+            <div class="spec-box">
+                <h4>Global Format Coverage</h4>
+                <p>Built-in deterministic rule packs for <span class="spec-highlight">19 Countries</span>: UK, US, CA, TR, DE, FR, ES, IT, CH, PL, BR, ZA, AT, AU, BE, IE, NZ, PT, SG (plus Global regex fallback).</p>
+            </div>
+            <div class="spec-box">
+                <h4>Verifiable Sanitization</h4>
+                <p>Sensitive areas in PDFs are converted into flattened raster images. Text streams are sanitized, preventing reverse extraction from hidden layers. <span class="spec-highlight">100% Offline.</span></p>
+            </div>
+            <div class="spec-box">
+                <h4>System & Accessibility</h4>
+                <p>Requires Windows 10/11 (x64) and WebView2. Available in <span class="spec-highlight">8 UI Languages</span>: English, Turkish, German, French, Spanish, Italian, Portuguese, and Polish.</p>
+            </div>
+        </div>
+        
         <h2 class="section-title">The PII Redaction Landscape</h2>
         <p class="section-desc">
-            The existing market forces an impossible compromise between security, cost, and context accuracy. Here is how Doxudel structurally outperforms legacy solutions.
+            The market forces a compromise between privacy, cost, and context accuracy. Here is how Doxudel's local NER architecture changes the baseline.
         </p>
 
         <div class="table-wrapper">
@@ -172,19 +209,19 @@
                         <td><span class="icon-fail">Fails</span> (Rigid patterns only)</td>
                         <td><span class="icon-pass">High</span></td>
                         <td><span class="icon-warn">High</span> (Hallucination risk)</td>
-                        <td class="doxudel-col"><span class="icon-pass">High</span> (Custom-trained NER)</td>
+                        <td class="doxudel-col"><span class="icon-pass">High</span> (Off-the-shelf NER + Deterministic Rules)</td>
                     </tr>
                     <tr>
                         <td><strong>Data Privacy (GDPR/DPA)</strong></td>
                         <td><span class="icon-pass">Secured</span> (Local processing)</td>
-                        <td><span class="icon-fail">Critical Breach Risk</span></td>
+                        <td><span class="icon-fail">3rd-Party Transit Risk</span></td>
                         <td><span class="icon-pass">Secured</span> (Local processing)</td>
                         <td class="doxudel-col"><span class="icon-pass">Secured</span> (Data never leaves device)</td>
                     </tr>
                     <tr>
                         <td><strong>Chain-of-Custody</strong></td>
                         <td>Maintained</td>
-                        <td><span class="icon-fail">Broken</span> (3rd party endpoints)</td>
+                        <td><span class="icon-fail">Broken</span> (External endpoints)</td>
                         <td>Maintained</td>
                         <td class="doxudel-col"><span class="icon-pass">Maintained</span></td>
                     </tr>
@@ -207,26 +244,22 @@
         </div>
 
         <h2 class="section-title">Why Architecture Matters</h2>
-        
         <div class="arg-grid">
             <div class="arg-card">
-                <h3>The Flaw of Cloud LLMs</h3>
-                <p>Uploading sensitive files to third-party endpoints creates massive compliance and liability risks under GDPR and UK DPA. Once data leaves your local machine, the chain-of-custody is broken. Furthermore, pay-as-you-go cloud redaction quickly inflates operational costs based on volume.</p>
+                <h3>The Flaw of Cloud Data Transit</h3>
+                <p>Uploading sensitive files to third-party endpoints creates compliance and liability risks. Once data leaves your local machine, the chain-of-custody is broken. Furthermore, pay-as-you-go cloud redaction inflates operational costs based on volume.</p>
             </div>
-            
             <div class="arg-card">
                 <h3>The Hardware Burden of Local LLMs</h3>
-                <p>Running local 70B+ LLMs solves the privacy issue but requires expensive enterprise GPU hardware. Yet, generative models still hallucinate and miss deterministic data patterns, offering unpredictable reliability for strict legal compliance.</p>
+                <p>Running local 70B+ LLMs solves the privacy issue but requires expensive enterprise GPU hardware. Generative models also suffer from semantic drift, offering unpredictable reliability for compliance operations.</p>
             </div>
-            
             <div class="arg-card">
                 <h3>The Doxudel Advantage</h3>
-                <p>Instead of heavy LLMs or simplistic regexes, Doxudel pairs optimized, lightweight on-device NER (Named Entity Recognition) models with deterministic checksum validation. It runs entirely on standard local hardware without external API calls.</p>
+                <p>Doxudel pairs optimized, lightweight on-device NER (Named Entity Recognition) models with deterministic checksum validations. It runs entirely on standard local hardware without external API calls, providing predictable, rule-based outcomes.</p>
             </div>
-            
             <div class="arg-card">
-                <h3>Absolute Data Sanitization</h3>
-                <p>Documents never leave your workstation. Sensitive areas are permanently flattened into sanitized rasters—preventing reverse-extraction from hidden text layers. The redaction is mathematically deterministic and irreversible.</p>
+                <h3>Irreversible Raster Sanitization</h3>
+                <p>Sensitive areas in documents are permanently flattened into sanitized rasters. This prevents reverse-extraction from hidden PDF text layers. The redaction is visually destructive and secure, leaving no residual metadata behind.</p>
             </div>
         </div>
 
@@ -239,9 +272,23 @@
             <a href="mailto:info@vectixore.com">Enterprise Support</a>
         </div>
         <strong>VECTIXORE LTD</strong><br>
-        Registered in England & Wales | Company No: <strong>16999592</strong> | ICO Registration: <strong>ZC087615</strong><br>
-        71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
+        Registered in England & Wales | Company No: <strong>16999592</strong> | ICO Registration: <strong>ZC087615</strong>
     </footer>
 
+    <!-- Basic Consent Script for GTM activation -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">We use minimal analytics to improve our site. By clicking "Accept", you consent to our use of non-essential cookies as described in our Privacy Policy.</div>
+        <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
+    </div>
+    <script>
+        if (!localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookieBanner').classList.add('show');
+        }
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'true');
+            document.getElementById('cookieBanner').classList.remove('show');
+            // Trigger GTM scripts dynamically here if needed
+        }
+    </script>
 </body>
 </html>

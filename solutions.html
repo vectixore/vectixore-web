@@ -3,7 +3,8 @@
 <head>
     <link rel="canonical" href="https://vectixore.com/solutions.html" />
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- GTM: Gated behind consent (type changes to text/javascript when accepted) -->
+    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -13,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Vectixore Solutions | Local AI Systems & Compliance Architectures</title>
-    <meta name="description" content="Explore Vectixore Solutions: Doxudel on-device PII anonymization, DoubtProof™ forensic integrity, Convexight discipline OS, and SalienTag content intelligence.">
+    <meta name="description" content="Explore Vectixore Solutions: Doxudel on-device PII anonymization, DoubtProof™ forensic integrity, and Convexight discipline OS. Designed to support DPA and GDPR compliance.">
     <meta name="keywords" content="Vectixore, Doxudel, DoubtProof, Convexight, SalienTag, Local NER, On-device AI, PII Redaction, System Architecture, Legal Tech">
     <meta name="author" content="Vectixore LTD">
 
@@ -41,55 +42,39 @@
           "position": 3,
           "name": "Convexight Discipline Operating System",
           "url": "https://vectixore.com/solutions.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "SalienTag Content Intelligence",
-          "url": "https://vectixore.com/solutions.html"
         }
       ]
     }
     </script>
 
     <meta property="og:title" content="Vectixore Solutions | Advanced System Architecture">
-    <meta property="og:description" content="Deploying on-device AI architectures for data anonymization, forensic verification, and behavioral optimization.">
+    <meta property="og:description" content="Deploying on-device AI architectures for data sanitization, forensic verification, and behavioral optimization.">
     <meta property="og:image" content="https://vectixore.com/assets/og-image.png">
     <meta property="og:url" content="https://vectixore.com/solutions.html">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" type="image/x-icon" href="https://vectixore.com/assets/favicon.ico?v=2">
 
     <style>
         :root { 
-            --bg: #121212; 
-            --card: #1a1a1a; 
-            --text: #f3f4f6; 
-            --text-muted: #9ca3af; 
-            --accent: #0066FF; 
-            --accent-hover: #3385ff;
-            --border: #2a2a2a; 
+            --bg: #121212; --card: #1a1a1a; --text: #f3f4f6; --text-muted: #9ca3af; 
+            --accent: #0066FF; --accent-hover: #3385ff; --border: #2a2a2a; 
         }
         body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; }
 
-        /* Navbar */
         .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(18, 18, 18, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
         .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 
-        /* Header */
         .header-sec { padding: 140px 20px 80px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #121212 0%, #1a1a1a 100%); }
         .page-title { font-size: 3rem; font-weight: 800; color: #fff; margin: 0; letter-spacing: -1px; }
         .page-sub { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-top: 10px; font-weight: 600; }
         
-        /* Grid */
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         
-        /* Card */
         .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 35px; transition: all 0.3s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15); }
         .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent); opacity: 0.8; }
@@ -98,7 +83,6 @@
         .active-prod { background: rgba(0, 102, 255, 0.15); color: #66a3ff; border: 1px solid rgba(0, 102, 255, 0.4); }
         .dev { background: rgba(245, 158, 11, 0.1); color: #fbbf24; }
         .beta { background: rgba(0, 102, 255, 0.1); color: var(--accent); }
-        .concept { background: rgba(156, 163, 175, 0.1); color: #9ca3af; }
 
         h2 { margin: 0 0 12px 0; color: #fff; font-size: 1.6rem; font-weight: 700; }
         p { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; flex-grow: 1; }
@@ -106,24 +90,25 @@
         .tags { margin-top: 25px; display: flex; gap: 8px; flex-wrap: wrap; }
         .tag { font-size: 0.7rem; color: #80b3ff; border: 1px solid #333333; padding: 5px 10px; border-radius: 6px; background: rgba(0, 0, 0, 0.4); }
 
-        /* Action Button for Doxudel */
-        .action-btn { margin-top: 25px; display: inline-block; width: 100%; padding: 14px 20px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; text-align: center; transition: background 0.2s, box-shadow 0.2s; box-sizing: border-box; font-size: 0.95rem; }
-        .action-btn:hover { background: var(--accent-hover); box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3); }
+        .action-btn { margin-top: 25px; display: inline-block; width: 100%; padding: 14px 20px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; text-align: center; transition: background 0.2s; box-sizing: border-box; font-size: 0.95rem; }
+        .action-btn:hover { background: var(--accent-hover); }
 
-        /* FOOTER */
+        /* Cookie Banner */
+        .cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #1a1a1a; border-top: 1px solid var(--border); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; box-sizing: border-box; transform: translateY(100%); transition: transform 0.3s; }
+        .cookie-banner.show { transform: translateY(0); }
+        .cookie-text { font-size: 0.85rem; color: var(--text-muted); max-width: 800px; }
+        .cookie-btn { background: var(--accent); color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
+
         .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding: 60px 20px; text-align: center; line-height: 1.8; }
         .footer-links { margin-bottom: 20px; }
-        .footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; transition: color 0.2s; }
+        .footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; }
         .footer a:hover { color: var(--accent); }
 
-        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 15px; } .page-title { font-size: 2.2rem; } }
+        @media (max-width: 768px) { .nav-content { flex-direction: column; gap: 15px; } .cookie-banner { flex-direction: column; gap: 15px; text-align: center; } }
     </style>
 </head>
 <body>
 
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
     <nav class="nav-bar">
         <div class="nav-content">
             <a href="./" class="nav-brand">
@@ -150,15 +135,14 @@
         <div class="grid">
             
             <article class="card">
-                <span class="status active-prod">Release Ready</span>
+                <span class="status active-prod">Available in Store</span>
                 <h2>Doxudel Desktop</h2>
                 <p>
-                    How to sanitize confidential documents without cloud leaks? <strong>Doxudel</strong> is an on-device personal data redaction tool. It utilizes <strong>on-device local NER</strong> models and deterministic rule packs across 12 countries to detect and redact PII locally—ensuring strict compliance with UK Data Protection Act and GDPR without external data transit.
+                    How to sanitize confidential documents without cloud transit? <strong>Doxudel</strong> is an on-device personal data redaction tool. It utilizes off-the-shelf local NER models and deterministic rule packs across 19 countries to detect and mask PII locally—designed to support UK DPA and GDPR compliance goals.
                 </p>
                 <div class="tags">
                     <span class="tag">Local AI / NER</span>
-                    <span class="tag">PII Anonymization</span>
-                    <span class="tag">UK Data Protection Act & GDPR </span>
+                    <span class="tag">PII Sanitization</span>
                     <span class="tag">Zero-Cloud</span>
                 </div>
                 <a href="doxudel.html" class="action-btn">Review Architecture & Buy</a>
@@ -168,7 +152,7 @@
                 <span class="status dev">In Development</span>
                 <h2>DoubtProof™</h2>
                 <p>
-                    How to secure digital record authenticity? <strong>DoubtProof™</strong> is a forensic verification toolchain safeguarding evidentiary payloads through cryptographic sealing, secure enclave attestation, and certified RFC 3161-compliant timestamps.
+                    How to secure digital record authenticity? <strong>DoubtProof™</strong> is a forensic verification toolchain designed to safeguard evidentiary payloads through cryptographic sealing, secure enclave attestation, and standard RFC 3161-compliant timestamps.
                 </p>
                 <div class="tags">
                     <span class="tag">Cybersecurity</span>
@@ -181,25 +165,12 @@
                 <span class="status beta">Beta Phase</span>
                 <h2>Convexight</h2>
                 <p>
-                    What is Convexight? It is a structured discipline OS built on behavioral momentum algorithms. Operating on an offline-first architecture, it ensures complete user telemetry privacy without server dependency.
+                    A structured discipline OS built on behavioral momentum algorithms. Operating on an offline-first architecture, it ensures complete user telemetry privacy without server dependency.
                 </p>
                 <div class="tags">
                     <span class="tag">Offline-First</span>
                     <span class="tag">Behavioral Science</span>
                     <span class="tag">Privacy-by-Design</span>
-                </div>
-            </article>
-
-            <article class="card">
-                <span class="status concept">Concept</span>
-                <h2>SalienTag</h2>
-                <p>
-                    How does algorithmic metadata optimization scale content reach? <strong>SalienTag</strong> provides structured hashtag synthesis, visual context extraction, and engagement frequency tuning using modular computer vision pipelines.
-                </p>
-                <div class="tags">
-                    <span class="tag">Content Engineering</span>
-                    <span class="tag">Metadata Optimization</span>
-                    <span class="tag">Visual AI</span>
                 </div>
             </article>
 
@@ -217,5 +188,20 @@
         71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
     </footer>
 
+    <!-- Basic Consent Script for GTM activation -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">We use minimal analytics to improve our site. By clicking "Accept", you consent to our use of non-essential cookies as described in our Privacy Policy.</div>
+        <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
+    </div>
+    <script>
+        if (!localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookieBanner').classList.add('show');
+        }
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'true');
+            document.getElementById('cookieBanner').classList.remove('show');
+            // Trigger GTM scripts dynamically here if needed
+        }
+    </script>
 </body>
 </html>

@@ -3,7 +3,12 @@
 <head>
     <link rel="canonical" href="https://vectixore.com/doxudel.html" />
 
-    <!-- Optional analytics (Google Tag Manager) is loaded ONLY after explicit consent — see the consent script at the end of <body>. -->
+    <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
+    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -282,43 +287,6 @@
         71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
     </footer>
 
-    <!-- Consent banner. Analytics (Google Tag Manager) loads only after "Accept"; "Reject" loads nothing. -->
-    <div class="cookie-banner" id="cookieBanner" role="region" aria-label="Analytics consent">
-        <div class="cookie-text">
-            We use optional analytics to understand how the site is used. Nothing is loaded until you accept.
-            See our <a href="privacy.html">Privacy Policy</a>.
-        </div>
-        <div class="cookie-actions">
-            <button class="cookie-btn cookie-btn-secondary" onclick="setConsent('rejected')">Reject</button>
-            <button class="cookie-btn" onclick="setConsent('accepted')">Accept</button>
-        </div>
-    </div>
-    <script>
-        (function () {
-            var GTM_ID = 'GTM-MXJQJRXG';
-            function loadAnalytics() {
-                if (window.__gtmLoaded) { return; }
-                window.__gtmLoaded = true;
-                var s = document.createElement('script');
-                s.async = true;
-                s.textContent = "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','" + GTM_ID + "');";
-                document.head.appendChild(s);
-            }
-            window.setConsent = function (value) {
-                try { localStorage.setItem('cookieConsent', value); } catch (e) {}
-                var banner = document.getElementById('cookieBanner');
-                if (banner) { banner.classList.remove('show'); }
-                if (value === 'accepted') { loadAnalytics(); }
-            };
-            var stored = null;
-            try { stored = localStorage.getItem('cookieConsent'); } catch (e) {}
-            if (stored === 'accepted') {
-                loadAnalytics();
-            } else if (stored !== 'rejected') {
-                var banner = document.getElementById('cookieBanner');
-                if (banner) { banner.classList.add('show'); }
-            }
-        })();
-    </script>
+    <script src="assets/consent.js" defer></script>
 </body>
 </html>

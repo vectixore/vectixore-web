@@ -3,7 +3,7 @@
 <head>
     <link rel="canonical" href="https://vectixore.com/solutions.html" />
 
-    <!-- GTM: Gated behind consent (type changes to text/javascript when accepted) -->
+    <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
     <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -188,20 +188,6 @@
         71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
     </footer>
 
-    <!-- Basic Consent Script for GTM activation -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-text">We use minimal analytics to improve our site. By clicking "Accept", you consent to our use of non-essential cookies as described in our Privacy Policy.</div>
-        <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
-    </div>
-    <script>
-        if (!localStorage.getItem('cookieConsent')) {
-            document.getElementById('cookieBanner').classList.add('show');
-        }
-        function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'true');
-            document.getElementById('cookieBanner').classList.remove('show');
-            // Trigger GTM scripts dynamically here if needed
-        }
-    </script>
+    <script src="assets/consent.js" defer></script>
 </body>
 </html>

@@ -9,7 +9,8 @@
       }
     </script>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
+    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -123,8 +124,7 @@
 </head>
 <body>
 
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJQJRXG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- GTM noscript fallback removed: analytics is consent-gated. -->
     
     <nav class="nav-bar">
         <div class="nav-content">
@@ -228,5 +228,6 @@
         </footer>
     </main>
 
+    <script src="assets/consent.js" defer></script>
 </body>
 </html>

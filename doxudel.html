@@ -3,12 +3,7 @@
 <head>
     <link rel="canonical" href="https://vectixore.com/doxudel.html" />
 
-    <!-- GTM: Gated behind consent -->
-    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
+    <!-- Optional analytics (Google Tag Manager) is loaded ONLY after explicit consent — see the consent script at the end of <body>. -->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,10 +28,9 @@
       "description": "Enterprise-grade, on-device PII redaction software. Uses local NER models and deterministic rule packs.",
       "offers": {
         "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
         "url": "https://apps.microsoft.com/detail/9NJSG1PNMLLZ",
-        "description": "Free download with 7-day trial. Local pricing and subscription handled securely via Microsoft Store."
+        "availability": "https://schema.org/InStock",
+        "description": "Free download with a 7-day trial. Subscription pricing is shown in your local currency by the Microsoft Store."
       }
     }
     </script>
@@ -45,6 +39,7 @@
     <meta property="og:description" content="Secure your chain-of-custody. Doxudel pairs on-device NER models with deterministic validations for verifiable data sanitization.">
     <meta property="og:image" content="https://vectixore.com/assets/doxudel-og.png">
     <meta property="og:url" content="https://vectixore.com/doxudel.html">
+    <meta property="og:type" content="product">
 
     <link rel="icon" type="image/x-icon" href="https://vectixore.com/assets/favicon.ico?v=2">
 
@@ -80,7 +75,7 @@
         .secondary-btn { background: transparent; color: #80b3ff; border: 1px solid rgba(0,102,255,0.4); }
         .secondary-btn:hover { background: rgba(0,102,255,0.1); }
         
-        .pricing-note { font-size: 0.85rem; color: #6b7280; max-width: 700px; margin-top: 15px; font-weight: 500; text-align: center; line-height: 1.5; }
+        .pricing-note { font-size: 0.85rem; color: #9ca3af; max-width: 700px; margin-top: 15px; font-weight: 500; text-align: center; line-height: 1.5; }
 
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
         .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #fff; }
@@ -117,10 +112,13 @@
         .footer a:hover { color: var(--accent); }
         
         /* Cookie Banner */
-        .cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #1a1a1a; border-top: 1px solid var(--border); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; transform: translateY(100%); transition: transform 0.3s; }
+        .cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #1a1a1a; border-top: 1px solid var(--border); padding: 15px 20px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; z-index: 9999; transform: translateY(100%); transition: transform 0.3s; }
         .cookie-banner.show { transform: translateY(0); }
-        .cookie-text { font-size: 0.85rem; color: var(--text-muted); }
+        .cookie-text { font-size: 0.85rem; color: var(--text-muted); flex: 1 1 320px; }
+        .cookie-text a { color: #80b3ff; }
+        .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
         .cookie-btn { background: var(--accent); color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.85rem; }
+        .cookie-btn-secondary { background: transparent; color: var(--text); border: 1px solid #404040; }
     </style>
 </head>
 <body>
@@ -143,7 +141,7 @@
         <div class="page-sub">Available Now for Windows</div>
         <h1 class="page-title">Redact PII offline — with proof.</h1>
         <p class="hero-desc">
-            Doxudel masks personal data in PDFs, scans, and Office files on your Windows PC. Nothing is uploaded. Featuring 19 country formats, checksum-validated IDs, and fail-closed masking designed to support strict DPIA requirements.
+            Doxudel masks personal data in PDFs, scanned images, Office files (DOCX, XLSX), CSV/TXT and HTML/XML/JSON on your Windows PC. Nothing is uploaded. Featuring 19 country formats, checksum-validated IDs, and fail-closed masking designed to support strict DPIA requirements.
         </p>
         
         <div class="cta-group">
@@ -151,7 +149,7 @@
                 <!-- Primary Store Badge (en-gb enforced) -->
                 <ms-store-badge productid="9NJSG1PNMLLZ" window-mode="direct" theme="auto" size="large" language="en-gb" animation="on"></ms-store-badge>
                 <!-- Fallback standard link for non-Windows/no-JS -->
-                <a href="https://apps.microsoft.com/detail/9NJSG1PNMLLZ" target="_blank" class="fallback-btn">Web Store</a>
+                <a href="https://apps.microsoft.com/detail/9NJSG1PNMLLZ" target="_blank" rel="noopener noreferrer" class="fallback-btn">Web Store</a>
                 <!-- Secondary B2B CTA -->
                 <a href="mailto:info@vectixore.com?subject=Doxudel%20Enterprise%20Pilot%20Request" class="secondary-btn">Request a Written Pilot</a>
             </div>
@@ -179,6 +177,22 @@
             </div>
         </div>
         
+        <h2 class="section-title">How it works</h2>
+        <div class="specs-grid">
+            <div class="spec-box">
+                <h4>1. Open a document</h4>
+                <p>Drop in a PDF, scan or Office file. Everything is processed on your machine — no upload, no API calls.</p>
+            </div>
+            <div class="spec-box">
+                <h4>2. Review the redactions</h4>
+                <p>Doxudel proposes matches using deterministic rule packs plus on-device NER. Accept, reject or adjust each item in the calibration view.</p>
+            </div>
+            <div class="spec-box">
+                <h4>3. Export sanitized output</h4>
+                <p>Get a flattened, redacted file with no recoverable text layer, plus a redaction report you can attach to your DPIA.</p>
+            </div>
+        </div>
+
         <h2 class="section-title">The PII Redaction Landscape</h2>
         <p class="section-desc">
             The market forces a compromise between privacy, cost, and context accuracy. Here is how Doxudel's local NER architecture changes the baseline.
@@ -229,7 +243,7 @@
                         <td><span class="icon-pass">Zero</span></td>
                         <td><span class="icon-fail">High</span> (Generative models drift)</td>
                         <td><span class="icon-fail">High</span> (Generative models drift)</td>
-                        <td class="doxudel-col"><span class="icon-pass">Zero Hallucination</span> (Fail-closed extraction, false positives controlled via Allowlist)</td>
+                        <td class="doxudel-col"><span class="icon-pass">No generative model</span> (Deterministic extraction; fail-closed masking with published residual limits)</td>
                     </tr>
                 </tbody>
             </table>
@@ -264,23 +278,47 @@
             <a href="mailto:info@vectixore.com">Enterprise Support</a>
         </div>
         <strong>VECTIXORE LTD</strong><br>
-        Registered in England & Wales | Company No: <strong>16999592</strong> | ICO Registration: <strong>ZC087615</strong>
+        Registered in England & Wales | Company No: <strong>16999592</strong> | ICO Registration: <strong>ZC087615</strong><br>
+        71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
     </footer>
 
-    <!-- Basic Consent Script for GTM activation -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-text">We use minimal analytics to improve our site. By clicking "Accept", you consent to our use of non-essential cookies as described in our Privacy Policy.</div>
-        <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
+    <!-- Consent banner. Analytics (Google Tag Manager) loads only after "Accept"; "Reject" loads nothing. -->
+    <div class="cookie-banner" id="cookieBanner" role="region" aria-label="Analytics consent">
+        <div class="cookie-text">
+            We use optional analytics to understand how the site is used. Nothing is loaded until you accept.
+            See our <a href="privacy.html">Privacy Policy</a>.
+        </div>
+        <div class="cookie-actions">
+            <button class="cookie-btn cookie-btn-secondary" onclick="setConsent('rejected')">Reject</button>
+            <button class="cookie-btn" onclick="setConsent('accepted')">Accept</button>
+        </div>
     </div>
     <script>
-        if (!localStorage.getItem('cookieConsent')) {
-            document.getElementById('cookieBanner').classList.add('show');
-        }
-        function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'true');
-            document.getElementById('cookieBanner').classList.remove('show');
-            // Trigger GTM scripts dynamically here if needed
-        }
+        (function () {
+            var GTM_ID = 'GTM-MXJQJRXG';
+            function loadAnalytics() {
+                if (window.__gtmLoaded) { return; }
+                window.__gtmLoaded = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.textContent = "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','" + GTM_ID + "');";
+                document.head.appendChild(s);
+            }
+            window.setConsent = function (value) {
+                try { localStorage.setItem('cookieConsent', value); } catch (e) {}
+                var banner = document.getElementById('cookieBanner');
+                if (banner) { banner.classList.remove('show'); }
+                if (value === 'accepted') { loadAnalytics(); }
+            };
+            var stored = null;
+            try { stored = localStorage.getItem('cookieConsent'); } catch (e) {}
+            if (stored === 'accepted') {
+                loadAnalytics();
+            } else if (stored !== 'rejected') {
+                var banner = document.getElementById('cookieBanner');
+                if (banner) { banner.classList.add('show'); }
+            }
+        })();
     </script>
 </body>
 </html>

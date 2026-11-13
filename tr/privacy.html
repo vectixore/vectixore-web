@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://vectixore.com/tr/privacy.html" />
+    <link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+    <link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+    <link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+    <link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+    <link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası | Vectixore LTD</title>
+    
+    <link rel="icon" type="image/png" href="https://vectixore.com/assets/favicon.png?v=2">
+    <link rel="icon" type="image/x-icon" href="https://vectixore.com/assets/favicon.ico?v=2">
+
+    <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
+    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
+    <style>
+        :root { 
+            --bg: #121212; 
+            --card: #1a1a1a; 
+            --text: #f3f4f6; 
+            --accent: #0066FF; 
+            --accent-hover: #3385ff;
+            --border: #2a2a2a; 
+            --warning: #f59e0b; 
+            --danger: #ef4444; 
+        }
+        
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            padding-top: 80px; 
+            min-height: 100vh; 
+            text-align: center; 
+        }
+
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; background: rgba(18, 18, 18, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 1000; }
+        .nav-content { max-width: 900px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 1px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #4d94ff; }
+        .lang-switch { position: relative; display: inline-block; margin-left: 20px; }
+        .lang-switch summary { list-style: none; cursor: pointer; color: var(--text-muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+        .lang-switch summary::-webkit-details-marker { display: none; }
+        .lang-switch summary:hover { color: #4d94ff; }
+        .lang-switch img { width: 16px; height: 12px; display: block; border-radius: 2px; }
+        .lang-menu { position: absolute; right: 0; top: 150%; background: #1a1a1a; border: 1px solid var(--border); border-radius: 8px; padding: 6px 0; min-width: 175px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        .lang-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 14px; color: var(--text-muted); font-size: 0.9rem; text-decoration: none; margin: 0; white-space: nowrap; }
+        .lang-menu a:hover { background: rgba(0,102,255,0.1); color: #4d94ff; }
+        .lang-menu a.active { color: #4d94ff; }
+
+        .container { max-width: 900px; padding: 20px 20px 60px 20px; margin: 0 auto; }
+        
+        .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; line-height: 1.2; }
+        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
+        
+        .card { 
+            background: var(--card); 
+            border: 1px solid var(--border); 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-sizing: border-box; 
+            text-align: left; 
+            margin-bottom: 30px; 
+        }
+
+        h2 { color: var(--accent); font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-top: 0; margin-bottom: 25px; }
+        h3 { color: #fff; margin-top: 35px; margin-bottom: 10px; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 15px; }
+        h4 { color: #cbd5e1; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 700; }
+
+        p { line-height: 1.7; font-size: 0.95rem; color: #9ca3af; margin-bottom: 15px; }
+        
+        ul { padding-left: 20px; color: #9ca3af; margin-bottom: 15px; }
+        li { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
+        li::marker { color: var(--accent); } 
+
+        .warning-box {
+            border: 1px solid var(--warning);
+            background: rgba(245, 158, 11, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .warning-title { color: var(--warning); font-weight: bold; display: block; margin-bottom: 10px; }
+
+        .footer { margin-top: 50px; font-size: 0.8rem; color: #6b7280; border-top: 1px solid var(--border); padding-top: 30px; line-height: 1.5; }
+        
+        a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; text-decoration: underline; }
+
+        .btn-deletion {
+            display: inline-block;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.2s;
+        }
+        .btn-deletion:hover {
+            background: var(--danger);
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GTM noscript fallback removed: analytics is consent-gated. -->
+    
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="/tr/" class="nav-brand">
+                <img src="https://vectixore.com/assets/favicon.png?v=2" onerror="this.src='https://vectixore.com/assets/favicon.ico?v=2'" alt="Vectixore Icon" style="width: 24px; height: 24px; object-fit: contain;">
+                VECTIXORE LTD
+            </a>
+            <div class="nav-links">
+                <a href="/tr/">Kurumsal</a>
+                <a href="/tr/solutions.html">Çözümler</a>
+                <a href="/tr/about.html">Hakkımızda</a>
+                <a href="/tr/terms.html">Şartlar</a>
+                <details class="lang-switch">
+                    <summary><img src="https://flagcdn.com/16x12/tr.png" alt="TR"> TR ▾</summary>
+                    <div class="lang-menu">
+                        <a href="/privacy.html" hreflang="en"><img src="https://flagcdn.com/16x12/gb.png" alt=""> English</a>
+                        <a href="/de/privacy.html" hreflang="de"><img src="https://flagcdn.com/16x12/de.png" alt=""> Deutsch</a>
+                        <a href="/fr/privacy.html" hreflang="fr"><img src="https://flagcdn.com/16x12/fr.png" alt=""> Français</a>
+                        <a href="/tr/privacy.html" hreflang="tr" class="active"><img src="https://flagcdn.com/16x12/tr.png" alt=""> Türkçe</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="business-name">GİZLİLİK POLİTİKASI &amp;<br>VERİ KORUMA BEYANI</div>
+        <div class="tagline">Kurumsal, cihaz üzerinde &amp; çekirdek sistemler kapsamı</div>
+
+        <div style="margin-bottom: 30px; color: #9ca3af; font-size: 0.95rem; text-align: left; background: rgba(0, 102, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px dashed var(--accent);">
+            <strong>Veri Sorumlusu:</strong> VECTIXORE LTD (Şirket No: 16999592)<br>
+            <strong>Kayıtlı Ofis:</strong> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Birleşik Krallık<br>
+            <strong>ICO Kaydı:</strong> Data Protection Act 2018 / UK GDPR kapsamında Kayıtlı Veri Sorumlusu (ZC087615)<br>
+            <strong>Resmî İletişim:</strong> info@vectixore.com
+        </div>
+
+        <div class="card">
+            <h2>1. VERİ MİMARİSİ &amp; OPERASYONEL UYGULAMALAR</h2>
+            <p>Vectixore LTD; yazılım çözümleri, cihaz üzerinde redaksiyon uygulamaları (Doxudel), forensik doğrulama araç zincirleri ve gizliliği koruyan yardımcı programlar geliştirir. Operasyonel mimarimiz; <strong>Veri Minimizasyonu</strong>, <strong>Cihaz Üzerinde İşleme</strong> ve <strong>Zero-Knowledge</strong> tasarım paradigmalarına dayanır.</p>
+
+            <h3>1.1. Cihaz Üzerinde Redaksiyon &amp; Dosya İşleme (Doxudel Desktop)</h3>
+            <p>Cihaz üzerinde temizleme yazılımımızı (Doxudel) kullanırken:</p>
+            <ul>
+                <li><strong>Yerel Çalıştırma:</strong> Belge ayrıştırma (PDF, DOCX, XLSX, görüntüler), OCR işleme ve Named Entity Recognition (cihaz üzerinde yerel NER) işlemleri tamamen istemci donanımının RAM'i ve yerel depolaması içinde gerçekleştirilir.</li>
+                <li><strong>Buluta Aktarım Yok:</strong> Dosya içerikleri, kişisel veriler (PII) ve işlenmiş redaksiyonlar hiçbir zaman harici Vectixore altyapısına aktarılmaz, tamponlanmaz veya bu altyapıda saklanmaz.</li>
+                <li><strong>Telemetri &amp; Tanılama:</strong> Yalnızca kullanıcının açıkça onayıyla, kesinlikle anonim çökme raporları veya tanılama sinyalleri toplanır; bunlar hiçbir kişisel tanımlayıcı veya belge içeriği içermez.</li>
+            </ul>
+
+            <h3>1.2. El Yazısı İmza Yakalama &amp; Mühürleme</h3>
+            <p>Dijital belge yürütme hizmetleri kullanıldığında, kullanıcının girdiği imzaların vektör yollarını (çizgi verileri) ve görsel rasterleştirmelerini işleriz.</p>
+            <ul>
+                <li><strong>Amaç:</strong> Yalnızca kullanıcı tarafından sağlanan ve hedef PDF/ikili kapsayıcılarına gömülü belge yükleri olarak işlenir.</li>
+                <li><strong>Kapsam:</strong> Vectixore LTD bu girdiler üzerinde davranışsal grafoloji veya yetkisiz biyometrik basınç profil analizi yapmaz; bunlar sonuçtaki veri yüküne kriptografik olarak bağlanır.</li>
+            </ul>
+
+            <h3>1.3. Kriptografik Doğrulama &amp; Kurcalama Algılama</h3>
+            <ul>
+                <li><strong>Mevcudiyet &amp; Sahtecilik Önleme:</strong> Sertifikalı dijital işlemler yürütülürken görsel eşleştirme akışları veya cihaz sensörü kontrolleri, yalnızca etkin yetkilendirmenin bütünlüğünü doğrulamak için değerlendirilir.</li>
+                <li><strong>Yerel Biyometrik Sinyaller:</strong> Belge mühürlemesini yetkilendirmek için cihaz düzeyinde biyometri (TouchID, FaceID, Windows Hello) kullanıldığında, işleme işletim sisteminin Secure Element'i tarafından yerel olarak gerçekleştirilir. Vectixore LTD yalnızca mantıksal başarı/başarısızlık kriptografik jetonlarını alır; ham biyometrik şablonları asla alınmaz.</li>
+            </ul>
+
+            <h3>1.4. SHA-256 Denetim Kaydı &amp; Değiştirilemezlik</h3>
+            <p>Mühürlenmiş kayıtlar için güvenilir UTC zaman damgalarıyla birlikte matematiksel SHA-256 özetlerinden (kriptografik hash) oluşan değiştirilemez bir kayıt defteri tutuyoruz.</p>
+            <ul>
+                <li><strong>Matematiksel Nitelik:</strong> Bir hash özeti tek yönlü matematiksel bir işlevdir; ham belge içerikleri kayıt defterimizden geri çözülemez veya çıkarılamaz.</li>
+                <li><strong>Bütünlük:</strong> Belgenin belirli bir tarihsel andaki varlığının ve bütünlüğünün doğrulanabilir matematiksel kanıtı olarak hizmet eder.</li>
+            </ul>
+
+            <h3>1.5. Ağ, Sistem Bütünlüğü &amp; İstemci Telemetrisi</h3>
+            <ul>
+                <li><strong>Bağlantı Meta Verileri:</strong> IP adresleri ve sistem zaman damgaları, sunucu işlemleri sırasında yalnızca güvenlik izleme, DDoS azaltma ve hız sınırlama amacıyla kaydedilir.</li>
+                <li><strong>Ortam Attestasyonu:</strong> Güvenlik sınırlarını korumak için kriptografik işlemler yürütülmeden önce cihaz bütünlüğü sinyalleri işlenir.</li>
+                <li><strong>Tanılama:</strong> Uygulama performansı, çökme günlükleri ve kimlik belirleyici içermeyen telemetri, kurumsal kararlılığı sağlamak üzere güvenli telemetri altyapısı aracılığıyla işlenir.</li>
+            </ul>
+
+            <h3>1.6. Veri Sorumlusu ve Veri İşleyen Arasındaki Ayrım</h3>
+            <ul>
+                <li><strong>Veri Sorumlusu olarak Vectixore LTD:</strong> Lisanslama sistemlerini, hesap portallarını ve doğrudan güvenlik tanılama telemetrisini yönetir.</li>
+                <li><strong>Veri Sorumlusu olarak Kullanıcı / Teknoloji Sağlayıcısı olarak Vectixore:</strong> Yerel olarak işlenen veya masaüstü yazılım paketlerimizle mühürlenen tüm belgeler, kayıtlar ve kişisel veriler bakımından mutlak veri sorumlusu siz olmaya devam edersiniz.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. KÜRESEL İLGİLİ KİŞİ HAKLARI &amp; UYUM</h2>
+            <p>UK GDPR, KVKK-GDPR ve uluslararası veri gizliliği mevzuatına uygun olarak kullanıcılar, kendi kişisel kayıtlarına ilişkin açık yasal haklara sahiptir:</p>
+            <ul>
+                <li><strong>Erişim Hakkı:</strong> Etkin sistemlerde tutulan kişisel verilerin onaylanmasını ve kopyalarını edinme hakkı.</li>
+                <li><strong>Düzeltme Hakkı:</strong> Yanlış kimlik veya idari kayıtları düzeltme hakkı.</li>
+                <li><strong>Silme Hakkı:</strong> Üstün yasal gereklilikler saklı kalmak üzere verilerin silinmesini talep etme hakkı.</li>
+                <li><strong>İşlemeyi Kısıtlama Hakkı &amp; İtiraz Hakkı:</strong> Belirli otomatik işlemeleri veya profil oluşturmayı durdurma hakkı.</li>
+            </ul>
+
+            <div class="warning-box">
+                <span class="warning-title">&#9888; KRİTİK İSTİSNA: KRİPTOGRAFİK DENETİM BÜTÜNLÜĞÜ</span>
+                <p style="margin-bottom:0; color: #e2e8f0;">Silme veya Düzeltme Hakkı, matematiksel olarak mühürlenmiş belge hash'lerine veya işlem zaman damgası kayıt defterlerine geriye dönük olarak UYGULANAMAZ. Mühürlenmiş bir kaydı değiştirmek, kriptografik kanıt zincirini geçersiz kılar. Bu kayıt defterinin saklanması, “Hukuki Taleplerin Kurulması, Takibi veya Savunulması” yasal dayanağı (UK GDPR Art. 17(3)(e)) ile düzenleyici uyum yükümlülükleri kapsamında zorunludur.</p>
+            </div>
+
+            <h3>2.1. Talepler &amp; Veri İlgilili Erişim Talepleri (DSAR)</h3>
+            <p>Yasal haklarınızı kullanmak veya veri yönetişimi prosedürleri hakkında bilgi almak için resmî taleplerinizi şu adrese iletin:</p>
+            <ul>
+                <li><strong>E-posta:</strong> info@vectixore.com</li>
+                <li><strong>Konu:</strong> “Hukuki / Veri İlgilili Erişim Talebi”</li>
+                <li><strong>Yanıt Süresi:</strong> 30 takvim günü içinde işlenir.</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.05);">
+            <h2>VERİ SİLME TALEPLERİ</h2>
+            <p>Kurumsal müşteriler ve yazılım kullanıcıları, hesabın sonlandırılmasını ve değiştirilemez olmayan kayıt verilerinin temizlenmesini istedikleri zaman talep edebilirler.</p>
+            <a href="/tr/data-deletion.html" class="btn-deletion">Veri Silme Talebi Gönder &rarr;</a>
+        </div>
+
+        <div class="card">
+            <h2>3. ÇEREZ &amp; YEREL DEPOLAMA BİLDİRİMİ</h2>
+            <p>Vectixore LTD, güvenli kimlik doğrulama, yönetim durumunun kalıcılığı ve platform işletimi için zorunlu olan yerel depolama jetonlarını, oturum tanımlayıcılarını ve CSRF koruma başlıklarını kullanır. İzleme çerezleri satmayız veya kullanıcı verilerini üçüncü taraf reklam aracılarına sağlamayız.</p>
+        </div>
+
+        <div class="footer">
+            <strong>VECTIXORE LTD</strong><br>
+            İngiltere ve Galler'de tescil edilmiştir | Şirket No: 16999592<br>
+            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, Birleşik Krallık<br>
+            &copy; 2026 Vectixore LTD. Tüm hakları saklıdır.
+        </div>
+    </div>
+
+    <!-- Legacy inline consent banner removed: unified in assets/consent.js -->
+    
+    <script src="/assets/consent.js" defer></script>
+</body>
+</html>

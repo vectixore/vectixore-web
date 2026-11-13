@@ -69,7 +69,15 @@
         .nav-brand { font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: #4d94ff; }
-        .lang-switch a { font-size: 0.8rem; margin-left: 8px; }
+        .lang-switch { position: relative; display: inline-block; margin-left: 20px; }
+        .lang-switch summary { list-style: none; cursor: pointer; color: var(--text-muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+        .lang-switch summary::-webkit-details-marker { display: none; }
+        .lang-switch summary:hover { color: #4d94ff; }
+        .lang-switch img { width: 16px; height: 12px; display: block; border-radius: 2px; }
+        .lang-menu { position: absolute; right: 0; top: 150%; background: #1a1a1a; border: 1px solid var(--border); border-radius: 8px; padding: 6px 0; min-width: 175px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        .lang-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 14px; color: var(--text-muted); font-size: 0.9rem; text-decoration: none; margin: 0; white-space: nowrap; }
+        .lang-menu a:hover { background: rgba(0,102,255,0.1); color: #4d94ff; }
+        .lang-menu a.active { color: #4d94ff; }
 
         /* Header / Hero */
         .header-sec { padding: 160px 20px 80px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #121212 0%, #161a2b 100%); }
@@ -149,9 +157,15 @@
                 <a href="/solutions.html">Solutions Vectixore</a>
                 <a href="/about.html">À propos</a>
                 <a href="/terms.html">Conditions</a>
-                <span class="lang-switch">
-                    <a href="/doxudel.html" hreflang="en">EN</a><a href="/de/doxudel.html" hreflang="de">DE</a><a href="/fr/doxudel.html" hreflang="fr">FR</a><a href="/tr/doxudel.html" hreflang="tr">TR</a>
-                </span>
+                <details class="lang-switch">
+                    <summary><img src="https://flagcdn.com/16x12/fr.png" alt="FR"> FR ▾</summary>
+                    <div class="lang-menu">
+                        <a href="/doxudel.html" hreflang="en"><img src="https://flagcdn.com/16x12/gb.png" alt=""> English</a>
+                        <a href="/de/doxudel.html" hreflang="de"><img src="https://flagcdn.com/16x12/de.png" alt=""> Deutsch</a>
+                        <a href="/fr/doxudel.html" hreflang="fr" class="active"><img src="https://flagcdn.com/16x12/fr.png" alt=""> Français</a>
+                        <a href="/tr/doxudel.html" hreflang="tr"><img src="https://flagcdn.com/16x12/tr.png" alt=""> Türkçe</a>
+                    </div>
+                </details>
             </div>
         </div>
     </nav>

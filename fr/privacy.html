@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://vectixore.com/fr/privacy.html" />
+    <link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+    <link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+    <link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+    <link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+    <link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité | Vectixore LTD</title>
+    
+    <link rel="icon" type="image/png" href="https://vectixore.com/assets/favicon.png?v=2">
+    <link rel="icon" type="image/x-icon" href="https://vectixore.com/assets/favicon.ico?v=2">
+
+    <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
+    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
+    <style>
+        :root { 
+            --bg: #121212; 
+            --card: #1a1a1a; 
+            --text: #f3f4f6; 
+            --accent: #0066FF; 
+            --accent-hover: #3385ff;
+            --border: #2a2a2a; 
+            --warning: #f59e0b; 
+            --danger: #ef4444; 
+        }
+        
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            padding-top: 80px; 
+            min-height: 100vh; 
+            text-align: center; 
+        }
+
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; background: rgba(18, 18, 18, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 1000; }
+        .nav-content { max-width: 900px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { display: flex; align-items: center; gap: 8px; font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 1px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #4d94ff; }
+        .lang-switch { position: relative; display: inline-block; margin-left: 20px; }
+        .lang-switch summary { list-style: none; cursor: pointer; color: var(--text-muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+        .lang-switch summary::-webkit-details-marker { display: none; }
+        .lang-switch summary:hover { color: #4d94ff; }
+        .lang-switch img { width: 16px; height: 12px; display: block; border-radius: 2px; }
+        .lang-menu { position: absolute; right: 0; top: 150%; background: #1a1a1a; border: 1px solid var(--border); border-radius: 8px; padding: 6px 0; min-width: 175px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        .lang-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 14px; color: var(--text-muted); font-size: 0.9rem; text-decoration: none; margin: 0; white-space: nowrap; }
+        .lang-menu a:hover { background: rgba(0,102,255,0.1); color: #4d94ff; }
+        .lang-menu a.active { color: #4d94ff; }
+
+        .container { max-width: 900px; padding: 20px 20px 60px 20px; margin: 0 auto; }
+        
+        .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; line-height: 1.2; }
+        .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
+        
+        .card { 
+            background: var(--card); 
+            border: 1px solid var(--border); 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-sizing: border-box; 
+            text-align: left; 
+            margin-bottom: 30px; 
+        }
+
+        h2 { color: var(--accent); font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 15px; margin-top: 0; margin-bottom: 25px; }
+        h3 { color: #fff; margin-top: 35px; margin-bottom: 10px; font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 15px; }
+        h4 { color: #cbd5e1; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 700; }
+
+        p { line-height: 1.7; font-size: 0.95rem; color: #9ca3af; margin-bottom: 15px; }
+        
+        ul { padding-left: 20px; color: #9ca3af; margin-bottom: 15px; }
+        li { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
+        li::marker { color: var(--accent); } 
+
+        .warning-box {
+            border: 1px solid var(--warning);
+            background: rgba(245, 158, 11, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .warning-title { color: var(--warning); font-weight: bold; display: block; margin-bottom: 10px; }
+
+        .footer { margin-top: 50px; font-size: 0.8rem; color: #6b7280; border-top: 1px solid var(--border); padding-top: 30px; line-height: 1.5; }
+        
+        a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; text-decoration: underline; }
+
+        .btn-deletion {
+            display: inline-block;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.2s;
+        }
+        .btn-deletion:hover {
+            background: var(--danger);
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GTM noscript fallback removed: analytics is consent-gated. -->
+    
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="/fr/" class="nav-brand">
+                <img src="https://vectixore.com/assets/favicon.png?v=2" onerror="this.src='https://vectixore.com/assets/favicon.ico?v=2'" alt="Vectixore Icon" style="width: 24px; height: 24px; object-fit: contain;">
+                VECTIXORE LTD
+            </a>
+            <div class="nav-links">
+                <a href="/fr/">Entreprise</a>
+                <a href="/fr/solutions.html">Solutions</a>
+                <a href="/fr/about.html">À propos</a>
+                <a href="/fr/terms.html">Conditions</a>
+                <details class="lang-switch">
+                    <summary><img src="https://flagcdn.com/16x12/fr.png" alt="FR"> FR ▾</summary>
+                    <div class="lang-menu">
+                        <a href="/privacy.html" hreflang="en"><img src="https://flagcdn.com/16x12/gb.png" alt=""> English</a>
+                        <a href="/de/privacy.html" hreflang="de"><img src="https://flagcdn.com/16x12/de.png" alt=""> Deutsch</a>
+                        <a href="/fr/privacy.html" hreflang="fr" class="active"><img src="https://flagcdn.com/16x12/fr.png" alt=""> Français</a>
+                        <a href="/tr/privacy.html" hreflang="tr"><img src="https://flagcdn.com/16x12/tr.png" alt=""> Türkçe</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="business-name">POLITIQUE DE CONFIDENTIALITÉ &amp;<br>DÉCLARATION DE PROTECTION DES DONNÉES</div>
+        <div class="tagline">Périmètre : entreprise, traitement sur l’appareil et systèmes essentiels</div>
+
+        <div style="margin-bottom: 30px; color: #9ca3af; font-size: 0.95rem; text-align: left; background: rgba(0, 102, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px dashed var(--accent);">
+            <strong>Responsable de traitement :</strong> VECTIXORE LTD (N° de société : 16999592)<br>
+            <strong>Siège social :</strong> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Royaume-Uni<br>
+            <strong>Enregistrement ICO :</strong> Responsable enregistré en vertu du Data Protection Act 2018 / UK GDPR (ZC087615)<br>
+            <strong>Contact officiel :</strong> info@vectixore.com
+        </div>
+
+        <div class="card">
+            <h2>1. ARCHITECTURE DES DONNÉES &amp; PRATIQUES OPÉRATIONNELLES</h2>
+            <p>Vectixore LTD développe des solutions logicielles, des applications de caviardage sur l’appareil (Doxudel), des chaînes d’outils de vérification forensique et des utilitaires préservant la confidentialité. Notre architecture opérationnelle repose strictement sur les paradigmes de conception de la <strong>minimisation des données</strong>, du <strong>calcul sur l’appareil</strong> et du <strong>zero-knowledge</strong>.</p>
+
+            <h3>1.1. Caviardage sur l’appareil &amp; traitement des fichiers (Doxudel Desktop)</h3>
+            <p>Lors de l’utilisation de notre logiciel de nettoyage sur l’appareil (Doxudel) :</p>
+            <ul>
+                <li><strong>Exécution locale :</strong> L’analyse des documents (PDF, DOCX, XLSX, images), le traitement OCR et la reconnaissance d’entités nommées (NER local sur l’appareil) s'effectuent entièrement dans la mémoire vive (RAM) et le stockage local du matériel client.</li>
+                <li><strong>Aucune transmission vers le cloud :</strong> Le contenu des fichiers, les données personnelles (PII) et les caviardages traités ne sont jamais transmis, mis en tampon ni stockés sur une infrastructure Vectixore externe.</li>
+                <li><strong>Télémétrie &amp; diagnostic :</strong> Seuls des rapports d’incident strictement anonymes ou des signaux de diagnostic sont collectés, uniquement après consentement explicite de l’utilisateur, et ils ne contiennent aucun identifiant personnel ni contenu documentaire.</li>
+            </ul>
+
+            <h3>1.2. Capture de signature manuscrite &amp; scellement</h3>
+            <p>Lorsque des services d’exécution numérique de documents sont utilisés, nous traitons les chemins vectoriels (données de trait) et les rastérisations visuelles des signatures saisies par l’utilisateur.</p>
+            <ul>
+                <li><strong>Finalité :</strong> Données traitées strictement comme des charges utiles documentaires fournies par l’utilisateur et intégrées aux conteneurs PDF/binaires cibles.</li>
+                <li><strong>Périmètre :</strong> Vectixore LTD n’effectue aucune graphologie comportementale ni profilage biométrique non autorisé de la pression ; ces données sont liées cryptographiquement à la charge utile résultante.</li>
+            </ul>
+
+            <h3>1.3. Vérification cryptographique &amp; détection des altérations</h3>
+            <ul>
+                <li><strong>Présence &amp; anti-usurcage :</strong> Lors de l’exécution de transactions numériques certifiées, les flux de correspondance visuelle ou les contrôles des capteurs de l’appareil sont évalués strictement pour garantir l’intégrité des autorisations actives.</li>
+                <li><strong>Signaux biométriques locaux :</strong> Lorsque la biométrie au niveau de l’appareil (TouchID, FaceID, Windows Hello) est utilisée pour autoriser le scellement d’un document, le traitement est effectué localement par le Secure Element du système d’exploitation. Vectixore LTD ne reçoit que des jetons cryptographiques booléens de succès/échec, jamais les gabarits biométriques bruts.</li>
+            </ul>
+
+            <h3>1.4. Registre d’audit SHA-256 &amp; immuabilité</h3>
+            <p>Nous maintenons un registre immuable de condensés mathématiques SHA-256 (hachages cryptographiques), avec des horodatages UTC fiables pour les enregistrements scellés.</p>
+            <ul>
+                <li><strong>Nature mathématique :</strong> Un condensé de hachage est une fonction mathématique à sens unique ; le contenu brut d’un document ne peut être ni rétro-conçu ni extrait de notre registre.</li>
+                <li><strong>Intégrité :</strong> Sert de preuve mathématique vérifiable de l’existence et de l’intégrité d’un document à un moment historique donné.</li>
+            </ul>
+
+            <h3>1.5. Réseau, intégrité du système &amp; télémétrie client</h3>
+            <ul>
+                <li><strong>Métadonnées de connexion :</strong> Les adresses IP et les horodatages système sont journalisés pendant les opérations sur le serveur strictement à des fins de surveillance de la sécurité, d’atténuation des attaques DDoS et de limitation du débit.</li>
+                <li><strong>Attestation de l’environnement :</strong> Pour préserver les frontières de sécurité, les signaux d’intégrité de l’appareil sont traités avant l’exécution des opérations cryptographiques.</li>
+                <li><strong>Diagnostic :</strong> Les performances de l’application, les journaux d’incident et la télémétrie non identifiante sont traités au moyen d’une infrastructure de télémétrie sécurisée afin d’assurer la stabilité de l’entreprise.</li>
+            </ul>
+
+            <h3>1.6. Démarcation entre responsable de traitement et sous-traitant</h3>
+            <ul>
+                <li><strong>Vectixore LTD en tant que responsable de traitement :</strong> Gère les systèmes de licences, les portails de comptes et la télémétrie de diagnostic de sécurité directe.</li>
+                <li><strong>Utilisateur en tant que responsable de traitement / Vectixore en tant que fournisseur de technologie :</strong> Vous restez le responsable absolu du traitement pour tous les documents, enregistrements et données personnelles traités localement ou scellés à l’aide de nos suites logicielles de bureau.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. DROITS GLOBAUX DES PERSONNES CONCERNÉES &amp; CONFORMITÉ</h2>
+            <p>Conformément au UK GDPR, au RGPD et aux lois internationales en matière de protection des données, les utilisateurs disposent de droits légaux clairs concernant leurs données personnelles :</p>
+            <ul>
+                <li><strong>Droit d’accès :</strong> Le droit d’obtenir confirmation et copie des données personnelles conservées dans des systèmes actifs.</li>
+                <li><strong>Droit de rectification :</strong> Le droit de corriger des enregistrements d’identité ou administratifs inexacts.</li>
+                <li><strong>Droit à l’effacement :</strong> Le droit de demander la suppression des données, sous réserve des exigences légales prévalentes.</li>
+                <li><strong>Droit à la limitation du traitement &amp; droit d’opposition :</strong> Le droit de stopper tout traitement automatisé ou profilage spécifique.</li>
+            </ul>
+
+            <div class="warning-box">
+                <span class="warning-title">&#9888; EXCEPTION CRITIQUE : INTÉGRITÉ DE L’AUDIT CRYPTOGRAPHIQUE</span>
+                <p style="margin-bottom:0; color: #e2e8f0;">Le droit à l’effacement ou à la rectification NE PEUT PAS s’appliquer rétroactivement aux hachages de documents scellés mathématiquement ni aux registres d’horodatage des transactions. Modifier un enregistrement scellé invalide la chaîne de conservation cryptographique. La conservation de ce registre est imposée par la base juridique « Établissement, exercice ou défense de demandes juridiques » (UK GDPR art. 17(3)(e)) et par les obligations de conformité réglementaire.</p>
+            </div>
+
+            <h3>2.1. Demandes &amp; demandes d’accès aux données (DSAR)</h3>
+            <p>Pour exercer vos droits légaux ou interroger les procédures de gouvernance des données, transmettez vos demandes formelles à :</p>
+            <ul>
+                <li><strong>E-mail :</strong> info@vectixore.com</li>
+                <li><strong>Objet :</strong> « Juridique / Demande d’accès aux données »</li>
+                <li><strong>Délai de réponse :</strong> Traitement dans un délai de 30 jours calendaires.</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border: 1px solid var(--danger); background: rgba(239, 68, 68, 0.05);">
+            <h2>DEMANDES DE SUPPRESSION DE DONNÉES</h2>
+            <p>Les clients entreprises et les utilisateurs du logiciel peuvent demander à tout moment la clôture de leur compte et l’effacement des données d’enregistrement non immuables.</p>
+            <a href="/fr/data-deletion.html" class="btn-deletion">Soumettre une demande de suppression de données &rarr;</a>
+        </div>
+
+        <div class="card">
+            <h2>3. AVIS RELATIF AUX COOKIES &amp; AU STOCKAGE LOCAL</h2>
+            <p>Vectixore LTD utilise des jetons de stockage local, des identifiants de session et des en-têtes de protection CSRF strictement nécessaires à l’authentification sécurisée, à la persistance de l’état administratif et au fonctionnement de la plateforme. Nous ne vendons pas de cookies de suivi et ne fournissons pas de données utilisateur à des intermédiaires publicitaires tiers.</p>
+        </div>
+
+        <div class="footer">
+            <strong>VECTIXORE LTD</strong><br>
+            Immatriculée en Angleterre et au Pays de Galles | N° de société : 16999592<br>
+            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, Royaume-Uni<br>
+            &copy; 2026 Vectixore LTD. Tous droits réservés.
+        </div>
+    </div>
+
+    <!-- Legacy inline consent banner removed: unified in assets/consent.js -->
+    
+    <script src="/assets/consent.js" defer></script>
+</body>
+</html>

@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link rel="canonical" href="https://vectixore.com/" />
+    <link rel="alternate" hreflang="en" href="https://vectixore.com/en/" />
+    <link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+    <link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+    <link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+    <link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+    <link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+    <link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+    <link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+    <link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
 
     <script>
       if (window.location.pathname.includes('index.html')) {
@@ -18,7 +28,6 @@
 
     <meta name="facebook-domain-verification" content="w1fgvbw8lf969kdk8kdp8kvsnsx1x7" />
     
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Vectixore LTD | Advanced AI Software & Enterprise Solutions</title>
@@ -86,7 +95,16 @@
         .nav-content { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .nav-links a:hover, .nav-links a.active { color: #4d94ff; }
+        .lang-switch { position: relative; display: inline-block; margin-left: 20px; }
+        .lang-switch summary { list-style: none; cursor: pointer; color: var(--text-muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+        .lang-switch summary::-webkit-details-marker { display: none; }
+        .lang-switch summary:hover { color: #4d94ff; }
+        .lang-switch img { width: 16px; height: 12px; display: block; border-radius: 2px; }
+        .lang-menu { position: absolute; right: 0; top: 150%; background: #1a1a1a; border: 1px solid var(--border); border-radius: 8px; padding: 6px 0; min-width: 175px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        .lang-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 14px; color: var(--text-muted); font-size: 0.9rem; text-decoration: none; margin: 0; white-space: nowrap; }
+        .lang-menu a:hover { background: rgba(0,102,255,0.1); color: #4d94ff; }
+        .lang-menu a.active { color: #4d94ff; }
 
         .container { max-width: 1000px; width: 100%; padding: 120px 20px 40px; margin: 0 auto; box-sizing: border-box; }
         
@@ -100,7 +118,7 @@
         .card { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 12px; height: 100%; box-sizing: border-box; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; }
         .card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12); }
         
-        .card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; margin-bottom: 15px; }
+        .card h2, .card h3 { color: #fff; margin-top: 0; font-size: 1.2rem; border-left: 3px solid var(--accent); padding-left: 15px; margin-bottom: 15px; }
         .card p { line-height: 1.6; font-size: 0.95rem; color: var(--text-muted); margin: 0; }
 
         .feature-list { list-style: none; padding: 0; margin-top: 15px; }
@@ -108,7 +126,7 @@
         .feature-list li::before { content: '›'; color: var(--accent); position: absolute; left: 0; font-weight: bold; font-size: 1.1rem; line-height: 1; }
 
         .legal-box { background: var(--card-subtle); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
-        .legal-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1rem; }
+        .legal-box h3, .legal-box h4 { color: #fff; margin: 0 0 10px 0; font-size: 1rem; }
         .legal-warning { border-left: 3px solid var(--warning); background: rgba(245, 158, 11, 0.05); }
 
         .footer { margin-top: 80px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 40px; padding-bottom: 40px; text-align: center; line-height: 1.8; }
@@ -134,6 +152,19 @@
                 <a href="solutions.html">Solutions</a>
                 <a href="about.html">About</a>
                 <a href="terms.html">Terms</a>
+                <details class="lang-switch">
+                    <summary><img src="https://flagcdn.com/16x12/gb.png" alt="EN"> EN ▾</summary>
+                    <div class="lang-menu">
+                        <a href="/" hreflang="en" class="active"><img src="https://flagcdn.com/16x12/gb.png" alt=""> English</a>
+                        <a href="/de/" hreflang="de"><img src="https://flagcdn.com/16x12/de.png" alt=""> Deutsch</a>
+                        <a href="/fr/" hreflang="fr"><img src="https://flagcdn.com/16x12/fr.png" alt=""> Français</a>
+                        <a href="/tr/" hreflang="tr"><img src="https://flagcdn.com/16x12/tr.png" alt=""> Türkçe</a>
+                        <a href="/es/" hreflang="es"><img src="https://flagcdn.com/16x12/es.png" alt=""> Español</a>
+                        <a href="/it/" hreflang="it"><img src="https://flagcdn.com/16x12/it.png" alt=""> Italiano</a>
+                        <a href="/pt/" hreflang="pt"><img src="https://flagcdn.com/16x12/pt.png" alt=""> Português</a>
+                        <a href="/pl/" hreflang="pl"><img src="https://flagcdn.com/16x12/pl.png" alt=""> Polski</a>
+                    </div>
+                </details>
             </div>
         </div>
     </nav>
@@ -148,7 +179,7 @@
 
         <section class="grid-3">
             <div class="card">
-                <h3>On-Device Privacy & Redaction</h3>
+                <h2>On-Device Privacy & Redaction</h2>
                 <p>How does Vectixore safeguard sensitive data? Through localized NLP solutions like <strong>Doxudel Desktop</strong>, performing offline PII sanitization and anonymization directly on hardware endpoints.</p>
                 <ul class="feature-list">
                     <li>Zero Cloud Upload Architecture</li>
@@ -157,7 +188,7 @@
                 </ul>
             </div>
             <div class="card">
-                <h3>Verification Systems</h3>
+                <h2>Verification Systems</h2>
                 <p>How does Vectixore handle audit-grade security? We deploy cryptographic document authentication, biometric attestation, and compliance-driven automation protocols.</p>
                 <ul class="feature-list">
                     <li>E-Signature Verification</li>
@@ -166,7 +197,7 @@
                 </ul>
             </div>
             <div class="card">
-                <h3>Enterprise Architectures</h3>
+                <h2>Enterprise Architectures</h2>
                 <p>What drives our productivity stacks? We build high-performance client-side and cloud-supported utility systems designed for verifiable ROI and zero-trust workflows.</p>
                 <ul class="feature-list">
                     <li>Zero-Trust Privacy Design</li>
@@ -183,7 +214,7 @@
         <section class="grid-2">
             <div>
                 <div class="legal-box">
-                    <h4>What is the Refund Policy for Vectixore?</h4>
+                    <h3>What is the Refund Policy for Vectixore?</h3>
                     <p style="color: #cbd5e1; margin-bottom: 10px;">
                         Refund requests for digital licenses and software services are processed within a <strong>14-day statutory window</strong> in strict accordance with the <strong>UK Consumer Rights Act 2015</strong>.
                     </p>
@@ -193,7 +224,7 @@
                 </div>
 
                 <div class="legal-box">
-                    <h4>Is Vectixore GDPR & UK Data Protection Act Compliant?</h4>
+                    <h3>Is Vectixore GDPR & UK Data Protection Act Compliant?</h3>
                     <p style="color: #cbd5e1;">
                         Yes. System architectures are engineered under strict <strong>Privacy-by-Design</strong> principles. Toolchains such as Doxudel process documents completely on-device, ensuring zero server-side exposure of confidential records. When applications are distributed or updated via authorized commercial app platforms—such as the <strong>Microsoft Store</strong>, <strong>Google Play Store</strong>, and comparable ecosystem marketplaces—telemetry, distribution metrics, and transactional handling strictly adhere to UK Data Protection Act, GDPR, and the data governance standards mandated by each distribution partner.
                     </p>
@@ -202,14 +233,14 @@
 
             <div>
                 <div class="legal-box">
-                    <h4>How to Manage Software Licenses?</h4>
+                    <h3>How to Manage Software Licenses?</h3>
                     <p style="color: #cbd5e1;">
                         Licensing subscriptions and standalone seats can be acquired and managed via authorized platform distribution channels (including the <strong>Microsoft Store</strong>, <strong>Google Play Store</strong>, and affiliated storefronts) or through direct enterprise provisioning keys issued by Vectixore LTD.
                     </p>
                 </div>
                 
                 <div class="legal-box legal-warning">
-                    <h4 style="color: #fbbf24;">Legal Disclaimer</h4>
+                    <h3 style="color: #fbbf24;">Legal Disclaimer</h3>
                     <p style="color: #e2e8f0;">
                         Vectixore LTD acts strictly as a technological software provider. Our applications, redaction toolchains, and forensic modules do not constitute formal legal counsel or statutory legal representation.
                     </p>

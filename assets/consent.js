@@ -8,7 +8,7 @@
  *    and are activated by this script after consent.
  *
  * Localisation
- *  - Banner text follows <html lang="...">: en, de, fr, tr.
+ *  - Banner text follows <html lang="...">: en, de, fr, tr, pt, it, es.
  *  - Missing or unknown language falls back to English.
  *
  * Storage
@@ -52,6 +52,38 @@
       reject: 'İsteğe bağlı olanları reddet',
       accept: 'Tümünü kabul et',
       aria: 'Analitik izni'
+    },
+    pt: {
+      body: 'Utilizamos análises opcionais para melhorar o site. Nada é carregado até aceitar.',
+      link: 'Política de privacidade',
+      tail: '',
+      reject: 'Rejeitar não essenciais',
+      accept: 'Aceitar tudo',
+      aria: 'Consentimento para análise'
+    },
+    it: {
+      body: 'Utilizziamo analisi facoltative per capire come viene usato il sito. Finché non accetti, non viene caricato nulla. Consulta la nostra',
+      link: 'Informativa sulla privacy',
+      tail: '.',
+      reject: 'Rifiuta i non essenziali',
+      accept: 'Accetta tutti',
+      aria: 'Consenso per l’analisi'
+    },
+    es: {
+      body: 'Utilizamos análisis opcionales para entender cómo se usa el sitio. No se carga nada hasta que aceptas. Consulta nuestra',
+      link: 'Política de privacidad',
+      tail: '.',
+      reject: 'Rechazar las no esenciales',
+      accept: 'Aceptar todo',
+      aria: 'Consentimiento de analítica'
+    },
+    pl: {
+      body: 'Używamy opcjonalnych analiz, aby zrozumieć, jak korzystasz z witryny. Nic nie jest ładowane, dopóki nie zaakceptujesz. Zobacz naszą',
+      link: 'Politykę prywatności',
+      tail: '.',
+      reject: 'Odrzuć nieistotne',
+      accept: 'Akceptuj wszystko',
+      aria: 'Zgoda na analitykę'
     }
   };
 

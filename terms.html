@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link rel="canonical" href="https://vectixore.com/terms.html" />
+    <link rel="alternate" hreflang="en" href="https://vectixore.com/en/terms.html" />
+    <link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+    <link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+    <link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+    <link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+    <link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+    <link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+    <link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+    <link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
 
     <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
     <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -9,7 +19,6 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use | Vectixore LTD</title>
     
@@ -27,6 +36,7 @@
             --bg: #121212; 
             --card: #1a1a1a; 
             --text: #f3f4f6; 
+            --text-muted: #9ca3af;
             --accent: #0066FF; 
             --border: #2a2a2a; 
             --warning: #f59e0b; 
@@ -42,7 +52,22 @@
             text-align: center; 
         }
 
-        .container { max-width: 850px; padding: 60px 20px; margin: 0 auto; }
+        .nav-bar { width: 100%; border-bottom: 1px solid var(--border); background: rgba(18, 18, 18, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; z-index: 100; }
+        .nav-content { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { font-weight: 800; color: #fff; font-size: 1.1rem; text-decoration: none; letter-spacing: 0.5px; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: #4d94ff; }
+        .lang-switch { position: relative; display: inline-block; margin-left: 20px; }
+        .lang-switch summary { list-style: none; cursor: pointer; color: var(--text-muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+        .lang-switch summary::-webkit-details-marker { display: none; }
+        .lang-switch summary:hover { color: #4d94ff; }
+        .lang-switch img { width: 16px; height: 12px; display: block; border-radius: 2px; }
+        .lang-menu { position: absolute; right: 0; top: 150%; background: #1a1a1a; border: 1px solid var(--border); border-radius: 8px; padding: 6px 0; min-width: 175px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        .lang-menu a { display: flex; align-items: center; gap: 8px; padding: 8px 14px; color: var(--text-muted); font-size: 0.9rem; text-decoration: none; margin: 0; white-space: nowrap; }
+        .lang-menu a:hover { background: rgba(0,102,255,0.1); color: #4d94ff; }
+        .lang-menu a.active { color: #4d94ff; }
+
+        .container { max-width: 850px; padding: 120px 20px 60px; margin: 0 auto; }
         
         .business-name { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px; }
         .tagline { color: var(--accent); font-weight: 600; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
@@ -80,6 +105,31 @@
 
     <!-- GTM noscript fallback removed: analytics is consent-gated. -->
     
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="./" class="nav-brand">VECTIXORE LTD</a>
+            <div class="nav-links">
+                <a href="./">Home</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="about.html">About</a>
+                <a href="terms.html" class="active">Terms</a>
+                <details class="lang-switch">
+                    <summary><img src="https://flagcdn.com/16x12/gb.png" alt="EN"> EN ▾</summary>
+                    <div class="lang-menu">
+                        <a href="/terms.html" hreflang="en" class="active"><img src="https://flagcdn.com/16x12/gb.png" alt=""> English</a>
+                        <a href="/de/terms.html" hreflang="de"><img src="https://flagcdn.com/16x12/de.png" alt=""> Deutsch</a>
+                        <a href="/fr/terms.html" hreflang="fr"><img src="https://flagcdn.com/16x12/fr.png" alt=""> Français</a>
+                        <a href="/tr/terms.html" hreflang="tr"><img src="https://flagcdn.com/16x12/tr.png" alt=""> Türkçe</a>
+                        <a href="/es/terms.html" hreflang="es"><img src="https://flagcdn.com/16x12/es.png" alt=""> Español</a>
+                        <a href="/it/terms.html" hreflang="it"><img src="https://flagcdn.com/16x12/it.png" alt=""> Italiano</a>
+                        <a href="/pt/terms.html" hreflang="pt"><img src="https://flagcdn.com/16x12/pt.png" alt=""> Português</a>
+                        <a href="/pl/terms.html" hreflang="pl"><img src="https://flagcdn.com/16x12/pl.png" alt=""> Polski</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <a href="./" class="back-link">&larr; Back to Home</a>
 

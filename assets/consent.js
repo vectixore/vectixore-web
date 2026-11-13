@@ -7,6 +7,10 @@
  *      <script type="text/plain" data-cookiecategory="analytics"> ... </script>
  *    and are activated by this script after consent.
  *
+ * Localisation
+ *  - Banner text follows <html lang="...">: en, de, fr, tr.
+ *  - Missing or unknown language falls back to English.
+ *
  * Storage
  *  - vectixore_consent = "full" | "necessary"
  *  - legacy keys from earlier pages are read for backward compatibility.
@@ -15,6 +19,47 @@
   'use strict';
 
   var KEY = 'vectixore_consent';
+
+  var STRINGS = {
+    en: {
+      body: 'We use optional analytics to understand how the site is used. Nothing is loaded until you accept. See our',
+      link: 'Privacy Policy',
+      tail: '.',
+      reject: 'Reject non-essential',
+      accept: 'Accept all',
+      aria: 'Analytics consent'
+    },
+    de: {
+      body: 'Wir verwenden optionale Analysen, um die Website zu verbessern. Nichts wird geladen, bis Sie zustimmen.',
+      link: 'Datenschutzerklärung',
+      tail: '',
+      reject: 'Nicht erforderliche ablehnen',
+      accept: 'Alle akzeptieren',
+      aria: 'Analyse-Einwilligung'
+    },
+    fr: {
+      body: "Nous utilisons des analyses optionnelles pour améliorer le site. Rien n'est chargé tant que vous n'acceptez pas.",
+      link: 'Politique de confidentialité',
+      tail: '',
+      reject: 'Refuser les non-essentiels',
+      accept: 'Tout accepter',
+      aria: 'Consentement analytique'
+    },
+    tr: {
+      body: 'Siteyi geliştirmek için isteğe bağlı analizler kullanıyoruz. Kabul edene kadar hiçbir şey yüklenmez.',
+      link: 'Gizlilik Politikası',
+      tail: '',
+      reject: 'İsteğe bağlı olanları reddet',
+      accept: 'Tümünü kabul et',
+      aria: 'Analitik izni'
+    }
+  };
+
+  function currentLang() {
+    var lang = (document.documentElement && document.documentElement.lang) || '';
+    lang = String(lang).toLowerCase().split(/[-_]/)[0];
+    return STRINGS[lang] ? lang : 'en';
+  }
 
   function readConsent() {
     try {
@@ -66,6 +111,8 @@
   function showBanner() {
     if (document.getElementById('vx-consent')) { return; }
 
+    var t = STRINGS[currentLang()];
+
     var style = document.createElement('style');
     style.textContent =
       '#vx-consent{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1a1a1a;' +
@@ -82,12 +129,11 @@
     var box = document.createElement('div');
     box.id = 'vx-consent';
     box.setAttribute('role', 'region');
-    box.setAttribute('aria-label', 'Analytics consent');
+    box.setAttribute('aria-label', t.aria);
 
     var txt = document.createElement('div');
     txt.className = 'vx-txt';
-    txt.innerHTML = 'We use optional analytics to understand how the site is used. ' +
-      'Nothing is loaded until you accept. See our <a href="privacy.html">Privacy Policy</a>.';
+    txt.innerHTML = t.body + ' <a href="privacy.html">' + t.link + '</a>' + t.tail;
 
     var acts = document.createElement('div');
     acts.className = 'vx-acts';
@@ -95,13 +141,13 @@
     var no = document.createElement('button');
     no.type = 'button';
     no.className = 'vx-no';
-    no.textContent = 'Reject non-essential';
+    no.textContent = t.reject;
     no.addEventListener('click', function () { decide('necessary'); });
 
     var yes = document.createElement('button');
     yes.type = 'button';
     yes.className = 'vx-yes';
-    yes.textContent = 'Accept all';
+    yes.textContent = t.accept;
     yes.addEventListener('click', function () { decide('full'); });
 
     acts.appendChild(no);

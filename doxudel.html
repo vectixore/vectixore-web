@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link rel="canonical" href="https://vectixore.com/doxudel.html" />
+    <link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+    <link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+    <link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+    <link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+    <link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
 
     <!-- GTM: gated behind consent (activated by assets/consent.js after "Accept all") -->
     <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -10,7 +16,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MXJQJRXG');</script>
     
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Doxudel Desktop | Zero-Cloud PII Redaction & Data Sanitization</title>
@@ -63,7 +68,8 @@
         .nav-content { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
         .nav-brand { font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-left: 20px; transition: color 0.2s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .nav-links a:hover, .nav-links a.active { color: #4d94ff; }
+        .lang-switch a { font-size: 0.8rem; margin-left: 8px; }
 
         /* Header / Hero */
         .header-sec { padding: 160px 20px 80px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #121212 0%, #161a2b 100%); }
@@ -80,7 +86,11 @@
         .secondary-btn { background: transparent; color: #80b3ff; border: 1px solid rgba(0,102,255,0.4); }
         .secondary-btn:hover { background: rgba(0,102,255,0.1); }
         
-        .pricing-note { font-size: 0.85rem; color: #9ca3af; max-width: 700px; margin-top: 15px; font-weight: 500; text-align: center; line-height: 1.5; }
+        .pricing-note { font-size: 0.85rem; color: #9ca3af; max-width: 700px; margin-top: 10px; font-weight: 500; text-align: center; line-height: 1.5; }
+        .price-line { margin-top: 20px; font-size: 1.2rem; font-weight: 700; color: #fff; text-align: center; }
+        .price-line .price-amount { color: #80b3ff; }
+        .price-line .price-period { color: #fff; }
+        .price-line .price-trial { display: block; margin-top: 4px; font-size: 0.85rem; font-weight: 500; color: #9ca3af; }
 
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
         .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #fff; }
@@ -139,6 +149,9 @@
                 <a href="solutions.html">Vectixore Solutions</a>
                 <a href="about.html">About</a>
                 <a href="terms.html">Terms</a>
+                <span class="lang-switch">
+                    <a href="/doxudel.html" hreflang="en">EN</a><a href="/de/doxudel.html" hreflang="de">DE</a><a href="/fr/doxudel.html" hreflang="fr">FR</a><a href="/tr/doxudel.html" hreflang="tr">TR</a>
+                </span>
             </div>
         </div>
     </nav>
@@ -159,8 +172,12 @@
                 <!-- Secondary B2B CTA -->
                 <a href="mailto:info@vectixore.com?subject=Doxudel%20Enterprise%20Pilot%20Request" class="secondary-btn">Request a Written Pilot</a>
             </div>
+            <div class="price-line">
+                <span class="price-amount" id="dx-price">USD 49.99</span><span class="price-period"> / year</span>
+                <span class="price-trial">Free download · 7-day free trial</span>
+            </div>
             <div class="pricing-note">
-                Free download · 7-day free trial · Local pricing & subscription securely handled by Microsoft Store
+                Charged in your local currency by Microsoft Store. Your exact price is confirmed at checkout.
             </div>
         </div>
     </header>
@@ -289,5 +306,33 @@
     </footer>
 
     <script src="assets/consent.js" defer></script>
+
+    <!-- Localized price by visitor country (Cloudflare edge, no third-party call) -->
+    <script>
+    (function () {
+        var EU = ["AL","AM","AT","AZ","BE","BA","BG","HR","CY","DK","EE","FO","FI","FR","GE","DE","GI","GR","GL","HU","IS","IE","IT","LI","LT","LU","MT","MD","ME","NL","MK","NO","PL","PT","RO","SM","RS","SK","SI","ES","SE","CH","UA","VA"];
+        var UK = ["IO","VG","GB"];
+        var PRICE = { USD: "USD 49.99", EUR: "EUR 49.99", GBP: "GBP 49.99", TRY: "TRY 2350" };
+
+        var el = document.getElementById("dx-price");
+        if (!el) return;
+
+        function apply(code) {
+            var p = PRICE.USD;
+            if (code === "TR") p = PRICE.TRY;
+            else if (UK.indexOf(code) !== -1) p = PRICE.GBP;
+            else if (EU.indexOf(code) !== -1) p = PRICE.EUR;
+            el.textContent = p;
+        }
+
+        fetch("/cdn-cgi/trace", { cache: "no-store" })
+            .then(function (r) { return r.text(); })
+            .then(function (t) {
+                var m = t.match(/(?:^|\n)loc=([A-Z]{2})/);
+                apply(m ? m[1] : "US");
+            })
+            .catch(function () { apply("US"); });
+    })();
+    </script>
 </body>
 </html>

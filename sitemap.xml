@@ -1,323 +1,899 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 <loc>https://vectixore.com/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://vectixore.com/solutions.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/solutions.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/solutions.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/solutions.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/solutions.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/solutions.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/solutions.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/solutions.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/solutions.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/doxudel.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/doxudel.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/doxudel.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/doxudel.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://vectixore.com/about.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/about.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/about.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/about.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/about.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/about.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/about.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/about.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/about.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/about.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/about.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.70</priority>
 </url>
 <url>
 <loc>https://vectixore.com/privacy.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/privacy.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/privacy.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/privacy.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/privacy.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/privacy.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/privacy.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/privacy.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/privacy.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/terms.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/terms.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/terms.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/terms.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/terms.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/terms.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/terms.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/terms.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/terms.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/terms.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/terms.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.50</priority>
 </url>
 <url>
 <loc>https://vectixore.com/cookies.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/cookies.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/cookies.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/cookies.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/cookies.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/cookies.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/cookies.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/cookies.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/cookies.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.30</priority>
 </url>
 <url>
 <loc>https://vectixore.com/data-deletion.html</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
 <lastmod>2026-11-01T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/de/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/fr/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/tr/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/es/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/it/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pt/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 <url>
 <loc>https://vectixore.com/pl/data-deletion.html</loc>
-<lastmod>2026-11-13T00:00:00+00:00</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://vectixore.com/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="de" href="https://vectixore.com/de/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://vectixore.com/fr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://vectixore.com/tr/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="es" href="https://vectixore.com/es/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="it" href="https://vectixore.com/it/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://vectixore.com/pt/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="pl" href="https://vectixore.com/pl/data-deletion.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://vectixore.com/data-deletion.html" />
+<lastmod>2026-11-14T00:00:00+00:00</lastmod>
 <priority>0.40</priority>
 </url>
 </urlset>

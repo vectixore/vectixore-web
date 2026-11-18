@@ -44,7 +44,7 @@
         "@type": "Offer",
         "url": "https://apps.microsoft.com/detail/9NJSG1PNMLLZ",
         "availability": "https://schema.org/InStock",
-        "description": "Transferência gratuita com período experimental de 7 dias. O preço da subscrição é apresentado pela Microsoft Store na sua moeda local."
+        "description": "Transferência gratuita com período experimental de 1 mês. O preço da subscrição é apresentado pela Microsoft Store na sua moeda local."
       }
     }
     </script>
@@ -203,8 +203,9 @@
                 <a href="mailto:info@vectixore.com?subject=Doxudel%20Enterprise%20Pilot%20Request" class="secondary-btn">Solicitar um piloto por escrito</a>
             </div>
             <div class="price-line">
-                <span class="price-amount" id="dx-price">EUR 49.99</span><span class="price-period"> / ano</span>
-                <span class="price-trial">Transferência gratuita · Teste grátis durante 7 dias</span>
+                <div><span class="price-amount" id="dx-price-annual">EUR 149.99</span><span class="price-period"> / ano</span></div>
+                <div style="font-size: 0.95rem; margin-top: 4px;"><span class="price-amount" id="dx-price-monthly">EUR 19.99</span><span class="price-period"> / mês</span></div>
+                <span class="price-trial">Transferência gratuita · 1 mês de teste gratuito</span>
             </div>
             <div class="pricing-note">
                 O preço é cobrado pela Microsoft Store na sua moeda local. O preço exato é confirmado no momento da compra.
@@ -340,19 +341,27 @@
     <!-- Localized price by visitor country (Cloudflare edge, no third-party call) -->
     <script>
     (function () {
-        var EU = ["AL","AM","AT","AZ","BE","BA","BG","HR","CY","DK","EE","FO","FI","FR","GE","DE","GI","GR","GL","HU","IS","IE","IT","LI","LT","LU","MT","MD","ME","NL","MK","NO","PL","PT","RO","SM","RS","SK","SI","ES","SE","CH","UA","VA"];
-        var UK = ["IO","VG","GB"];
-        var PRICE = { USD: "USD 49.99", EUR: "EUR 49.99", GBP: "GBP 49.99", TRY: "TRY 2350" };
+        // Europe 50 + UK 6 + TR 1; keep in sync with Store market overrides.
+        var EU = ["AX","AD","AL","AM","AT","AZ","BE","BA","BG","HR","CY","CZ","DK","EE","FO","FI","FR","GE","DE","GI","GR","GL","HU","IS","IE","IT","LI","LT","LU","LV","MT","MC","MD","ME","NL","MK","NO","PL","PT","RO","SM","RS","SK","SI","ES","SE","CH","UA","VA"];
+        var UK = ["GB","IM","JE","GG","IO","VG"];
+        var PRICE = {
+            USD: { annual: "USD 149.99", monthly: "USD 19.99" },
+            EUR: { annual: "EUR 149.99", monthly: "EUR 19.99" },
+            GBP: { annual: "GBP 149.99", monthly: "GBP 19.99" },
+            TRY: { annual: "TRY 4,900.00", monthly: "TRY 950.00" }
+        };
 
-        var el = document.getElementById("dx-price");
-        if (!el) return;
+        var elA = document.getElementById("dx-price-annual");
+        var elM = document.getElementById("dx-price-monthly");
+        if (!elA || !elM) return;
 
         function apply(code) {
             var p = PRICE.USD;
             if (code === "TR") p = PRICE.TRY;
             else if (UK.indexOf(code) !== -1) p = PRICE.GBP;
             else if (EU.indexOf(code) !== -1) p = PRICE.EUR;
-            el.textContent = p;
+            elA.textContent = p.annual;
+            elM.textContent = p.monthly;
         }
 
         fetch("/cdn-cgi/trace", { cache: "no-store" })
